@@ -62,21 +62,22 @@ body {
 
 #message-box {
 	height: 150px;	
-	width: 400px;	
+	width: 436px;	
 	background-color: rgba(255, 255, 255, 0.55);
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -55px;
-	margin-left: -200px;
+	margin-left: -218px;
 }
 
 #message-box h1 {
 	font-family: serif;	
 	text-transform: uppercase;
-	font-size: 36px;
+	font-size: 42px;
 	text-align: center;
 	letter-spacing: 1px;
+	margin-bottom: 13px;
 }
 
 #message-box .button {
