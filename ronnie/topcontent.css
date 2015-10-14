@@ -16,7 +16,8 @@
   font-weight: bold;
   color:#414041;
 }
-#shopnow {
+#shopnow a {
+  display: block;
   width: 120px;
   height: 20px;
   padding:10px;
@@ -28,9 +29,13 @@
   background-color: #414041;
   font-family:arial;
 }
+#shopnow a:hover {
+  background-color: grey;
+  display: block;
+}
 #middlecontent {
   height:30px;
-  padding-top: 10px;
+  line-height: 30px;
   text-align:center;
   font-family:arial;
   word-spacing:5px;

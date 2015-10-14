@@ -22,6 +22,13 @@ header li {
   font-size: 14px;
   color:white;
 }
+header li a:hover {
+  color:#b0aeb1;
+}
+a:link, a:active, a:visited {
+  color:white;
+  text-decoration: none;
+}
 #bag {
   width: 20px;
   height: 15px;

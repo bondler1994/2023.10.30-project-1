@@ -3,7 +3,7 @@ footer>ul {
   padding: 10px;
   height: 180px;
 }
-footer li {
+footer>ul>li {
   width:33%;
   float:left;
   margin:20px 1px;
@@ -24,8 +24,49 @@ footer>p {
   font-size: 8px;
   letter-spacing: 2px;
 }
+#STAYCONNECTED img {
+  width:20px;
+  height:20px;
+}
+#STAYCONNECTED ul {
+text-align: center;
+margin-top: 20px;
+}
+#STAYCONNECTED li {
+  display: inline;
+  margin:5px;
+}
+#BEOURFRIEND div {
+  margin-top: 20px;
+  text-align: center;
+}
 #NEEDASSISTANCE p {
+  margin:20px;
   text-align: center;
   font-size: 10px;
   letter-spacing: 2px;
+}
+
+#BEOURFRIEND input[type=email] {
+  display: block;
+  float: right;
+  border-color: white;
+  border-width: 1px;
+  border-style:solid;
+  height: 20px;
+  width:70%;
+  background-color: #414040;
+  color:white;
+}
+#BEOURFRIEND input[type=submit] {
+  display: block;
+  clear:both;
+  float: right;
+  margin-top: 5px;
+  border-color: white;
+  border-width: 1px;
+  border-style:solid;
+  height: 20px;
+  background-color:white ;
+  color:#414040;
 }

@@ -3,8 +3,11 @@
   height:auto;
 }
 #bottomcontent h1 {
+  margin:40px;
   text-align: center;
   letter-spacing: 10px;
+  font-size: 30px;
+  font-weight: bold;
 }
 #bottomcontent hr {
   border:0;
@@ -13,6 +16,7 @@
   height:1px;
 }
 #bottomcontent h2 {
+  margin-top:20px;
   text-align: center;
   letter-spacing: 5px;
   font-family:arial;
