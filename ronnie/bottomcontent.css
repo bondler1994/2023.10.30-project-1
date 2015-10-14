@@ -1,0 +1,33 @@
+#bottomcontent {
+  width:100%;
+  height:auto;
+}
+#bottomcontent h1 {
+  text-align: center;
+  letter-spacing: 10px;
+}
+#bottomcontent hr {
+  border:0;
+  background-color: black;
+  width:100px;
+  height:1px;
+}
+#bottomcontent h2 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-family:arial;
+  font-size: 14px;
+  font-weight: normal;
+}
+#bottomcontent ul{
+  width: 900px;
+  margin:0 auto;
+  text-align: center;
+  padding:0;
+}
+#bottomcontent img {
+  display: inline;
+  padding:20px 10px;
+  width:210px;
+  height:300px;
+}
