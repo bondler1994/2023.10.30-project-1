@@ -5,9 +5,9 @@
 </head>
 <body>
 	<!-- header start -->
-	<head>
+	<header>
 		<div class="logo">
-			<img src="">
+			<img src="images/logo.png">
 		</div>
 
 		<nav>
@@ -21,22 +21,26 @@
 		</nav>
 
 		<div id="cart">
-			<img src="">
+			<img src="images/bag.png">
 		</div>
-	</head>
+
+		<div class="clear"></div>
+	</header>
 	<!-- header end  -->
 
 	<!-- contentTop start -->
 	<div class="contentTop">
-		<div class="mainPic">
-			<div class="midLabel">
-				<h1 class="wordTop" id="season">FALL &amp WINTER</h1>
-				<img id="shopButton" src="">
+		<div class="cover">
+			<img id="mainPic" src="images/cover.jpg">
+			<div class="midBox"></div>
+			<div class="wordBox">
+				<h1 id="wordTopBig">FALL &amp WINTER</h1>
+				<h2 id="wordTopMid">Shop Now</h2>
 			</div>
 		</div>
 
 		<div class="midWords">
-			<h3 class="wordTop">FREE SHIPPING WORLWIDE</h3>
+			<h3 id="wordTopBot">FREE SHIPPING WORLWIDE</h3>
 		</div>
 	</div>
 	<!-- contentTop end -->
@@ -44,45 +48,48 @@
 	<!-- contentDown start -->
 	<div class="contentDown">
 		<div class="word">
-			<h2 class="wordDown">YEAR ROUND</h2>
+			<h2 id="wordDownTop">YEAR ROUND</h2>
 			<hr>
-			<h3 class="wordDown">Must Have Items</h3>
+			<h3 id="wordDownBot">Must Have Items</h3>
 		</div>
 
 		<div class="showPicture">
-			<img id="leftPicture"src="">
-			<img id="midPicture"src="">
-			<img id="rightPicture"src="">
+			<img src="images/p1.png">
+			<img src="images/p2.png">
+			<img src="images/p3.png">
 		</div>
 	</div>
 	<!-- contentDown end -->
 
 	<!-- footer start -->
 	<footer>
-		<div class="connection">
-			<h3 class="wordFooter">STAY CONNECTED</h3>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+		<div class="footBox">
+			<div class="boxItem" id="connection">
+				<h3>STAY CONNECTED</h3>
+				<ul>
+					<li><img src="images/icon1.png"></li>
+					<li><img src="images/icon2.png"></li>
+					<li><img src="images/icon3.png"></li>
+					<li><img src="images/icon4.png"></li>
+				</ul>
+			</div>
+			
+			<div class="boxItem" id="membership">
+				<h3>BE OUR FRIEND</h3>
+				<input id="email" type="email" placeholder="Email">
+				<input id="submit" type="submit" value="Update Me">
+			</div>
+			
+			<div class="boxItem" id="assistance">
+				<h3>NEED ASSISTANCE</h3>
+				<p id="phone">123-456-7890</p>
+				<p id="email">info@mysite.com</p>
+			</div>
+			<div class="clear"></div>
 		</div>
 
-		<div class="membership">
-			<h3 class="wordFooter">BE OUR FREIND</h3>
-			<input type="email" placeholder="Email" value="email" >
-			<input type="submit" value="Submit">
-		</div>
-
-		<div class="assistance">
-			<h3 class="wordFooter">NEED ASSISTANCED</h3>
-			<p class="wordFooter">123-456-7890</p>
-			<p class="wordFooter">info@mysite.com</p>
-		</div>
-
-		<div class="copyright">
-			<p>&copy;2003 by PRETTY GAL Proudly created with Wix.com</p>
+		<div>
+			<p id="copyright">&copy;2003 by PRETTY GAL Proudly created with Wix.com</p>
 		</div>
 	</footer>
 	<!-- footer end -->
