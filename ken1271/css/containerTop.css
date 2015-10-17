@@ -1,0 +1,26 @@
+#containerTop{
+  background: transparent url("img/cover.jpg") no-repeat scroll 0% 0% / cover;
+  height: 400px;
+  margin:0 auto;
+  position: relative;
+}
+#containerTop>div{
+  position: absolute;
+  left:30%;
+  top:60%;
+  width:400px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.5;
+
+}
+#containerTop h1{
+  margin: 0;
+  text-align: center;
+}
+#containerTop>div>a{
+  position: relative;
+  left:25%;
+  bottom:5%;
+}

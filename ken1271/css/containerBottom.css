@@ -1,0 +1,14 @@
+#containerBottom{
+  
+}
+#containerBottom>h1{
+  text-align: center;
+  letter-spacing: 10px;
+}
+#containerBottom>p{
+  text-align: center;
+}
+#containerBottom>hr{
+  width: 30px;
+  margin: auto;
+}

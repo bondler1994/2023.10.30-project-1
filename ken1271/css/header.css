@@ -1,0 +1,17 @@
+#header{
+  background-color: #535151;
+}
+#header>div{
+  width:1000px;
+  margin: 0 auto;
+}
+#header>div>ul{
+  display: inline;
+  type:none;
+  position: relative;
+  bottom: 30px;
+}
+#header>div>ul>li{
+  display: inline;
+  padding:25px;
+}

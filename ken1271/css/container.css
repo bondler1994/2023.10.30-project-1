@@ -1,0 +1,36 @@
+#container{
+
+}
+#container>ul{
+  width:1000px;
+  margin: 0 auto;
+}
+#container>ul>li{
+  display: inline-block;
+  width: 300px;
+  margin: 0 10px;
+  height: 400px;
+  position: relative;
+}
+#itemLeft{
+  background: transparent url("img/pic_01.png") no-repeat scroll 0% 0% / cover;
+}
+#itemLeft>div{
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #535151;
+}
+#itemCenter{
+  background: transparent url("img/pic_02.png") no-repeat scroll 0% 0% / cover;
+}
+#itemRight{
+  background: transparent url("img/pic_03.png") no-repeat scroll 0% 0% / cover;
+}
+#itemRight>div{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #535151;
+}

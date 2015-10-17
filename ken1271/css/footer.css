@@ -1,0 +1,28 @@
+#footer{
+  background-color: gray;
+  text-align: center;
+
+}
+#footer>p{
+  width: 1000px;
+  margin:0 auto;
+}
+#footer>div{
+  width:1000px;
+  margin: 0 auto;
+}
+#footer>div>div{
+  display: inline-block;
+  width:28%;
+  margin: 0 15px;
+}
+#footerleft{
+
+}
+#footerleft>ul{
+
+}
+#footerleft>ul>li{
+  display: inline;
+  padding:5px;
+}
