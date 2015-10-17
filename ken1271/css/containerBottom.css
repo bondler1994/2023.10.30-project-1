@@ -1,5 +1,6 @@
 #containerBottom{
-  
+  min-width: 1000px;
+  margin: 60px auto;
 }
 #containerBottom>h1{
   text-align: center;

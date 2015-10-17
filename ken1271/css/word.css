@@ -1,6 +1,6 @@
 #word{
   background-color: #EEE;
-  width: :1000px;
+  min-width: 1000px
 }
 #word h4{
   text-align: center;
