@@ -86,3 +86,17 @@ width: 100%;
 #get a:hover {
   background-color: #535151;
 }
+#mid a{
+    position: absolute;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font: 55px/1.4em "times new roman",times,serif;
+    color: #303132;
+    letter-spacing: 10px;
+    line-height: 85px;
+}
+#mid a:hover{
+  transition: color 0.4s ease 0s;
+  color:#b0aeb1;
+}
