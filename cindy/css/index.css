@@ -1,0 +1,140 @@
+/* make 3 menu */
+/* footer icon */
+.foo-icon, #footer-icon1, #footer-icon2, #footer-icon3, #footer-icon4 {
+  background: url(../img/icons.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+#header {
+  height: 90px;
+  background: url(../img/bg.png);
+}
+
+#logo {
+  margin-top: 25px;
+}
+#logo a {
+  width: 200px;
+  height: 50px;
+  background: url(../img/logo.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#nav {
+  margin-top: 30px;
+}
+#nav a {
+  font-size: 18px;
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #B0AFAF;
+}
+
+#calicon {
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+  background: url(../img/cal-icon.png);
+  background-repeat: no-repeat;
+}
+
+#banner {
+  height: 550px;
+  background: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#banner_bottom {
+  background-color: #E3E3E3;
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+
+#news {
+  padding-top: 40px;
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+#news h1 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  height: 40px;
+}
+
+.row {
+  padding-top: 80px;
+  width: 85%;
+}
+
+/*--- make menu ---*/
+#menu-1 {
+  background: url(../img/menu1.png);
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+#menu-2 {
+  background: url(../img/menu2.png);
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+#menu-3 {
+  background: url(../img/menu3.png);
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+/*--- footer   ---*/
+footer {
+  background: url(../img/footer.png);
+  margin-top: 50px;
+  height: auto;
+}
+footer p {
+  letter-spacing: 1px;
+}
+
+#footer {
+  height: 220px;
+}
+
+/* footer font */
+.foo-font {
+  font-size: 14px;
+  color: #B0AFAF;
+  font-weight: bold;
+}
+
+#footer-icon1 {
+  background-position: 0px 0px;
+}
+
+#footer-icon2 {
+  background-position: -45px 0px;
+}
+
+#footer-icon3 {
+  background-position: -90px 0px;
+}
+
+#footer-icon4 {
+  background-position: -135px 0px;
+}
+
+/*--- footer > middle > email button  ---*/
+#bt-email {
+  float: right;
+  margin-top: 5px;
+}
+
+/*--- footer > copyright  ---*/
+#copyright {
+  margin-top: 50px;
+  height: 50px;
+}
