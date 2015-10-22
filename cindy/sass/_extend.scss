@@ -1,0 +1,16 @@
+
+/* make 3 menu */
+@mixin setMenu($i:1){
+	background: url(#{$img-path}/menu#{$i}.png);
+	background-repeat: no-repeat;
+	height: 400px;
+}
+
+/* footer icon */
+.foo-icon{
+	background: url(#{$img-path}/icons.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display:inline-block;
+}
