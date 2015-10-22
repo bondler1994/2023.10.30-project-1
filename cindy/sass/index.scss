@@ -1,59 +1,14 @@
 @import "compass/css3";
 @import "global";
 @import "extend";
+@import "common/footer";
+@import "common/header";
+@import "common/banner";
 
-
-#header{
-	height: $header-height;
-	background: url(#{$img-path}/bg.png);
+#wrap{
+	width : $wrap-width;
+	height: auto;
 }
-
-
-#logo{
-	margin-top: 25px;
-
-	a{
-		width: 200px;
-		height: 50px;
-		background: url(#{$img-path}/logo.png);
-		background-repeat: no-repeat;
-		display: block;
-	}
-}
-
-#nav {
-	margin-top: $header-height/2-15px;
-
-	a {
-		font-size: 18px;
-		padding: 0px 10px;
-		text-decoration: none;
-		color: $font-color;
-	}
-}
-
-#calicon{
-	height : 40px;
-	width : 40px;
-	margin-top: 20px;
-	background: url(#{$img-path}/cal-icon.png);
-	background-repeat: no-repeat;
-}
-
-
-#banner{
-	height: 550px;
-	background: url(#{$img-path}/banner.png);
-	background-repeat: no-repeat;
-	background-position: center; 
-}
-
-#banner_bottom{
-	background-color: #E3E3E3;
-	line-height: 40px;
-	letter-spacing: 5px;
-}
-
 
 #news{
 	padding-top: 40px;
@@ -61,79 +16,20 @@
 	letter-spacing: 5px;
 
 	h1{
-		font-family: "Playfair Display";
+		font-family: $font-style-h1;
 		font-weight: bold;
 		height: 40px;
 	}
 }
-
 
 .row{
 	padding-top: 80px;
 	width: 85%;
 }
 
-
 /*--- make menu ---*/
 @for $i from 1 through 3{
 	#menu-#{$i} {
 		@include setMenu('#{$i}');
 	}
-}
-
-
-/*--- footer   ---*/
-footer {
-	background: url(#{$img-path}/footer.png);
-	margin-top: 50px;
-	height: auto;
-
-	p{
-		letter-spacing: 1px;
-	}
-}
-
-#footer{
-	height: 220px;
-}
-
-/* footer font */
-.foo-font{
-	font-size: 14px;
-	color: $font-color;
-	font-weight: bold;
-}
-
-
-#footer-icon1 {
-	@extend .foo-icon;
-	background-position: 0px 0px;
-}
-
-#footer-icon2 {
-	@extend .foo-icon;
-	background-position: -45px 0px;
-}
-
-#footer-icon3 {
-	@extend .foo-icon;
-	background-position: -90px 0px;
-}
-
-#footer-icon4 {
-	@extend .foo-icon;
-	background-position: -135px 0px;
-}
-
-
-/*--- footer > middle > email button  ---*/
-#bt-email{
-	float:right;
-	margin-top: 5px;
-}
-
-/*--- footer > copyright  ---*/
-#copyright{
-	margin-top: 50px;
-	height: 50px;
 }
