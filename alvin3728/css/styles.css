@@ -1,0 +1,35 @@
+header, section, footer, nav, article, figure, figcaption {
+        display: block; }
+body {
+        color: #272727;
+        background-color: #ffffff;                      
+        font-family: Georgia, Times, serif;
+       /*line-height: 1.4em; */}
+.container {
+        width: 860px;
+        margin: 0px auto;}       
+.clear {
+        clear: both; } 
+
+/*------------------------header-------------------------------*/
+header  {
+        background: url("../img/bg.png");       
+        height: 100px ; }
+img.logo {
+        width:202px;
+        height: 34px;
+        float: left;
+        padding: 30px 20px 0px 20px; }
+                     
+nav  {                         
+        padding-top: 40px ;
+        float: left; }            
+nav li {
+        display: inline;
+        margin: 0px 20px 0px 20px;}
+nav li a {
+        color: #f0f0f0;
+        text-decoration:none; }
+/*-------------------banner---------------------------*/
+.banner{
+	    width: 100% ;}
