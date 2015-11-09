@@ -9,10 +9,19 @@ body{
 	background-color: #535151;
 	height: 120px;
 }
-#n_1, #n_2, #n_3, #n_4, #n_5{
+
+.container{
+	width: 80%;
+	margin: auto;
+
+	text-align: center;
+}
+
+/*#n_1, #n_2, #n_3, #n_4, #n_5{
 	padding-left: 10%;
 	padding-right: 10%;
-}
+}*/
+
 .comp-name, .menu, .shop-car{
 	display: inline-block;
 	padding-top: 40px;
@@ -52,86 +61,104 @@ body{
 	padding-top: 30%;
 }
 .fall{
-	height: 27%;
 	width: 60%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(100%, 100%, 100%, 0.4);
-	padding-top: 3%;
+	/*text-align: center;*/
 }
 .fall h1{
-	text-align: center;
-	margin-top: 0;
 	margin-bottom: 2%;
 	font-size: 38pt;
 	font-weight: bold;	
 }
 .shop-now{
-	background-color: #000000;
-	color: #FFFFFF;
-	height: 22%;
 	width: 40%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 2%;
-	text-align: center;
+	background-color: #000000;
+	color: #FFFFFF;
 }
-#n_3{
+
+.free-shipping{
 	background-color: #B8AB9A;
-	/*height: 50px;*/
 	padding-top: 1%;
 	padding-bottom: 1%;
-	text-align: center;
+	/*text-align: center;*/
 	letter-spacing: 3px;
 }
-#n_4_1{
-	width: 60%;
-	margin: auto;
-	text-align: center;
+
+.promotion{
+	/*line-height: 4em;*/
+	margin-top: 3%;
+	margin-bottom: 3%;
+	/*text-align: center;*/
 }
-#n_4_1 h1{
+.promotion h1{
 	font-size: 30pt;
 	font-weight: bold;
 	letter-spacing: 5px;
 }
-#n_4_1 h2{
+.promotion h2{
 	font-size: 24pt;
 }
-#n_4_1 h3{
+.promotion h3{
 	letter-spacing: 5px;
-}
-.demo{
-	width: 90%;
-	margin: auto;
-}
-.demo div{
-	display: inline-block;
-	height: 100%;
 }
 
 
 /*footer*/
 .footer{
-	margin-top: 8%;
 	background-color: #535151;
-	height: 320px;
+	margin-top: 6%;
+
+	padding-top: 5%;
+	padding-bottom: 5%;
 	color: #AFAEAE;
 }
 .footer .info{
 	width: 90%;
-	height: 70%;
 	margin: auto;
 }
 .footer .info  .info-item{
 	width: 33%;
-	/*height: 30%;*/
 	padding: 0;
-	padding-top: 9%;
 	display: inline-block;
 	vertical-align: top;
 }
+
+.sprite a{
+	margin: 0.5em 0;
+	background: url(icons.png) no-repeat 0 0;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.sprite .fb{
+	background-position: 2px 0px;
+}
+.sprite .twitter{
+	background-position: -42px 0px;
+}
+.sprite .pin{
+	background-position: -88px 0px;
+}
+.sprite .google{
+	background-position: -134px 0px;
+}
+.footer .copyright{
+	width: 90%;
+	/*height: 20%;*/
+	margin: auto;
+	/*text-align: center;*/
+}
+
 .contact{
-	text-align: center;
+	/*text-align: center;*/
 }
 .mailus{
 	text-align: left;
@@ -155,35 +182,12 @@ body{
 	color: #000000;
 	border: 0;
 	padding: 8px 17px;
+	margin-bottom: 10%;
 }
 .contact-info{
 	color: #DADADA;
 }
-.sprite a{
-	margin: 0.5em 0;
-	background: url(icons.png) no-repeat 0 0;
-	width: 30px;
-	height: 30px;
-	display: inline-block;
-}
-.sprite .fb{
-	background-position: 0px 0px;
-}
-.sprite .twitter{
-	background-position: -43px 0px;
-}
-.sprite .pin{
-	background-position: -86px 0px;
-}
-.sprite .google{
-	background-position: -129px 0px;
-}
-.footer .copyright{
-	width: 90%;
-	height: 20%;
-	margin: auto;
-	text-align: center;
-}
+
 .footer a{
 	color: #AFAEAE;
 }
