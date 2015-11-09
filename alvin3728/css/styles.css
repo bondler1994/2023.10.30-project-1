@@ -50,18 +50,20 @@ img.cal-icon {
         
 /*-------------------banner---------------------------*/
 div.shop-now1 {
-  height: 550px;
+  height: 500px;
   background-image: url("../images/banner.png");     
   background-size: 100% 100%;   
 }
 
-div.shop-now2 {
+div.shop-now2 {  
   border: 2px solid #ffffff;
   width: 480px;
   height: 150px;
   position:absolute;
-  left: 34%;
+  left: 50%;
   top:50%;
+  margin-left: -240px; 
+/*transform: translate(-50%, 0%); another way   */
   background-color: #ffffff;
   opacity: 0.6;
 } 
@@ -81,7 +83,7 @@ h1 {
   background-color: #000000 ;
   border: 1px solid #000000; 
   padding: 10px 0px ;
-  margin-left: 120px;
+  margin-left: 140px;
   width: 200px;
   opacity: 1;
 }
