@@ -35,6 +35,18 @@ header .logo {
   margin-right: 30px;
 }
 
+.title a:visited, .title a:link,.title a:active{
+    color: white;
+}
+
+.title a:hover {
+    color: hotpink;
+}
+/*
+.title a:active {
+    color: grey;
+}*/
+
 .bag {
   width: 20px;
   height: 20px;

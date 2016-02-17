@@ -36,6 +36,13 @@
   height: 40px;
   margin: auto;
 }
+.bodycontent h4:hover {
+  width: 180px;
+  transition: width 0.2s;
+}
+
+
+
 
 .downcontent h1 {
   text-align:center;
