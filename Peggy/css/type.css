@@ -128,8 +128,14 @@ height: 150px;
 	float: left;
 	letter-spacing: 3px;
 }
+#social-icons a{
+	color: #fff;
+	font-size: 18pt;
+	text-decoration: none;
+	letter-spacing: 15px;
+}
 #con{
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 #mail{
 	height: 100px;
