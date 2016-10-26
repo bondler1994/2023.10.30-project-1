@@ -1,0 +1,278 @@
+
+/* reset.css ---------------------------------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* universe ---------------------------------------------------------------------------------------------------- */
+
+.container {
+	margin: auto;
+	width: 1050px;
+}
+
+.clear {
+	float: none;
+	clear: both;
+}
+
+
+
+/* header ---------------------------------------------------------------------------------------------------- */
+
+header {
+	width: auto;
+	height: 90px;
+	background-color: #535151;
+}
+
+header section div {
+	display: inline;
+}
+
+.logo {
+	float: left;
+	padding: 28px 0;
+}
+
+.nav {
+	float: left;
+}
+
+nav {
+	float: none;
+	padding: 37px 0;
+}
+
+.cart {
+	float: right;
+	padding: 18.5px 0;
+}
+
+nav ul {
+	list-style: none;
+	display: inline-flex;
+	padding: 0 0 0 100px;
+}
+
+nav ul li {
+	width: 100px;
+	margin: 0;
+	display: inline;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: whitesmoke;
+    font-family: 'Helvetica';
+    font-weight: lighter;
+    display: block;
+    text-align: center;
+}
+
+
+
+/* banner ---------------------------------------------------------------------------------------------------- */
+
+.banner {
+
+}
+
+.banner_img {
+	height: 650px;
+	background-image: url(img/banner.png);
+	background-size: auto 100%;
+	background-position: center center;
+	position: relative;
+}
+
+.shop_button {
+	width: 600px;
+	height: 200px;
+	background-color: rgba(242, 242, 242, 0.41);
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner .shop_button p {
+	font-family: 'Italiana', serif;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: .05em;
+	text-align: center;
+	padding: 41px 0 0 0;
+}
+
+.shop_button a {
+	text-decoration: none;
+	padding: 11px 60px;
+	font-size: 15px;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	letter-spacing: .2em;
+	text-align: center;
+	border: none;
+	background: rgba(8, 26, 50, .2);
+	color: aquamarine;
+	display: block;
+	width: 100px;
+	margin: 25px auto 0;
+}
+
+.shipping {
+	width: auto;
+	height: 50px;
+	background-color: #e3e3e3;
+}
+
+.shipping p {
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	font-size: 13px;
+	letter-spacing: .5em;
+	text-align: center;
+	padding: 18.5px 0;
+}
+
+
+
+/* menu ---------------------------------------------------------------------------------------------------- */
+
+.title {
+	text-align: center;
+}
+
+.content_title {
+	font-family: 'Italiana', serif;
+	font-size: 41px;
+	letter-spacing: .3em;
+	margin: 60px 0 20px 0;
+}
+
+.separate {
+	margin: 30px 0 15px 0;
+}
+
+.content_subtitle {
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	font-size: 19px;
+	letter-spacing: .2em;
+	margin: 15px 0 0 0;
+
+}
+
+.product_menu {
+	display: flex;
+	justify-content: center;
+	margin: 60px 0 100px 0;
+}
+
+.product {
+	padding: 0 29px;
+}
+
+
+
+/* footer ---------------------------------------------------------------------------------------------------- */
+
+footer {
+	width: auto;
+	height: 300px;
+	background-color: #535151;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	padding: 90px 0 0 0;
+}
+
+.footer img {
+	margin: 0 -8px;
+}
+
+.f_title {
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	font-size: 15px;
+	letter-spacing: .1em;
+	text-align: left;
+	color: #bfbfbf;
+	margin: 0 0 15px 0;
+}
+
+.f_contact {
+	font-family: 'Dancing Script', cursive;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #bfbfbf;
+	margin: 5px 0;
+}
+
+.email_textbox {
+	border: 1.5px solid whitesmoke;
+    width: 300px;
+    height: 30px;
+    padding: 0px 10px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.email_button {
+	margin: 20px auto;
+	background-color: #bfbfbf;
+    border: none;
+    color: black;
+    padding: 7.5px 41px;
+    cursor: pointer;
+}
+
+.form {
+	display: block;
+}
+
+.copyright p {
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	font-size: 15px;
+	letter-spacing: .2em;
+	text-align: center;
+	margin: 25px 0 0 0;
+	color: #bfbfbf;
+}
+
+
