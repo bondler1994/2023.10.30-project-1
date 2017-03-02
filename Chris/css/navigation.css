@@ -1,0 +1,36 @@
+
+#navigation_background {
+    background-color: #535151;
+    height: 124px;
+}
+
+#navigation {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 1370px;
+    color: #d2d2d2;
+}
+
+.menu {
+    float: left;
+}
+
+.menu li {
+    padding-left: 87px;
+    font-size: 20px;
+}
+
+#logo {
+    font-size: 28px;
+    letter-spacing: 5pt;
+}
+
+.view_shopping_cart {
+    height: 42px;
+    float: right;
+    margin-right: 64px;
+}
+
+.menu_selected {
+    color: #fff;
+}

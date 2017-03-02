@@ -3,10 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>t2 page</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/navigation.css"/>
+        <link rel="stylesheet" href="css/footer.css"/>
+        <link rel="stylesheet" href="css/news.css"/>
+        <link rel="stylesheet" href="css/sale.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <style>
             body {
                 font-family: sans-serif, monospace;
+                margin: 0;
+            }
+
+            .horizontal_list_initial > li {
+                display: inline;
+            }
+
+            .horizontal_list_initial {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+            .debug_css {
+                border: 1px black red;
             }
 
         </style>
@@ -14,21 +32,19 @@
     <body>
         <div id="navigation_background">
             <div id="navigation">
-                <ul id="menu">
-                    <li>Home</li>
+                <ul class="menu horizontal_list_initial">
+                    <li id="logo">PRETTY GAL</li>
+                    <li class="menu_selected">Home</li>
                     <li>Shop</li>
                     <li>Sale</li>
                     <li>Customer Care</li>
                     <li>Stockists</li>
-                    <li><img alt="view_shopping_cart"/></li>
                 </ul>
-                <div id="logo">
-                    <p>PRETTY GAL</p>
-                </div>
+                <img class="view_shopping_cart" src="img/bag.png" alt="view_shopping_cart"/>
             </div>
         </div>
         <div id="news">
-            <img alt="news_main_photo"/>
+            <img src="img/cover.jpg" alt="news_main_photo"/>
             <div id="news_title">
                 <button>Shop Now</button>
             </div>
@@ -40,20 +56,18 @@
             <div id="sale_year_round">
                 <p>YEAR ROUND</p>
                 <p>－</p>
-                <div id="sale_img_list">
-                    <ul>
-                        <li><img/></li>
-                        <li><img/></li>
-                        <li><img/></li>
-                    </ul>
-                </div>
+                <ul id="sale_img_list" class="horizontal_list_initial">
+                    <li><img src="img/left.png"/></li>
+                    <li><img src="img/middle.png"/></li>
+                    <li><img src="img/right.png"/></li>
+                </ul>
             </div>
         </div>
         <div id="footer">
-            <div>
-                <div id="footer_stay_connected">
+            <ul class="horizontal_list_initial">
+                <li id="footer_stay_connected">
                     <p>STAY CONNECTED</p>
-                    <ul>
+                    <ul class="horizontal_list_initial">
                         <li>
                             <i class="fa fa-facebook-square" class="sociality_icon_size"></i>
                         </li>
@@ -67,23 +81,21 @@
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </li>
                     </ul>
-                </div>
-                <div id="footer_be_our_friend">
+                </li>
+                <li id="footer_be_our_friend">
                     <p>BE OUR FRIEND</p>
                     <input type="text"/>
                     <input type="button" value="Update Me">
-                </div>
-                <div id="footer_need_assistance">
+                </li>
+                <li id="footer_need_assistance">
                     <p>NEED ASSISTANCE</p>
                     <p>123-456-7890</p>
                     <p>info@mysite.com</p>
-                </div>
-            </div>
+                </li>
+            </ul>
             <div id="copy_right">
                 (c)2023 by PRETTY GAL. Proudly created with Wix.com
             </div>
         </div>
     </body>
-</html>
-body>
 </html>
