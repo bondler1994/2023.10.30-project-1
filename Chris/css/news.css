@@ -1,10 +1,36 @@
-#news img {
-    width: 100%;
-}
-
-#news {
+#news_background {
     background-image: url(../img/cover.jpg);
     background-position: center center;
-    height: 808px;
     background-size: 2565px;
+    background-repeat: no-repeat;
+
+    height: 800px;
+    padding-top: 5px;
+}
+
+#news_content {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    margin-top: 340px;
+    width: 730px;
+    height: 216px;
+
+    padding-top: 14px;
+}
+
+#news_content>p{
+    font-family: serif;
+    font-size: 74px;
+    padding: 20px 76px;
+    margin: 0 auto;
+}
+
+#news_content>button {
+    margin: 0 235px;
+    width: 278px;
+    height: 55px;
+    font-size: 18pt;
+    color: white;
+    background-color: black;
+    border-style: none;
 }
