@@ -34,3 +34,14 @@
     background-color: black;
     border-style: none;
 }
+
+#news_free_shipping_worlwide {
+    background-color: #e3e3e3;
+    line-height: 60px;
+    letter-spacing: 4pt;
+}
+
+#news_free_shipping_worlwide p{
+    margin: 0 auto;
+    width: 337px;
+}
