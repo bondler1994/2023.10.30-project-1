@@ -1,3 +1,10 @@
 #news img {
     width: 100%;
 }
+
+#news {
+    background-image: url(../img/cover.jpg);
+    background-position: center center;
+    height: 808px;
+    background-size: 2565px;
+}
