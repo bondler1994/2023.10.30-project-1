@@ -23,6 +23,13 @@
                 margin-bottom: 0;
                 padding-left: 0;
             }
+
+            .clear_fix {
+                clear: both;
+                content: "";
+                display: table;
+            }
+
             .debug_css {
                 border: 1px black red;
             }
@@ -31,7 +38,7 @@
     </head>
     <body>
         <div id="navigation_background">
-            <div id="navigation">
+            <div id="navigation" class="clear_fix">
                 <ul class="menu horizontal_list_initial">
                     <li id="logo">PRETTY GAL</li>
                     <li class="menu_selected">Home</li>

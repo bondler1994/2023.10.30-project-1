@@ -28,7 +28,8 @@
 .view_shopping_cart {
     height: 42px;
     float: right;
-    margin-right: 64px;
+    margin-right: 70px;
+    margin-top: -9px;
 }
 
 .menu_selected {

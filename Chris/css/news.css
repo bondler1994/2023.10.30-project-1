@@ -16,23 +16,25 @@
     height: 216px;
 
     padding-top: 14px;
+    text-align: center
 }
 
 #news_content>p{
     font-family: serif;
     font-size: 74px;
-    padding: 20px 76px;
+    padding: 20px 0;
     margin: 0 auto;
+    text-align: inherit;
 }
 
 #news_content>button {
-    margin: 0 235px;
     width: 278px;
     height: 55px;
     font-size: 18pt;
     color: white;
     background-color: black;
     border-style: none;
+    text-align: inherit;
 }
 
 #news_free_shipping_worlwide {
@@ -43,5 +45,5 @@
 
 #news_free_shipping_worlwide p{
     margin: 0 auto;
-    width: 337px;
+    text-align: center;
 }
