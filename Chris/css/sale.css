@@ -1,3 +1,39 @@
 #sale_img_list img {
-    height: 455px;
+    height: 555px;
+}
+
+#sale_img_list li {
+    margin: 0 4px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+div.sale_year_round h1{
+    font-family: serif;
+    font-size: 36pt;
+    letter-spacing: 12pt;
+    margin: 0 auto;
+}
+
+div.sale_year_round h2{
+    font-family: sans-serif;
+    font-size: 22pt;
+    letter-spacing: 5pt;
+    margin: 0 auto;
+}
+
+div.hr_line {
+    border: 1px black solid;
+    width: 30px;
+    margin: 40px auto;
+}
+
+div.sale_year_round {
+    margin: 90px auto;
+}
+
+div#sale_actie {
+    margin: 94px auto;
 }
