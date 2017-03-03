@@ -15,13 +15,17 @@
             }
 
             .horizontal_list_initial > li {
-                display: inline;
+                display: inline-block;
             }
 
             .horizontal_list_initial {
                 margin-top: 0;
                 margin-bottom: 0;
                 padding-left: 0;
+            }
+
+            .text_center {
+                text-align: center;
             }
 
             .clear_fix {
@@ -31,7 +35,7 @@
             }
 
             .debug_css {
-                border: 1px black red;
+                border: 1px red dashed;
             }
 
         </style>
@@ -75,37 +79,37 @@
                 </ul>
             </div>
         </div>
-        <div id="footer">
+        <div class="footer">
             <ul class="horizontal_list_initial">
-                <li id="footer_stay_connected">
+                <li class="footer_stay_connected">
                     <p>STAY CONNECTED</p>
                     <ul class="horizontal_list_initial">
                         <li>
-                            <i class="fa fa-facebook-square" class="sociality_icon_size"></i>
+                            <i class="fa fa-facebook"></i>
                         </li>
                         <li>
-                            <i class="fa fa-twitter-square" class="sociality_icon_size"></i>
+                            <i class="fa fa-twitter"></i>
                         </li>
                         <li>
-                            <i class="fa fa-pinterest-square" class="sociality_icon_size"></i>
+                            <i class="fa fa-pinterest-p"></i>
                         </li>
                         <li>
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </li>
                     </ul>
                 </li>
-                <li id="footer_be_our_friend">
+                <li class="footer_be_our_friend">
                     <p>BE OUR FRIEND</p>
-                    <input type="text"/>
-                    <input type="button" value="Update Me">
+                    <input class="update_me_text" type="text" placeholder="Email"/>
+                    <input class="update_me_button" type="button" value="Update Me"/>
                 </li>
-                <li id="footer_need_assistance">
-                    <p>NEED ASSISTANCE</p>
-                    <p>123-456-7890</p>
-                    <p>info@mysite.com</p>
+                <li class="need_assistance">
+                    <p class="text_center">NEED ASSISTANCE</p>
+                    <p class="text_center">123-456-7890</p>
+                    <p class="text_center">info@mysite.com</p>
                 </li>
             </ul>
-            <div id="copy_right">
+            <div class="text_center copy_right">
                 (c)2023 by PRETTY GAL. Proudly created with Wix.com
             </div>
         </div>
