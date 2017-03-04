@@ -1,7 +1,7 @@
 .footer {
     background-color: #535151;
     color: #d2d2d2;
-    height: 400px;
+    min-height: 303px;
 }
 
 .text_center {
@@ -10,14 +10,13 @@
 
 .footer>ul {
     text-align: center;
-    padding: 68px 0;
 }
 
 .footer>ul>li {
-    margin-top: 0;
-    margin-left: 108px;
-    margin-right: 108px;
-    font-size: 14pt;
+    margin-top: 56px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 11pt;
 }
 
 .footer p {
@@ -26,10 +25,10 @@
 }
 
 .horizontal_list_initial ul li {
-    margin: 0 12px;
+    margin: 0 10px;
 }
 .horizontal_list_initial i {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
@@ -47,17 +46,18 @@
 
 .update_me_text{
     background-color: transparent;
-    font-size: 18px;
+    font-size: 14px;
     border: 1px white solid;
     color: white;
-    padding: 10px;
-    width: 380px;
+    padding: 6px;
+    width: 282px;
 }
 
 .update_me_button {
-    margin-top: 5px;
-    padding: 8px 15px;
+    margin-top: 7px;
+    padding: 6px 11px;
     float: right;
+    border: none;
     background-color: #d3d3d3;
 }
 
@@ -71,7 +71,7 @@
 
 .copy_right {
     margin: 0 auto;
-    font-size: 12pt;
+    font-size: 9pt;
     letter-spacing: 1.5pt;
-    margin-top: 35px;
+    margin-top: 62px;
 }

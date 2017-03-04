@@ -1,36 +1,36 @@
 #news_background {
     background-image: url(../img/cover.jpg);
-    background-position: center center;
-    background-size: 2565px;
+    background-position: center top;
+    background-size: 1930px;
     background-repeat: no-repeat;
 
-    height: 800px;
+    height: 600px;
     padding-top: 5px;
 }
 
 #news_content {
     background-color: rgba(255, 255, 255, 0.6);
     margin: 0 auto;
-    margin-top: 340px;
-    width: 730px;
-    height: 216px;
+    margin-top: 250px;
+    max-width: 545px;
+    height: 172px;
 
-    padding-top: 14px;
     text-align: center
 }
 
 #news_content>p{
     font-family: serif;
-    font-size: 74px;
-    padding: 20px 0;
+    font-size: 54px;
+    padding: 26px 0 18px 0;
     margin: 0 auto;
     text-align: inherit;
+    letter-spacing: 4px;
 }
 
 #news_content>button {
-    width: 278px;
-    height: 55px;
-    font-size: 18pt;
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
     color: white;
     background-color: black;
     border-style: none;
@@ -39,8 +39,8 @@
 
 #news_free_shipping_worlwide {
     background-color: #e3e3e3;
-    line-height: 60px;
-    letter-spacing: 4pt;
+    line-height: 45px;
+    letter-spacing: 3pt;
 }
 
 #news_free_shipping_worlwide p{

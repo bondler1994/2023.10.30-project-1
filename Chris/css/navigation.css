@@ -1,13 +1,13 @@
 
 #navigation_background {
     background-color: #535151;
-    height: 124px;
+    height: 94px;
 }
 
 #navigation {
-    padding-top: 40px;
+    padding-top: 32px;
     margin: 0 auto;
-    width: 1370px;
+    width: 896px;
     color: #d2d2d2;
 }
 
@@ -16,19 +16,19 @@
 }
 
 .menu li {
-    padding-left: 87px;
-    font-size: 20px;
+    padding-right: 62px;
+    font-size: 16px;
 }
 
 #logo {
-    font-size: 28px;
-    letter-spacing: 5pt;
+    font-size: 22px;
+    letter-spacing: 3pt;
 }
 
 .view_shopping_cart {
-    height: 42px;
+    height: 35px;
     float: right;
-    margin-right: 70px;
+    margin-right: -14px;
     margin-top: -9px;
 }
 
