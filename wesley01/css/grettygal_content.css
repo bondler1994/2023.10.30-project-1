@@ -1,5 +1,4 @@
 #content {
-    /*background-color: #E7E3E2;*/
     width: 100%;
     height: 1000px;
 }
@@ -18,19 +17,13 @@
     background-position: center;
     width: 100%;
     height: 600px;
-    /*border: 1px green dashed;*/
-    /*position: relative;*/
 }
 
 #top_box {
-    /*display: flex;*/
-    /*align-items: center;*/
     background-color: white;
     background: rgba(100%, 100%, 100%, 0.5);
-    /*position: absolute;*/
     width: 500px;
     height: 145px;
-    /*margin: 0 auto 0;*/
     text-align: center;
 }
 
@@ -89,13 +82,10 @@ P {
     width: 296px;
     height: 411px;
     margin: 0 6px;
-    /*border: 1px green dashed;*/
 }
 
 #commoditybox {
     display: flex;
-    /*flex-wrap: wrap;*/
-    /*border: 1px red dashed;*/
     justify-content: center;
 }
 
@@ -107,7 +97,6 @@ P {
 
 #c_box2 {
     text-align: center;
-    /*padding-top: 70px;*/
     background-image: url("../img/menu2.png");
 }
 
