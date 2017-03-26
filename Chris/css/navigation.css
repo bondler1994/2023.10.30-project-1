@@ -5,9 +5,9 @@
 }
 
 #navigation {
-    padding-top: 32px;
+    padding-top: 24px;
     margin: 0 auto;
-    width: 896px;
+    width: 918px;
     color: #d2d2d2;
 }
 
@@ -21,15 +21,13 @@
 }
 
 #logo {
-    font-size: 22px;
-    letter-spacing: 3pt;
+    font-size: 21px;
+    letter-spacing: 5pt;
 }
 
 .view_shopping_cart {
-    height: 35px;
+    height: 33px;
     float: right;
-    margin-right: -14px;
-    margin-top: -9px;
 }
 
 .menu_selected {

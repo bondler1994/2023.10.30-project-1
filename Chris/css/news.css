@@ -20,11 +20,11 @@
 
 #news_content>p{
     font-family: serif;
-    font-size: 54px;
-    padding: 26px 0 18px 0;
+    font-size: 50px;
+    padding: 30px 0 18px 0;
     margin: 0 auto;
     text-align: inherit;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 #news_content>button {
