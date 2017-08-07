@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>PRETTY GAL</title>
   <style type="text/css">
   body {
     margin: 0px;
@@ -26,7 +26,10 @@
   header .sub_header ul li, header .sub_header ul img {
     display: inline;
     margin: 20px;
-    color: rgb(200, 200, 200)
+  }
+  header .sub_header ul li a:link, header .sub_header ul li a:visited {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
   }
   header .sub_header #logo, header .sub_header ul {
     float:left;
@@ -45,6 +48,11 @@
   }
   .content .content_menu img {
     margin: 10px;
+  }
+  .content .content_menu img:hover {
+    position:relative;
+    top:30px;
+}
   }
   header .sub_content .sub_content_center_space .sub_content_center_space_content {
     background-color: rgba(255, 255, 255, 0.5);
@@ -140,7 +148,10 @@
       color: rgb(80, 79, 79);
   }
   footer .footer_content .footer_content_center .get_email input{
-    width: 200px;
+      width: 200px;
+      padding: 3px;
+      border: 1px;
+      border-style: solid;
       border-color: rgb(200, 200, 200);
       color: rgb(200, 200, 200);
   }
@@ -164,11 +175,11 @@
   <div class="sub_header">
     <img id="logo" src="images/logo.png" alt="">
     <ul>
-      <li>Home</li>
-      <li>Shop</li>
-      <li>Sale</li>
-      <li>Customer Care</li>
-      <li>Stockists</li>
+      <li><a href="https://www.google.com.tw">Home</a></li>
+      <li><a href="https://www.google.com.tw">Shop</a></li>
+      <li><a href="https://www.google.com.tw">Sale</a></li>
+      <li><a href="https://www.google.com.tw">Customer Care</a></li>
+      <li><a href="https://www.google.com.tw">Stockists</a></li>
     </ul>
     <img id="navigation_counter" src="images/cal-icon.png" alt="">
   </div>
