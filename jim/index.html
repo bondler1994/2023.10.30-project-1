@@ -10,7 +10,7 @@
     margin: 0px;
     padding: 0px;
   }
-  .content, header .sub_header, header .sub_content, header .sub_footer, .content .content_title, .content .content_menu, footer .footer_content, footer .copyright {
+  .content, header .sub_header, header .sub_content, header .sub_footer, .content .content_title, .content .content_menu, footer .footer_content, footer .copyright, footer .footer_content .footer_content_right p, footer .footer_content .footer_content_left .icons ul  {
     width: auto;
     display: -webkit-flex;
     display:         flex;
@@ -43,6 +43,9 @@
     background-position: center;
     background-size: cover;
   }
+  .content .content_menu img {
+    margin: 10px;
+  }
   header .sub_content .sub_content_center_space .sub_content_center_space_content {
     background-color: rgba(255, 255, 255, 0.5);
     padding-bottom: 10px;
@@ -58,7 +61,7 @@
   header .sub_content .sub_content_center_space .sub_content_center_space_content button {
     font-size: 12px;
     border-radius: 0px;
-    background-color: black;
+    background-color: rgb(80, 79, 79);
     color: white;
     border: 0px;
     width: 130px;
@@ -75,6 +78,7 @@
     margin-bottom: 100px;
   }
   .content .content_title {
+    padding-top: 20px;
     display: block;
   }
   .content .content_title h3, .content .content_title h5 {
@@ -127,10 +131,18 @@
   }
   footer .footer_content .footer_content_left .icons ul li {
       display: inline;
-      margin: 1px;
+      margin: 3px;
   }
   footer .footer_content .footer_content_center {
       margin-top: 25px;
+  }
+  footer .footer_content .footer_content_center button {
+      color: rgb(80, 79, 79);
+  }
+  footer .footer_content .footer_content_center .get_email input{
+    width: 200px;
+      border-color: rgb(200, 200, 200);
+      color: rgb(200, 200, 200);
   }
   footer .footer_content .footer_content_right {
     margin-bottom: 28px;
@@ -142,7 +154,10 @@
   footer .footer_content .footer_content_right p {
     margin: 1px;
   }
-  </style>
+  footer .copyright p {
+    color: rgb(200, 200, 200);
+  }
+</style>
 </head>
 <body>
 <header>
