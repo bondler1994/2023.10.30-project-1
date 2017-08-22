@@ -14,11 +14,10 @@ body {
 }
 .menu {
 	font-family: sans-serif;
-	width: 1530px;
 }
 .item {
 	display: inline-block;
-	margin-right: 90px;
+	margin-right: 150px;
 }
 .item > a {
 	text-decoration: none;
@@ -26,19 +25,16 @@ body {
 	font-size: 24px;
 	margin-left: 120px;
 }
-.item {
-	line-height: 150px;
-}
 .imgsrc1 {
-	float: left;
-	padding-top: 24.5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .imgsrc2 {
-	float: right;
-	padding-top: 48.5px; 
+	display: inline-block;
+	vertical-align: middle;	
 }
-.centerUpper {
-
+.imgsrc1 > img{
+	display: block;
 }
 .imgsrc3 > img {
 	max-width: 100%;
@@ -107,6 +103,10 @@ hr {
 	text-align: center;
 	margin-top: 70px;
 	margin-bottom: 150px;
+}
+.photo3 > img {
+	width: 450px;
+	height: 560px;
 }
 img#middle {
 	margin-right: 20px;
