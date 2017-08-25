@@ -143,3 +143,17 @@ img#middle {
 u {
 	text-decoration-color: black;
 }
+.email {
+	width: 345px; 
+	height: 25px;
+	border: solid 1px white;
+	background-color: #535151;
+	color: white;
+}
+.updateme {
+	height: 25px;
+	width: auto;
+}
+.footerTopText2 {
+	color: white;
+}
