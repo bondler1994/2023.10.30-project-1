@@ -34,7 +34,7 @@ width: 600px;
 
 
 # css
-###background-size: cover
+### background-size: cover
 - 依比例縮小圖片填滿畫面
 <br>
 
