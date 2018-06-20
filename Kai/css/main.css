@@ -1,0 +1,16 @@
+body {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.header_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header_nav {
+  height: 120px;
+  background-color: red;
+  width: 100%;
+}
