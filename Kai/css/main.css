@@ -10,7 +10,7 @@ body {
 
 .header_nav {
   height: 80px;
-  background-color: #564f4f;
+  background-color: #383332e3;
 }
 
 .header_nav_set {
@@ -163,18 +163,36 @@ button {
 }
 
 .foolter_left {
-  display: inline;
+  width: 33%;
+  display: inline-block;
 }
 
 .foolter_middle {
-  display: inline;
+  width: 33%;
+  display: inline-block;
+  text-align: left;
+}
+
+.email {
+  width: 300px;
+  border: 1px solid #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.foolter_button {
+  margin: 0;
+  padding: 0;
 }
 
 .foolter_right {
-  display: inline;
+  width: 33%;
+  text-align: center;
+  display: inline-block;
 }
 
 .foolter_content_p {
+  margin-top: 3px;
   font-family: sans-serif;
   text-align: center;
   color: #ffffff;
