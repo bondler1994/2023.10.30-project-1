@@ -14,7 +14,7 @@ body {
 }
 
 .header_nav_set {
-  width: 960px;
+  width: 1080px;
   margin: 0 auto;
   color: #ffffff;
   font-family: sans-serif;
@@ -44,7 +44,7 @@ body {
 }
 
 .header_nav_list li {
-  margin-left: 60px;
+  margin-left: 80px;
   line-height: 80px;
   display: inline;
 }
@@ -144,4 +144,38 @@ button {
 
 .content_sub_title {
   font-size: 18px;
+}
+
+.content_img_put {
+  margin-top: 40px;
+}
+
+.foolter {
+  width: 100%;
+  height: 200px;
+  background-color: #383332e3;
+  bottom: 0px;
+}
+
+.foolter_content {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.foolter_left {
+  display: inline;
+}
+
+.foolter_middle {
+  display: inline;
+}
+
+.foolter_right {
+  display: inline;
+}
+
+.foolter_content_p {
+  font-family: sans-serif;
+  text-align: center;
+  color: #ffffff;
 }
