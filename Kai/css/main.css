@@ -158,11 +158,13 @@ body {
 }
 
 .foolter_content {
-  width: 1080px;
+  position: relative;
   margin: 0 auto;
+  width: 1080px;
 }
 
 .foolter_left {
+  text-align: center;
   width: 32%;
   display: inline-block;
 }
@@ -175,6 +177,11 @@ body {
   width: 32%;
   display: inline-block;
   text-align: left;
+}
+
+button {
+  text-align: right;
+  border: 0px;
 }
 
 .email {
@@ -199,6 +206,9 @@ body {
   font-size: 9px;
   letter-spacing: 2px;
   font-family: sans-serif;
-  text-align: center;
   color: #ffffff;
+}
+
+.foolter_content_bottom {
+  text-align: center;
 }
