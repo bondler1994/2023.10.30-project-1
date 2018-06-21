@@ -130,3 +130,18 @@ button {
   line-height: 40px;
   letter-spacing: 5px;
 }
+
+.content {
+  margin: 40px auto;
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+}
+
+.content_title {
+  font-size: 36px
+}
+
+.content_sub_title {
+  font-size: 18px;
+}
