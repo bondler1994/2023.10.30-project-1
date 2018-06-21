@@ -180,8 +180,10 @@ body {
 }
 
 button {
-  text-align: right;
+  margin-top: 5px;
   border: 0px;
+  margin-left: 212px;
+  font-size: 16px;
 }
 
 .email {
