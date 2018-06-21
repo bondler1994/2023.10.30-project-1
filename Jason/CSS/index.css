@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    font-style: Helvetica;
+    color: #d3d3d3;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #d3d3d3;
+}
+a:hover{
+    color: white;
+}
+
+header{
+    background: rgb(83, 81, 81);
+    width: 100%;
+}
+.header-wrapper{
+    width: 1054px;
+    height: 109px;
+    margin: 0 auto;
+}
+
+.header-wrapper::before {
+    content:"";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logotype{
+    vertical-align: middle;
+    font-size: 24px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+
+nav{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 70px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 76px;
+}
+nav ul li:first-child {
+    margin-left: 0;
+    
+}
+
+
+.cart{
+    background: transparent  url(../image/bag_img.png) 0px 0px no-repeat  ;
+    display: inline-block;
+    width: 36px;
+    height:41px;
+    vertical-align: middle;
+    margin-left: 98px;
+}
+
+.banner-wrapper{
+    background-color: #d3d3d3;
+    height: 736px;
+}
+
+.banner{
+    background: transparent url(../image/cover.jpg) 0px 0px /cover no-repeat;
+    width: 100%;
+    height: 686px;
+}
+
+
+.template{
+    position: absolute;
+    width:100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    z-index: 10;
+    margin-top: -7px;
+    margin-left: -8px;
+    display: none;
+}
