@@ -104,16 +104,16 @@ body {
   font-family: sans-serif;
 }
 
-button {
-  margin-top: 10px;
+.header_form_button {
+  line-height: 30px;
+  margin: 0 auto;
   padding: 0px;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   width: 150px;
   height: 30px;
   background-color: #000000;
   color: #ffffff;
-  border: none;
 }
 
 .header_bottom {
@@ -163,12 +163,16 @@ button {
 }
 
 .foolter_left {
-  width: 33%;
+  width: 32%;
+  display: inline-block;
+}
+
+.foolter_img {
   display: inline-block;
 }
 
 .foolter_middle {
-  width: 33%;
+  width: 32%;
   display: inline-block;
   text-align: left;
 }
@@ -186,13 +190,14 @@ button {
 }
 
 .foolter_right {
-  width: 33%;
+  width: 32%;
   text-align: center;
   display: inline-block;
 }
 
 .foolter_content_p {
-  margin-top: 3px;
+  font-size: 9px;
+  letter-spacing: 2px;
   font-family: sans-serif;
   text-align: center;
   color: #ffffff;
