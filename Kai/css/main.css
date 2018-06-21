@@ -1,9 +1,12 @@
 body {
+  width: 100%;
+  margin: 0;
+}
+
+.header {
   width: 1080px;
   margin: 0 auto;
 }
-
-.header_flex {}
 
 .header_nav {
   height: 80px;
@@ -12,19 +15,29 @@ body {
 
 .header_nav_set {
   width: 960px;
+  margin: 0 auto;
   color: #ffffff;
   font-family: sans-serif;
 }
 
 .header_nav_logo {
+  line-height: 80px;
+  float: left;
   font-size: 24px;
-  margin: 20px;
+  margin: 0px;
 }
 
-.header_nav_list {}
+.clearfix {
+  clear: both;
+}
+
+.header_nav_list {
+  height: 100%;
+}
 
 .header_nav_list ul {
   list-style-type: none;
+  float: left;
 }
 
 .header_nav_list li {
@@ -35,18 +48,13 @@ body {
   color: #ffffff;
   text-decoration: none;
   size: 12px;
-  margin: 0px 20px;
+  margin-left: 30px;
 }
 
 .header_nav_list img {
   width: 25px;
   height: 25px;
-  margin: 0px 20px;
-}
-
-.header_background {
-  margin: 0 auto;
-  padding: 0;
+  margin-left: 30px;
 }
 
 .header_background img {
