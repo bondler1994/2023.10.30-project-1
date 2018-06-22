@@ -8,7 +8,9 @@ ul {
     padding: 0;
     margin: 0;
 }
-
+p{
+    margin: 0;
+}
 
 ul li {
     list-style: none;
@@ -172,9 +174,28 @@ footer{
 .footer-wrapper{
     width: 958px;
     margin: 0 auto;
+    padding-top: 82px;
 }
 .footer-wrapper .contact {
     display: inline-block;
+    width: 162px;}
+
+.contact p{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-icon{
+    margin: 0 auto;
+    width: 146px;
+}
+.contact-icon i{
+    margin-left: 22px;
+    font-size: 20px;
+    line-height: 2;
+}
+.contact-icon i:first-child{
+    margin: 0;
 }
 
 .footer-wrapper .get-email {
