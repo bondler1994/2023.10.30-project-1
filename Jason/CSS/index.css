@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    font-style: Helvetica;
     color: #d3d3d3;
     box-sizing: border-box;
 }
@@ -79,11 +78,50 @@ nav ul li:first-child {
 }
 
 .banner{
-    background: transparent url(../image/cover.jpg) 0px 0px /cover no-repeat;
+    background: transparent url(../image/cover.jpg) center top /cover no-repeat;
     width: 100%;
     height: 686px;
+    overflow: auto; /* 消除collapsing margin */
+}
+.button-wrapper{
+    margin: 292px auto 0;
+    background-color: rgba(255,255,255,.5);
+    width: 622px;
+    height: 196px;
+    text-align: center;
 }
 
+.button-wrapper p {
+    margin: 0;
+    padding: 24px 0 14px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 7px
+}
+
+.button-wrapper button{
+    border-style: none;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    padding: 10px 70px 10px;
+    cursor: pointer;
+}
+
+.banner-info{
+    text-transform: uppercase;
+    color: #616161;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+
+.content-wrapper{
+    margin: 0 auto;
+    width: 1054px;
+}
 
 .template{
     position: absolute;
