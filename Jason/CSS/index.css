@@ -123,6 +123,67 @@ nav ul li:first-child {
     width: 1054px;
 }
 
+.content-wrapper h1{
+    margin: 74px auto 0;
+    width: 402px;
+    letter-spacing: 15.4px;
+    text-transform: uppercase;
+    font-size: 37px;
+    color: black;
+}
+.content-wrapper .dash{
+    border-bottom: 2px solid #d3d3d3;
+    margin: 32px auto 32px;
+    width: 36px;
+}
+.content-wrapper p{
+    margin: 0 auto;
+    width: 266px;
+    font-size: 22px;
+    letter-spacing: 6.2px
+}
+.content-wrapper .content{
+    margin-top: 74px;
+    text-align: center;
+}
+.content-wrapper .pic {
+    height: 468px;
+    width: 342px;
+    margin-left: 8px;
+    display: inline-block;
+}
+.content-wrapper .pic:first-child {
+    margin-left: 0;
+}
+.content-wrapper .pic-left {
+    background: transparent url(../image/left.png) center center/cover no-repeat;
+}
+.content-wrapper .pic-mid {
+    background: transparent url(../image/middle.png) center center/cover no-repeat;
+}
+.content-wrapper .pic-right {
+    background: transparent url(../image/right.png) center center/cover no-repeat;
+}
+
+footer{
+    background-color: rgb(83, 81, 81);
+    margin-top: 84px;
+}
+.footer-wrapper{
+    width: 958px;
+    margin: 0 auto;
+}
+.footer-wrapper .contact {
+    display: inline-block;
+}
+
+.footer-wrapper .get-email {
+    display: inline-block;
+}
+
+.footer-wrapper .assistance {
+    display: inline-block;
+}
 .template{
     position: absolute;
     width:100%;
