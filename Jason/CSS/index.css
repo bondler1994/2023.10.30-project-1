@@ -192,12 +192,12 @@ footer{
     margin: 0 auto;
     width: 146px;
 }
-.contact-icon i{
+.contact-icon a{
     margin-left: 22px;
     font-size: 20px;
     line-height: 2;
 }
-.contact-icon i:first-child{
+.contact-icon a:first-child{
     margin: 0;
 }
 
