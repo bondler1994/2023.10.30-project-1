@@ -27,7 +27,6 @@ button{
     padding: 0;
 }
 
-
 /* 以上是清除掉預設樣式 */
 
 header{
@@ -39,7 +38,6 @@ header{
     height: 109px;
     margin: 0 auto;
 }
-
 .header-wrapper::before {
     content:"";
     height: 100%;
@@ -47,20 +45,18 @@ header{
     vertical-align: middle;
 }
 
+
 .logotype{
     vertical-align: middle;
     font-size: 24px;
     letter-spacing: 6px;
     text-transform: uppercase;
 }
-
-
 nav{
     display: inline-block;
     vertical-align: middle;
     padding-left: 70px;
 }
-
 nav ul li{
     display: inline-block;
     margin-left: 76px;
@@ -68,8 +64,6 @@ nav ul li{
 nav ul li:first-child {
     margin-left: 0;
 }
-
-
 .cart{
     background: transparent  url(../image/bag_img.png) 0px 0px no-repeat  ;
     display: inline-block;
@@ -79,11 +73,11 @@ nav ul li:first-child {
     margin-left: 98px;
 }
 
+
 .banner-wrapper{
     background-color: #d3d3d3;
     height: 736px;
 }
-
 .banner{
     background: transparent url(../image/cover.jpg) center top /cover no-repeat;
     width: 100%;
@@ -97,7 +91,6 @@ nav ul li:first-child {
     height: 196px;
     text-align: center;
 }
-
 .button-wrapper p {
     margin: 0;
     padding: 24px 0 14px;
@@ -107,7 +100,6 @@ nav ul li:first-child {
     font-weight: 700;
     letter-spacing: 7px
 }
-
 .button-wrapper button{
     border-style: none;
     background-color: black;
@@ -116,7 +108,6 @@ nav ul li:first-child {
     padding: 10px 70px 10px;
     cursor: pointer;
 }
-
 .banner-info{
     text-transform: uppercase;
     color: #616161;
@@ -125,11 +116,11 @@ nav ul li:first-child {
     letter-spacing: 3px;
 }
 
+
 .content-wrapper{
     margin: 0 auto;
     width: 1054px;
 }
-
 .content-wrapper h1{
     margin: 74px auto 0;
     width: 402px;
@@ -172,20 +163,25 @@ nav ul li:first-child {
     background: transparent url(../image/right.png) center center/cover no-repeat;
 }
 
+
+
 footer{
     background-color: rgb(83, 81, 81);
     margin-top: 84px;
+    padding-bottom: 66px;
 }
 .footer-wrapper{
     width: 958px;
     margin: 0 auto;
-    padding-top: 82px;
+    padding: 82px 0 70px
 }
+
 .footer-wrapper .contact {
     display: inline-block;
     width: 162px;
     vertical-align: top;
 }
+
 
 .contact p{
     letter-spacing: 1px;
@@ -205,6 +201,7 @@ footer{
     margin: 0;
 }
 
+
 .footer-wrapper .get-email {
     display: inline-block;
     width: 338px;
@@ -216,7 +213,6 @@ footer{
     clear: right;
     content:"";
 }
-
 .get-email p{
     text-transform: uppercase;
     font-size: 14px;
@@ -243,7 +239,20 @@ footer{
 .footer-wrapper .assistance {
     display: inline-block;
     vertical-align: top;
+    text-align: center;
+    margin-left: 138px;
 }
+.assistance p {
+    text-align: center;
+}
+.assistance p:first-child {
+    text-transform: uppercase;
+}
+.copyright{
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
 .template{
     position: absolute;
     width:100%;
