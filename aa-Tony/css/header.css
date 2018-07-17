@@ -1,0 +1,57 @@
+body, html {
+  background: url(../img/Template_2.png) top center no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  /* outline: 3px solid red; */
+}
+
+/* =========== Navibar ============ */
+#header {
+  width: 100%;
+  /* background-color: #535151; */
+  outline: 1px solid red;
+}
+
+#header ul {
+  position: relative;
+  
+  list-style: none;
+  text-align: center;
+  outline: 2px dashed green;
+}
+
+#header li {
+  display: inline-block;
+  padding: 0 30px;
+  line-height: 100px;
+  text-transform: capitalize;
+  color: #c9c9c9;
+  outline: 1px dotted blue;
+}
+
+#header li:first-child {
+  padding-left: 0;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+li a {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+li:last-child a {
+  padding-right: 45px;
+}
+
+li img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* 垂直置中 */
+  width: 40px;
+  height: auto;
+  margin: 0 auto;
+  /* 水平置中 */
+}
+
