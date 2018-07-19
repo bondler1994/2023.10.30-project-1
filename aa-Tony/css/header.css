@@ -13,7 +13,6 @@
 }
 
 #header ul {
-  position: relative;
   margin: 0;
   list-style: none;
   text-align: center;
@@ -38,18 +37,13 @@
 }
 
 li a {
+  display: inline-block;
   color: #c9c9c9;
   text-decoration: none;
 }
 
-li:last-child a {
-  padding-right: 45px;
-}
-
 li img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  vertical-align: middle;
   /* 垂直置中 */
   width: 40px;
   height: auto;
@@ -71,7 +65,7 @@ li img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-30%);
   padding: 10px 20px;
   background-color: rgba(255,255,255,0.3);
   text-align: center;
@@ -111,7 +105,7 @@ h1  {
 /* ========== Buy ========== */
 
 #buy {
-  padding: 13px;
+  padding: 13px 0px;
   text-align: center;
 }
 
@@ -195,15 +189,18 @@ input {
   margin-top: 4px;
 }
 
-.col h6:last-child {
+.col h6:nth-child(n+2) {
   text-transform: lowercase;
+  color:white;
 }
 
 ::placeholder {
   color: #fff;
+
 }
 
 footer>h6 {
+  margin: 0;
   text-align: center;
   line-height: 50px;
 }
