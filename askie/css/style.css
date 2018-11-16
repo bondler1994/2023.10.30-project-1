@@ -1,0 +1,125 @@
+html {
+    /*
+    1. Correct the line height in all browsers.
+    2. Prevent adjustments of font size after orientation changes in iOS.
+    */
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'helvetica', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    background: #525050;
+    padding: 40px 12% 30px;
+}
+
+.nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav > a {
+    color: #bebebe;
+    text-shadow: 0 0 2px #000;
+    font-weight: 700;
+    margin-right: 7%;
+    font-size: 1.15rem;
+    float: left;
+    padding-top: 5px;
+}
+
+.nav > .nav__brandName {
+    font-size: 1.6rem;
+    letter-spacing: 0.2em;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+
+.nav > a:last-child {
+    margin: 0;
+}
+
+.nav > .nav__cartLink {
+    float: left;
+    padding-top: 0;
+}
+
+.nav > .nav__cartPhoto {
+    max-width: 30px;
+}
+
+
+/* banner */
+
+.banner__campaign {
+    background: url(../images/cover.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    padding: 20% 0;
+}
+
+.banner__campaign > .banner__season{
+    display: inline-block;
+    background: rgba(255,255,255,.5);
+    padding: 30px 40px;
+    position: relative;
+    font-size: 4rem;
+    font-family: -webkit-pictograph;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2c2d2e;
+}
+
+.banner__callToAction {
+    display: block;
+    font-size: 1.3rem;
+    color: #fff;
+    background: #2c2d2e;
+    width: 55%;
+    margin: 20px auto 0;
+    padding: 15px 0;
+    font-family: sans-serif;
+    text-transform: capitalize;
+
+}
+
+.shippingMessage {
+    background: #ddd;
+    color: #555;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    letter-spacing: .2em;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+.mustHave > .mustHave__title {
+    text-transform: uppercase;
+}
+
+.mustHave > .mustHave__description {
+    text-transform: capitalize;
+}
+
