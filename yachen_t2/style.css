@@ -1,0 +1,241 @@
+* {
+  /* outline: 1px solid #000; */
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 1042px;
+}
+
+nav {
+  background-color: #666;
+  color: #ECEFF1;
+  padding: 25px 30px;
+  font-size: 0;
+  text-align: center;
+}
+nav .prettyGal {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 5px;
+  vertical-align: middle;
+  margin-right: 70px;
+}
+nav ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  font-size: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+li:nth-child(6) {
+  font-size: 0;
+  vertical-align: middle;
+  margin-right: 0;
+}
+
+.row1 {
+  background-image: url("img/cover.jpg");
+  padding: 200px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.rect {
+  width: 37%;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px 0;
+}
+
+.season {
+  font-family: serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.shopNow {
+  background-color: #333;
+  font-weight: 500;
+  color: white;
+  width: 25%;
+  margin: 20px auto 0 auto;
+  padding: 7px 20px;
+}
+
+.freeShipping {
+  color: #333;
+  font-size: 12px;
+  letter-spacing: 5px;
+  word-spacing: 2px;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #E0E0E0;
+}
+
+section#section_Goods {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.text {
+  padding: 60px 0;
+}
+.text h2, .text p {
+  font-size: 40px;
+  color: #333;
+  font-family: serif;
+  letter-spacing: 10px;
+  margin: 0;
+
+}
+.text p {
+  color: #B0BEC5;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.text h3 {
+  margin: 0;
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 6px;
+  font-size: 21px;
+}
+
+.goods {
+  text-align: center;
+  font-size: 0;
+}
+.goods img + img {
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #555;
+  color: #CFD8DC;
+  font-size: 0;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.icons, .email, .connect {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 110px;
+}
+
+.icons, .connect {
+  width: 15%;
+}
+
+.icons {
+  font-size: 0;
+}
+.icons h4 {
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.icons .imgs {
+  text-align: center;
+  padding-top: 5px;
+}
+.icons .imgs img {
+  width: 25px;
+}
+.icons .imgs img + img {
+  margin-left: 13px;
+}
+
+.top h4 {
+  font-weight: 400;
+}
+
+.email {
+  text-align: right;
+}
+
+.input {
+  text-align: left;
+}
+.input h4 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+.input input {
+  width: 320px;
+  margin: 8px 0;
+  font-weight: 500;
+  background-color: #555;
+  padding: 6px;
+  border: 2px solid #ECEFF1;
+  border-radius: 2px;
+}
+
+input::-webkit-input-placeholder {
+  color: #ECEFF1;
+  font-weight: 600;
+}
+
+input:-moz-placeholder {
+  color: #ECEFF1;
+  font-weight: 600;
+}
+
+input::-moz-placeholder {
+  color: #ECEFF1;
+  font-weight: 600;
+}
+
+input:-ms-input-placeholder {
+  color: #ECEFF1;
+  font-weight: 600;
+}
+
+.button {
+  font-size: 16px;
+  display: inline-block;
+  color: #333;
+  padding: 10px;
+  background-color: #E0E0E0;
+  border-radius: 1px;
+}
+
+.connect {
+  font-size: 16px;
+  margin-right: 0;
+  font-weight: 500;
+}
+.connect p {
+  margin: 0;
+  letter-spacing: 1px;
+}
+.connect p + p {
+  color: white;
+  margin-top: 4px;
+}
+
+.copywright {
+  font-size: 14px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 500;
+  padding-top: 55px;
+}
