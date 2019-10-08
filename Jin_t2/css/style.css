@@ -89,7 +89,7 @@ main {
 }
 
 .banner__title { 
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     color: #2f3032;
     font-family: 'Times New Roman';
     font-weight: 600;
@@ -99,7 +99,7 @@ main {
 
 .banner__action {
     font-family: Raleway;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: lighter; 
     background-color: #2f3032;
     color: #fcfafa;
@@ -113,7 +113,7 @@ main {
 
 .banner-postscript {
     background-color: #e3e3e3;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     font-family: Raleway;
     letter-spacing: 0.2rem;
     color: #3b3c3f;
@@ -130,7 +130,7 @@ main {
 
 .stage__title {
     font-family: "Times New Roman";
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     letter-spacing: 0.5rem;
     line-height: 2;
     color: #3d3e3f;
@@ -143,7 +143,7 @@ main {
 .stage__description {
     font-family: Raleway;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 3;
     letter-spacing: 0.3rem;
     color: #3d3e3f;
@@ -199,14 +199,14 @@ footer {
 }
 
 .footer__icon .fab {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #f2f2f2;
-    margin: 0 9px;
+    margin: 0 10px;
 }
 
 .footer__title {
     font-family: raleway;
-    font-size: 0.65rem;
+    font-size: .8rem;
     letter-spacing: 0.07rem;
     margin-bottom: 6px;
 }
@@ -262,7 +262,7 @@ footer {
 }
 
 .footer__info {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     letter-spacing: 0.05rem;
     font-family: raleway;
     color: #f2f2f2;
@@ -270,8 +270,8 @@ footer {
 }
 
 .footer__copyright {
-    font-size: 0.65rem;
-    letter-spacing: 0.05rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.07rem;
     font-family: raleway;
     text-align: center;
     margin-top: 7%;
