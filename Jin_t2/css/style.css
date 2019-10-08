@@ -1,0 +1,266 @@
+* {
+    /* outline: 1px solid #000; */
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+}
+
+/* ---------------------Header------------------------- */
+header {
+    background-color: #535151;
+    padding: 25px 0 34px 0;
+}
+
+.index {
+    font-size: 0;
+}
+
+.index__logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.index__logo>img {
+    width: 100%;
+}
+
+.index__menu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 76%;
+}
+
+.index__menu>li {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.index__menu a {
+    font-size: 0.95rem;
+    font-family: Raleway;
+    color: #d3d2d2;
+}
+
+.index__menu a:hover {
+    color: #fff;
+}
+
+.index__checkout {
+    display: inline-block;
+    vertical-align: middle;
+    width: 4%;
+}
+
+.index__checkout>img {
+    width: 100%;
+}
+
+/* ----------------------main-------------------------- */
+
+/*-------------banner-------------*/
+
+main {
+    padding-bottom: 82px;
+}
+
+.banner {
+    height: 615px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner>img {
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner__placecard {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 43%;    
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px 44px;
+}
+
+.banner__title { 
+    font-size: 2.7rem;
+    color: #2f3032;
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+}
+
+.banner__action {
+    font-family: Raleway;
+    font-size: 0.9rem;
+    font-weight: lighter; 
+    background-color: #2f3032;
+    color: #fcfafa;
+    padding: 10px 63px;
+    border: 0;
+}
+
+.banner__action:active{
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0,35);
+}
+
+.banner-postscript {
+    background-color: #e3e3e3;
+    font-size: 0.65rem;
+    font-family: Raleway;
+    letter-spacing: 0.2rem;
+    color: #3b3c3f;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*-------------stage-------------*/
+
+.stage__placecard {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.stage__title {
+    font-family: "Times New Roman";
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    line-height: 2;
+    color: #3d3e3f;
+}
+
+.stage__placecard>hr {
+    width: 30px;
+}
+
+.stage__description {
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 3;
+    letter-spacing: 0.3rem;
+    color: #3d3e3f;
+}
+
+.stage__showcase {
+    font-size: 0;
+}
+
+.stage__production {
+    display: inline-block;
+    margin: 0 0.73%;
+    width: 31.87%;
+    background-color: #303132;
+    vertical-align: middle;
+}
+
+.stage__production>img {
+    width: 100%;
+    height: 419px;
+}
+
+/* ---------------------footer------------------------- */
+
+footer {
+    background-color: #535151;
+    color: #d3d2d2;
+    font-size: 0;
+    padding: 7% 0;
+}
+
+.footer__link {
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    margin-left: 5%;
+}
+
+.footer__icon {
+    display: inline-block;
+}
+
+.footer__icon .fab {
+    font-size: 1rem;
+    color: #f2f2f2;
+    margin: 0 9px;
+}
+
+.footer__title {
+    font-family: raleway;
+    font-size: 0.65rem;
+    letter-spacing: 0.07rem;
+    margin-bottom: 6px;
+}
+
+.footer__join {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-left: 14%;
+    margin-right: 13%;
+} 
+
+.footer__join::after {
+    clear: right;
+}
+
+.footer__input-email {
+    display: block;
+    vertical-align: top;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: #535151;
+    outline: 0;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 5px;
+}
+
+.footer__input-email::placeholder {
+    color: #f2f2f2;
+    font-family: raleway;
+}
+
+.footer__submit {
+    float: right;
+    font-family: raleway;
+    font-size: 0.65rem;
+    background-color: #d3d3d3;
+    color: #535151;
+    padding: 5px 10px;
+}
+
+.footer__join>div {
+    clear: right;
+}
+
+.footer__contact {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 16%;
+    margin-right: 5%; 
+}
+
+.footer__info {
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    font-family: raleway;
+    color: #f2f2f2;
+    margin-bottom: 6px;
+}
+
+.footer__copyright {
+    font-size: 0.65rem;
+    letter-spacing: 0.05rem;
+    font-family: raleway;
+    text-align: center;
+    margin-top: 7%;
+}
