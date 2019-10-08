@@ -230,6 +230,7 @@ footer {
     height: 30px;
     box-sizing: border-box;
     background-color: #535151;
+    color: #f2f2f2;
     outline: 0;
     border: 1px solid #f2f2f2;
     margin-bottom: 5px;
@@ -238,6 +239,7 @@ footer {
 .footer__input-email::placeholder {
     color: #f2f2f2;
     font-family: raleway;
+    padding-left: 2px;
 }
 
 .footer__submit {
