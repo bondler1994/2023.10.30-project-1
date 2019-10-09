@@ -3,7 +3,7 @@
 }
 
 .container {
-    max-width: 950px;
+    width: 74%;
     margin: auto;
 }
 
@@ -62,23 +62,13 @@ header {
 
 /*-------------banner-------------*/
 
-main>div {
-}
-
 .banner {
-    height: 615px;
+    height: 90vh;
     background-image: url('../images/banner.png');
     background-size: cover;
     background-position: top center;
     position: relative;
-    /* overflow: hidden; */
 }
-
-/* .banner>img {
-    height: 100%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-} */
 
 .banner__placecard {
     background-color: rgba(255, 255, 255, 0.5);
@@ -154,30 +144,53 @@ main>div {
 .stage__showcase {
     padding-bottom: 82px;
     font-size: 0;
+    text-align: center;
 }
 
 .stage__production {
     display: inline-block;
     margin: 0 0.73%;
     width: 31.87%;
-    height: 417px;
     overflow: hidden;
     /* background-color: #303132; */
     vertical-align: top;
+}
 
+.stage__showcase>.left {
+    background-image: url(../images/origin/p1.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.stage__showcase>.center {
+    background-image: url(../images/origin/p2.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+.stage__showcase>.right {
+    background-image: url(../images/origin/p3.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
 }
 
 .stage__production>img {
     width: 100%;
+    opacity: 0;
 }
 
-.stage__production>p {
+.stage__production p {
     font-size: 16px;
+    width: 100%;
     color: #fff;
     font-family: raleway;
     text-align: center;
     padding: 15px 0;
     background-color: #303132;
+    position: absolute;
+    bottom: 0;
 }
 
 /* ---------------------footer------------------------- */
@@ -188,11 +201,15 @@ footer {
     padding: 7% 0;
 }
 
+footer>.container {
+    text-align: center;
+}
+
 .footer__link {
     display: inline-block;
     text-align: center;
     width: 15%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 .footer__icon {
@@ -216,7 +233,8 @@ footer {
 .footer__join {
     display: inline-block;
     vertical-align: top;
-    width: 32%;
+    text-align: left;
+    width: 31.87%;
     margin-left: 14%;
     margin-right: 13%;
 } 
@@ -234,12 +252,13 @@ footer {
     color: #f2f2f2;
     border: 1px solid #f2f2f2;
     margin-bottom: 5px;
+    padding-left: 2px;
 }
 
 .footer__input-email::placeholder {
     color: #f2f2f2;
     font-family: raleway;
-    padding-left: 2px;
+    /* padding-left: 2px; */
 }
 
 .footer__submit {
@@ -260,7 +279,7 @@ footer {
     vertical-align: top;
     text-align: center;
     width: 16%;
-    margin-right: 5%; 
+    /* margin-right: 5%;  */
 }
 
 .footer__info {
