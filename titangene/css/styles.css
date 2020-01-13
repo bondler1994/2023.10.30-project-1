@@ -1,4 +1,80 @@
 /* --------------------- reset --------------------- */
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* --------------------- header --------------------- */
+header {
+  background-color: #535151;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+header .container {
+  width: 1020px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 28px 0;
+  box-sizing: border-box;
+  font-size: 0;
+}
+header nav {
+  width: 92%;
+  display: inline-block;
+  vertical-align: middle;
+}
+header h1 {
+  display: inline-block;
+  font-size: 22px;
+  letter-spacing: 6px;
+}
+header a {
+  color: #d4d4d4;
+}
+header a:hover {
+  color: #fff;
+}
+header ul {
+  display: inline-block;
+  margin-left: 42px;
+  list-style-type: none;
+  /* vertical-align: middle; */
+}
+header ul li {
+  display: inline-block;
+}
+header ul li + li {
+  margin-left: 14px;
+}
+header ul li a {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+}
+header .cart {
+  width: 8%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+header .cart-btn {
+  width: 36px;
+  height: 40px;
+  padding: 20px;
+  border: none;
+  background: url(../img/bag.png) no-repeat center;
+  cursor: pointer;
 }
