@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
+h1, h2, h3, p, figure {
   margin: 0;
 }
 ul {
@@ -121,3 +121,81 @@ main {
   letter-spacing: 3px;
 }
 
+.product-wrap {
+  margin-bottom: 96px;
+}
+.product-wrap h2,
+.product-wrap p {
+  text-align: center;
+}
+.product-wrap h2 {
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 12px;
+  position: relative;
+}
+.product-wrap hr {
+  width: 36px;
+  margin: 32px auto;
+  border: none;
+  border-top: 1px solid #6b6b6c;
+}
+.product-wrap > p {
+  font-size: 24px;
+  letter-spacing: 5px;
+  margin-bottom: 74px;
+}
+.product-list {
+  width: 1020px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.product-item {
+  width: 32%;
+  max-height: 447px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  overflow: hidden;
+}
+.product-item img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+.product-item + .product-item {
+  margin-left: 2%;
+}
+.product-list figcaption {
+  background-color: #303132;
+  font-size: 16px;
+  text-align: center;
+}
+.product-list figcaption a {
+  width: 100%;
+  display: inline-block;
+  padding: 18px 0;
+  color: #fff;
+}
+.product-item--sale {
+  position: relative;
+}
+.product-item--sale p {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 16px;
+}
+.product-item--sale a {
+  color: #303132;
+  padding: 16px;
+  /* 清除最後字元的 letter-spacing */
+  margin-right: -16px;
+}
+.product-item--sale a:hover {
+  color: #777;
+}
