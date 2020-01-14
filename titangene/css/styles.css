@@ -1,4 +1,5 @@
-body::before {
+/* --------------------- debug --------------------- */
+/* body::before {
   content: url(../Template_2.png);
   text-align: center;
   position: absolute;
@@ -9,7 +10,7 @@ body::before {
   opacity: .3;
   opacity: 0;
   z-index: -1;
-}
+} */
 /* --------------------- reset --------------------- */
 body {
   margin: 0;
