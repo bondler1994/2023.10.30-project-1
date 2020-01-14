@@ -192,7 +192,7 @@ main {
 .product-item--sale {
   position: relative;
 }
-.product-item--sale p {
+.product-item--sale span {
   position: absolute;
   top: 72px;
   left: 50%;
