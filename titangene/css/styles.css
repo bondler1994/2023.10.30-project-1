@@ -95,19 +95,20 @@ main {
   margin-top: 100px;
 }
 .banner-wrap {
-  height: 666px;
   background: url(../img/cover.jpg) no-repeat center/cover;
-  position: relative;
+}
+.banner-body {
+  height: 666px;
+  padding-top: 290px;
+  box-sizing: border-box;
 }
 .banner {
-  padding: 30px 50px;
+  width: 610px;
+  padding: 30px 40px;
+  box-sizing: border-box;
   background-color: rgba(255, 255, 255, .5);
   margin: auto;
   text-align: center;
-  position: absolute;
-  top: 280px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .banner h2 {
   font-size: 60px;
@@ -123,17 +124,15 @@ main {
   color: #fff;
   font-size: 20px;
 }
-
-.notification-wrap {
+.banner-wrap .notification {
   background-color: #e3e3e3;
-  margin-bottom: 74px;
   padding: 16px 0;
   text-align: center;
   letter-spacing: 3px;
 }
 
 .product-wrap {
-  margin-bottom: 96px;
+  padding: 76px 0;
 }
 .product-wrap h2,
 .product-wrap p {
