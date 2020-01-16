@@ -1,5 +1,4 @@
 * {
-    /* outline: 1px solid; */
     box-sizing: border-box;
 }
 
@@ -19,12 +18,19 @@ h4 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+/* ------ header ------ */
+
 header {
     background-color: #555;
     padding: 30px 0;
 }
 
-header nav {
+nav {
     width: 1050px;
     font-size: 0;
     font-weight: 500;
@@ -32,70 +38,69 @@ header nav {
     text-align: center;
 }
 
-header nav a {
+nav a {
     display: inline-block;
     vertical-align: middle;
-    text-decoration: none;
     color: #CFD8DC;
 }
 
-header nav a:hover {
+nav a:hover {
     color: #eee;
 }
 
-header nav>a:first-of-type {
+nav>a {
     width: 20%;
 }
 
-header nav ul a {
+nav ul a {
     width: 100%;
     padding: 5% 0;
 }
 
-header nav h1 {
+nav h1 {
     font-size: 22px;
     letter-spacing: 7px;
 }
 
-header nav ul {
+nav ul {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
     width: 70%;
 }
 
-header nav li {
+nav li {
     display: inline-block;
     width: 8%;
     font-size: 16px;
     margin-left: 8%;
 }
 
-header nav li:nth-child(4) {
+nav li:nth-child(4) {
     width: 19%;
 }
 
-header nav li:nth-child(5) {
+nav li:nth-child(5) {
     width: 12%;
 }
 
-header nav .cart {
+nav .cart {
     display: inline-block;
     width: 10%;
     text-align: right;
 }
 
 
-/* main */
+/* ----- main ------*/
 
-main>div:first-of-type {
+section.banner {
     background: url("./img/cover.jpg");
     padding: 280px 0 195px 0;
     background-size: cover;
     background-position: 50% 0;
 }
 
-main>div:nth-of-type(2) {
+.shipping {
     text-align: center;
     font-size: 14px;
     letter-spacing: 5px;
@@ -150,7 +155,7 @@ main>div:nth-of-type(2) {
     padding: 30px 0 20px 0;
 }
 
-.product .product_wrapper {
+.product_wrapper {
     width: 1050px;
     margin: auto;
 }
@@ -172,9 +177,12 @@ main>div:nth-of-type(2) {
     margin-bottom: 35px;
 }
 
-.product .recommend img+img {
+.recommend img+img {
     margin-left: 5px;
 }
+
+
+/* -----footer------ */
 
 footer {
     background-color: #555;
@@ -183,7 +191,7 @@ footer {
     font-size: 0;
 }
 
-footer .footer_wrapper {
+.footer_wrapper {
     width: 950px;
     margin: auto;
 }
@@ -196,34 +204,34 @@ footer h4 {
     letter-spacing: 2px;
 }
 
-footer .social {
+.social {
     display: inline-block;
     vertical-align: top;
     text-align: center;
     width: 20%;
 }
 
-footer .social a {
+.social a {
     display: inline-block;
     width: 20px;
 }
 
-footer .social a img {
+.social a img {
     width: 100%;
 }
 
-footer .social a+a {
+.social a+a {
     margin-left: 25px;
 }
 
-footer .email {
+.email {
     display: inline-block;
     vertical-align: top;
     width: 36%;
     margin-left: 12%;
 }
 
-footer .email input {
+.email input {
     width: 100%;
     background-color: #555;
     padding: 5px 0;
@@ -231,20 +239,21 @@ footer .email input {
     font-weight: bold;
 }
 
-footer .email button {
+.email button {
     display: block;
     margin-left: auto;
     font-size: 16px;
     color: #666;
     padding: 5px 10px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
-footer .email input::placeholder {
+.email input::placeholder {
     color: #eee;
 }
 
-footer .contact {
+.contact {
     display: inline-block;
     width: 20%;
     vertical-align: top;
@@ -253,7 +262,7 @@ footer .contact {
     margin-left: 12%;
 }
 
-footer .copyright {
+.copyright {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 1px;
