@@ -84,9 +84,8 @@ header .cart {
   text-align: right;
 }
 header .cart-btn {
-  width: 36px;
+  width: 40px;
   height: 40px;
-  padding: 20px;
   border: none;
   background: url(../img/bag.png) no-repeat center;
   cursor: pointer;
