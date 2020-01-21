@@ -29,7 +29,7 @@ a {
 }
 
 /* --------------------- header --------------------- */
-header {
+body > header {
   background-color: #535151;
   position: fixed;
   top: 0;
@@ -37,52 +37,52 @@ header {
   right: 0;
   z-index: 999;
 }
-header .container {
+body > header .container {
   width: 1020px;
   margin: 0 auto;
   padding: 28px 0;
   box-sizing: border-box;
   font-size: 0;
 }
-header nav {
+body > header nav {
   width: 92%;
   display: inline-block;
   vertical-align: middle;
 }
-header h1 {
+body > header h1 {
   display: inline-block;
   font-size: 22px;
   letter-spacing: 6px;
 }
-header a {
+body > header a {
   color: #d4d4d4;
 }
-header a:hover {
+body > header a:hover {
   color: #fff;
 }
-header ul {
+body > header ul {
   display: inline-block;
   margin-left: 42px;
   list-style-type: none;
 }
-header ul li {
+body > header ul li {
   display: inline-block;
 }
-header ul li + li {
+body > header ul li + li {
   margin-left: 14px;
 }
-header ul li a {
+body > header ul li a {
   display: inline-block;
   padding: 12px 30px;
   font-size: 18px;
 }
-header .cart {
+body > header .cart {
   width: 8%;
   display: inline-block;
   vertical-align: middle;
   text-align: right;
 }
-header .cart-btn {
+body > header .cart-btn {
   width: 40px;
   height: 40px;
   border: none;
