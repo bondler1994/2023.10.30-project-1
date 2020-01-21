@@ -96,18 +96,20 @@ main {
 }
 .banner-wrap {
   background: url(../img/cover.jpg) no-repeat center/cover;
-}
-.banner-body {
   height: 666px;
-  padding-top: 290px;
-  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 50px;
 }
 .banner {
   width: 610px;
   padding: 30px 40px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, .5);
   margin: auto;
+  box-sizing: border-box;
+  position: absolute;
+  top: 290px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .5);
   text-align: center;
 }
 .banner h2 {
@@ -125,8 +127,14 @@ main {
   font-size: 20px;
 }
 .banner-wrap .notification {
-  background-color: #e3e3e3;
+  height: 50px;
   padding: 16px 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #e3e3e3;
   text-align: center;
   letter-spacing: 3px;
 }
