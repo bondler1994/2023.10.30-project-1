@@ -1,0 +1,275 @@
+* {
+    /* outline: 1px solid lightcoral; */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+hr {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tbg {
+    width: 100%;
+    opacity: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    background-color: #535151;
+}
+
+nav {
+    padding: 25px 0;
+    margin: 0 auto;
+    width: 1220px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo a {
+    font-size: 26px;
+    letter-spacing: 8px;
+    color: #D2D2D2;
+    padding: 10px 0;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: 72px;
+    vertical-align: middle;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #D2D2D2;
+}
+
+.menu a+a {
+    margin-left: 54px;
+}
+
+.menu a:hover {
+    color: lightsalmon;
+}
+
+.shopping_chart {
+    display: inline-block;
+    font-size: 0;
+    width: 46px;
+    padding: 10px;
+    vertical-align: middle;
+    margin-left: 71px;
+}
+
+.shopping_chart img {
+    width: 100%;
+}
+
+.background {
+    width: 1680px;
+    height: 808px;
+    margin: 0 auto;
+    background-image: url(img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flow-root;
+}
+
+.center_wrapper {
+    width: 750px;
+    text-align: center;
+    margin: 350px auto 0;
+    background: rgba(231, 228, 219, 0.7);
+}
+
+.center_wrapper h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 72px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
+
+.button_shopnow {
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 80px;
+    background-color: #303132;
+    color: #fff;
+    font-size: 27px;
+}
+
+.button_shopnow:hover {
+    background-color: lightsalmon;
+}
+
+.demarcationline {
+    background-color: #E3E3E3;
+    padding: 20px 0;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.title {
+    margin-top: 73px;
+}
+
+.title h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    line-height: 1.8;
+    letter-spacing: 11px;
+    text-align: center;
+}
+
+.title hr {
+    width: 40px;
+    margin: 23px auto;
+}
+
+.title p {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 8px;
+    padding: 16px 0;
+}
+
+.picturearea {
+    width: 1230px;
+    margin: 80px auto 90px;
+    font-size: 0;
+}
+
+.picturearea img {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    width: 400px;
+    vertical-align: top;
+}
+
+.picturearea img+img {
+    margin-left: 15px;
+}
+
+footer {
+    background-color: #535151;
+    display: flow-root;
+}
+
+.footer_text {
+    width: 1115px;
+    margin: 100px auto;
+    color: #D3D3D3;
+    font-size: 0;
+    text-align-last: justify;
+}
+
+.connected {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+}
+
+.footer_text div p {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.connected .icon {
+    font-size: 0;
+}
+
+.icon i {
+    font-size: 29px;
+    color: #D3D3D3;
+}
+
+.icon i:hover {
+    color: lightsalmon;
+}
+
+.icon i+i {
+    margin-left: 23px;
+}
+
+.form_email {
+    display: inline-block;
+    width: 400px;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.form_email label {
+    text-align-last: left;
+    font-size: 19px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.inputemail {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #535151;
+    border: 2px #D3D3D3 solid;
+    font-size: 20px;
+    padding: 6px;
+    margin-bottom: 12px;
+    margin-right: 0;
+    color: #fff;
+}
+
+.inputemail:focus {
+    border-color: lightsalmon;
+}
+
+.assistance {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    text-align-last: center;
+    width: 196px;
+}
+
+.assistance h4 {
+    font-family: 'Enriqueta', serif;
+    font-size: 18px;
+}
+
+.copyright {
+    margin-top: 80px;
+    font-size: 19px;
+    text-align-last: center;
+}
+
+.button_submit {
+    display: block;
+    border-radius: 0;
+    width: 120px;
+    height: 36px;
+    font-size: 18px;
+    background-color: #D3D3D3;
+    margin-left: auto;
+    text-align-last: center;
+}
