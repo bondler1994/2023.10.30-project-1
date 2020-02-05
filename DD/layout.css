@@ -1,6 +1,6 @@
-* {
-    /* outline: 1px solid lightcoral; */
-}
+/* * {
+    outline: 2px solid lightseagreen;
+} */
 
 body,
 h1,
@@ -11,13 +11,16 @@ p,
 hr {
     margin: 0;
     padding: 0;
-    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    width: 100%;
 }
 
 .tbg {
@@ -38,6 +41,11 @@ nav {
     width: 1220px;
 }
 
+h1:hover {
+    border-bottom: 3px solid lightsalmon;
+    margin-bottom: -3px;
+}
+
 .logo {
     display: inline-block;
     vertical-align: middle;
@@ -46,7 +54,7 @@ nav {
 .logo a {
     font-size: 26px;
     letter-spacing: 8px;
-    color: #D2D2D2;
+    color: #d2d2d2;
     padding: 10px 0;
 }
 
@@ -61,7 +69,7 @@ nav {
     padding: 10px 15px;
     font-size: 21px;
     font-weight: 500;
-    color: #D2D2D2;
+    color: #d2d2d2;
 }
 
 .menu a+a {
@@ -81,30 +89,23 @@ nav {
     margin-left: 71px;
 }
 
-.shopping_chart img {
-    width: 100%;
-}
-
-.background {
+.banner_background {
     width: 1680px;
     height: 808px;
     margin: 0 auto;
-    background-image: url(img/cover.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(img/cover.jpg) center / cover no-repeat;
     display: flow-root;
 }
 
-.center_wrapper {
+.banner_text {
     width: 750px;
     text-align: center;
     margin: 350px auto 0;
     background: rgba(231, 228, 219, 0.7);
 }
 
-.center_wrapper h2 {
-    font-family: 'Times New Roman', Times, serif;
+.banner_text h2 {
+    font-family: "Times New Roman", Times, serif;
     font-size: 72px;
     line-height: 1.8;
     letter-spacing: 2px;
@@ -124,51 +125,50 @@ nav {
 }
 
 .demarcationline {
-    background-color: #E3E3E3;
+    background-color: #e3e3e3;
+    font-family: 'Raleway', sans-serif;
     padding: 20px 0;
     text-align: center;
     letter-spacing: 5px;
 }
 
-.title {
+.shoppinglist_title {
     margin-top: 73px;
 }
 
-.title h3 {
-    font-family: 'Times New Roman', Times, serif;
+.shoppinglist_title h3 {
+    font-family: "Times New Roman", Times, serif;
     font-size: 52px;
     line-height: 1.8;
     letter-spacing: 11px;
     text-align: center;
 }
 
-.title hr {
+.shoppinglist_title hr {
     width: 40px;
     margin: 23px auto;
 }
 
-.title p {
+.shoppinglist_title p {
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 25px;
     letter-spacing: 8px;
     padding: 16px 0;
 }
 
-.picturearea {
+.shoppinglist_picture {
     width: 1230px;
     margin: 80px auto 90px;
     font-size: 0;
 }
 
-.picturearea img {
-    width: 100%;
+.shoppinglist_picture a {
     display: inline-block;
-    font-size: 0;
     width: 400px;
-    vertical-align: top;
 }
 
-.picturearea img+img {
+.shoppinglist_picture a+a {
     margin-left: 15px;
 }
 
@@ -180,29 +180,35 @@ footer {
 .footer_text {
     width: 1115px;
     margin: 100px auto;
-    color: #D3D3D3;
+    color: #d3d3d3;
     font-size: 0;
     text-align-last: justify;
 }
 
-.connected {
+.footer_text h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    text-align-last: start;
+    margin-bottom: 12px;
+}
+
+.footer_link {
     display: inline-block;
     width: 180px;
     vertical-align: top;
 }
 
-.footer_text div p {
-    font-size: 19px;
-    margin-bottom: 12px;
+.icon {
+    font-size: 0;
 }
 
-.connected .icon {
-    font-size: 0;
+.icon a {
+    display: inline-block;
 }
 
 .icon i {
     font-size: 29px;
-    color: #D3D3D3;
+    color: #d3d3d3;
 }
 
 .icon i:hover {
@@ -213,18 +219,11 @@ footer {
     margin-left: 23px;
 }
 
-.form_email {
+.footer_form {
     display: inline-block;
     width: 400px;
     font-size: 16px;
     vertical-align: top;
-}
-
-.form_email label {
-    text-align-last: left;
-    font-size: 19px;
-    display: block;
-    margin-bottom: 12px;
 }
 
 .inputemail {
@@ -232,7 +231,7 @@ footer {
     box-sizing: border-box;
     width: 100%;
     background-color: #535151;
-    border: 2px #D3D3D3 solid;
+    border: 2px #d3d3d3 solid;
     font-size: 20px;
     padding: 6px;
     margin-bottom: 12px;
@@ -244,7 +243,24 @@ footer {
     border-color: lightsalmon;
 }
 
-.assistance {
+.button_submit {
+    display: block;
+    border-radius: 0;
+    width: 120px;
+    height: 36px;
+    font-size: 18px;
+    background-color: #d3d3d3;
+    margin-left: auto;
+    text-align-last: center;
+}
+
+.button_submit:hover {
+    cursor: pointer;
+    background-color: lightsalmon;
+    color: #eee;
+}
+
+.footer_infomation {
     display: inline-block;
     font-size: 16px;
     vertical-align: top;
@@ -252,24 +268,25 @@ footer {
     width: 196px;
 }
 
-.assistance h4 {
-    font-family: 'Enriqueta', serif;
+.footer_infomation h3 {
+    text-align-last: center;
+}
+
+.footer_infomation span:nth-child(2) {
+    font-family: "Enriqueta", serif;
     font-size: 18px;
+    color: #F4F4F4;
+    display: block;
+}
+
+.footer_infomation span:nth-child(3) {
+    line-height: 2;
+    color: #F4F4F4;
+    display: block;
 }
 
 .copyright {
     margin-top: 80px;
     font-size: 19px;
-    text-align-last: center;
-}
-
-.button_submit {
-    display: block;
-    border-radius: 0;
-    width: 120px;
-    height: 36px;
-    font-size: 18px;
-    background-color: #D3D3D3;
-    margin-left: auto;
     text-align-last: center;
 }
