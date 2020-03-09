@@ -1,13 +1,19 @@
 /* css reset */
 body,
-h1 ,h2 ,button{
+h1 ,h2 ,button ,ul{
   margin: 0;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
 }
 /* css reset */
 h1{
   font-family: Arial;
 }
-.header {
+header {
   background: #535151;
 }
 .header-content {
@@ -42,7 +48,7 @@ nav a {
   margin-left:20px;
   margin-right:20px; 
 }
-img{
+.header-content img{
   width: 40px;
   vertical-align: middle;
 }
@@ -90,4 +96,69 @@ img{
   font-family: serif;
   text-align: center;
   letter-spacing: 5px;
+}
+.content h3{
+  font-size: 45px;
+  letter-spacing: 15px;
+  text-align: center;
+}
+.content hr{
+  width: 50px;
+  border: 1px solid gray;
+}
+.content p{
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.content ul li{
+  display: inline-block;
+}
+.content ul{
+ text-align: center;
+}
+.content img{
+  height: 400px;
+}
+.content ul :nth-child(2){
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer{
+  background:#535151;
+  color: #d2d2d2;
+  text-align: center;
+}
+footer .horizontal_list_initial >form{
+  margin :0 100px 0;
+}
+footer .horizontal_list_initial{
+  height: 150px;
+}
+.link{
+  display:inline-block;
+  vertical-align: top;
+}
+.link ul :nth-child(n+2):nth-child(-n+4){
+  margin-left: 20px;
+}
+footer .stayConnected li{
+  display: inline-block;
+}
+footer img{
+  width: 20px;
+}
+.horizontal_list_initial form{
+  display: inline-block;
+  vertical-align: top;
+}
+.horizontal_list_initial form input{
+  display: block;
+  width: 150px;
+  background: #535151;
+  border: 1px solid white;
+}
+.horizontal_list_initial .information{
+  display:inline-block;
+  vertical-align: top;
 }
