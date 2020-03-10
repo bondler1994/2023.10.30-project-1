@@ -1,6 +1,6 @@
 /* css reset */
 body,
-h1 ,h2 ,button ,ul{
+h1 ,h2 ,button ,ul ,h3 ,p{ 
   margin: 0;
 }
 ul{
@@ -54,23 +54,23 @@ nav a {
 }
 .banner{
   background: url("./img/cover.jpg") no-repeat;
-  height: 800px;
+  height: 750px;
   background-position: top center;
   background-size: cover;
   position: relative;
 }
 .banner-inner{
   position: absolute;
-  left :30%;
-  top: 50%;
+  left: 28%;
+  top: 40%;
   font-size: 0;
   background-color:rgba(231, 228, 219, 0.7);
   text-align: center;
 }
 .banner-inner h2{
   font-family: "Times New Roman", Times, serif;
-  margin: 25px;
-  font-size: 50px;
+  margin: 25px 45px;
+  font-size: 70px;
 }
 .t2img {
   position: absolute;
@@ -84,7 +84,7 @@ nav a {
   width: 150px;
   height: 25px;
   color:white;
-  padding: 10px;
+  padding: 10px 45px;
   background-color: #303132;
   font-size: 20px;
   text-align: center;
@@ -92,8 +92,8 @@ nav a {
 }
 .FreeShippingWorlWide{
   background-color: #e3e3e3;
-  font-size: 20px;
-  font-family: serif;
+  padding: 15px 0;
+  font-family: sans-serif, monospace;
   text-align: center;
   letter-spacing: 5px;
 }
@@ -101,6 +101,7 @@ nav a {
   font-size: 45px;
   letter-spacing: 15px;
   text-align: center;
+  margin: 35px 0;
 }
 .content hr{
   width: 50px;
@@ -110,15 +111,22 @@ nav a {
   font-size: 20px;
   letter-spacing: 5px;
   text-align: center;
+  margin: 35px 0 50px 0;
+}
+.content ul{
+ text-align: center;
+ margin-bottom:100px;
 }
 .content ul li{
   display: inline-block;
 }
-.content ul{
- text-align: center;
+.content a{
+  display: inline-block;
 }
 .content img{
-  height: 400px;
+  width:100%;
+  height: 450px;
+  vertical-align: top;
 }
 .content ul :nth-child(2){
   margin-left: 10px;
@@ -127,13 +135,14 @@ nav a {
 footer{
   background:#535151;
   color: #d2d2d2;
-  text-align: center;
+  /* text-align: center; */
 }
-footer .horizontal_list_initial >form{
-  margin :0 100px 0;
+footer .horizontal_list_initial_inner >form{
+    margin: 0 185px 0;
 }
 footer .horizontal_list_initial{
   height: 150px;
+  padding: 50px 0 0 0;
 }
 .link{
   display:inline-block;
@@ -148,17 +157,42 @@ footer .stayConnected li{
 footer img{
   width: 20px;
 }
+.horizontal_list_initial h4{
+  font-size: 15px;
+  margin: 0 0 15px 0;
+}
 .horizontal_list_initial form{
   display: inline-block;
   vertical-align: top;
 }
 .horizontal_list_initial form input{
   display: block;
-  width: 150px;
+  width: 330px;
+  height: 30px;
   background: #535151;
   border: 1px solid white;
+  margin-bottom: 10px;
+}
+.horizontal_list_initial form button{
+  display: block;
+  margin-left: auto;
+  width: 85px;
+  padding:8px 5px 8px 5px;
 }
 .horizontal_list_initial .information{
   display:inline-block;
   vertical-align: top;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+.horizontal_list_initial .information p{
+  margin: 5px 0 5px 0;
+}
+.horizontal_list_initial_inner{
+  width: 1050px;
+  margin: auto;
+}
+.copyright{
+  text-align: center;
+  padding-bottom: 100px;
 }
