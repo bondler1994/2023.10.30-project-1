@@ -1,10 +1,9 @@
 /* css reset */
 body,
-h1 ,h2 ,button ,ul ,h3 ,p ,div{ 
+h1 ,h2 ,button ,ul ,h3 ,p ,div { 
   margin: 0;
 }
 h1 ,h2 ,ul ,h3 ,p{ 
-  margin: 0;
   font-family:Arial, Helvetica, sans-serif
 }
 p{
@@ -38,7 +37,6 @@ header {
 h1 {
   display: inline-block;
   vertical-align: middle;
-  text-align: justify;
 }
 h1 a {
   padding: 20px;
@@ -54,7 +52,7 @@ nav {
   vertical-align: middle;
 }
 nav a {
-  padding: 30px 22px;
+  padding: 30px 25px;
   text-decoration: none;
   color: #d2d2d2;
   font-size: 18px;
@@ -102,6 +100,10 @@ nav a {
   font-size: 20px;
   text-align: center;
   margin-bottom: 30px;
+}
+.shopA:hover{
+  color: pink;
+  cursor: pointer;
 }
 .FreeShippingWorlWide{
   background-color: #e3e3e3;
@@ -163,6 +165,12 @@ footer .horizontal_list_initial{
 .link ul :nth-child(n+2):nth-child(-n+4){
   margin-left: 20px;
 }
+.link ul li a{
+  display: block;
+}
+.link ul li img{
+  vertical-align: top;
+}
 footer .stayConnected li{
   display: inline-block;
 }
@@ -195,11 +203,10 @@ footer img{
 .horizontal_list_initial .information{
   display:inline-block;
   vertical-align: top;
-  margin: 10px 0 10px 0;
   text-align: center;
 }
 .horizontal_list_initial .information p{
-  margin: 5px 0 5px 0;
+  padding: 2px 0 2px 0;
 }
 .horizontal_list_initial_inner{
   width: 880px;
@@ -208,4 +215,5 @@ footer img{
 .copyright{
   text-align: center;
   padding: 25px 0 100px 0;
+  font-weight:bold;
 }
