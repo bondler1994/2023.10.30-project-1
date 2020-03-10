@@ -1,7 +1,14 @@
 /* css reset */
 body,
-h1 ,h2 ,button ,ul ,h3 ,p{ 
+h1 ,h2 ,button ,ul ,h3 ,p ,div{ 
   margin: 0;
+}
+h1 ,h2 ,ul ,h3 ,p{ 
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif
+}
+p{
+  font-family:'Raleway', sans-serif;
 }
 ul{
   padding: 0;
@@ -11,7 +18,7 @@ li{
 }
 /* css reset */
 h1{
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header {
   background: #535151;
@@ -21,6 +28,13 @@ header {
   margin: auto;
   font-size: 0;
 }
+.header-content a{
+  display:inline-block;
+}
+.header-content a:hover{
+  color:blue;
+  cursor:pointer;
+}
 h1 {
   display: inline-block;
   vertical-align: middle;
@@ -28,7 +42,7 @@ h1 {
 }
 h1 a {
   padding: 20px;
-  display: inline-block;
+  margin: 20px 0;
   color: #d2d2d2;
   font-size: 25px;
   text-decoration: none;
@@ -40,11 +54,10 @@ nav {
   vertical-align: middle;
 }
 nav a {
-  padding: 22px;
+  padding: 30px 22px;
   text-decoration: none;
   color: #d2d2d2;
   font-size: 18px;
-  display: inline-block;
   margin-left:20px;
   margin-right:20px; 
 }
@@ -69,7 +82,7 @@ nav a {
 }
 .banner-inner h2{
   font-family: "Times New Roman", Times, serif;
-  margin: 25px 45px;
+  margin: 25px 45px 15px 45px;
   font-size: 70px;
 }
 .t2img {
@@ -88,12 +101,12 @@ nav a {
   background-color: #303132;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .FreeShippingWorlWide{
   background-color: #e3e3e3;
-  padding: 15px 0;
-  font-family: sans-serif, monospace;
+  padding: 10px 0;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   letter-spacing: 5px;
 }
@@ -101,17 +114,16 @@ nav a {
   font-size: 45px;
   letter-spacing: 15px;
   text-align: center;
-  margin: 35px 0;
+  padding: 100px 0 50px 0;
 }
 .content hr{
-  width: 50px;
-  border: 1px solid gray;
+  width: 35px;
 }
 .content p{
-  font-size: 20px;
-  letter-spacing: 5px;
+  font-size: 25px;
+  letter-spacing: 8px;
   text-align: center;
-  margin: 35px 0 50px 0;
+  padding: 35px 0 80px 0;
 }
 .content ul{
  text-align: center;
@@ -134,15 +146,15 @@ nav a {
 }
 footer{
   background:#535151;
-  color: #d2d2d2;
+  color: #d3d3d3;
   /* text-align: center; */
 }
 footer .horizontal_list_initial_inner >form{
-    margin: 0 185px 0;
+    margin: 0 100px 0;
 }
 footer .horizontal_list_initial{
   height: 150px;
-  padding: 50px 0 0 0;
+  padding: 100px 0 0 0;
 }
 .link{
   display:inline-block;
@@ -160,6 +172,7 @@ footer img{
 .horizontal_list_initial h4{
   font-size: 15px;
   margin: 0 0 15px 0;
+  letter-spacing: 2px;
 }
 .horizontal_list_initial form{
   display: inline-block;
@@ -167,7 +180,7 @@ footer img{
 }
 .horizontal_list_initial form input{
   display: block;
-  width: 330px;
+  width: 300px;
   height: 30px;
   background: #535151;
   border: 1px solid white;
@@ -189,10 +202,10 @@ footer img{
   margin: 5px 0 5px 0;
 }
 .horizontal_list_initial_inner{
-  width: 1050px;
+  width: 880px;
   margin: auto;
 }
 .copyright{
   text-align: center;
-  padding-bottom: 100px;
+  padding: 25px 0 100px 0;
 }
