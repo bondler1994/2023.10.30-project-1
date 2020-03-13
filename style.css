@@ -9,6 +9,9 @@ h1 ,h2 ,ul ,h3 ,p{
 p{
   font-family:'Raleway', sans-serif;
 }
+a{
+  text-decoration: none;
+}
 ul{
   padding: 0;
 }
@@ -24,15 +27,15 @@ header {
 }
 .header-content {
   width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   font-size: 0;
+  padding: 20px 0;f
 }
 .header-content a{
   display:inline-block;
 }
 .header-content a:hover{
   color:blue;
-  cursor:pointer;
 }
 h1 {
   display: inline-block;
@@ -40,10 +43,9 @@ h1 {
 }
 h1 a {
   padding: 20px;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   color: #d2d2d2;
   font-size: 25px;
-  text-decoration: none;
   letter-spacing: 5px;
 }
 nav {
@@ -52,15 +54,19 @@ nav {
   vertical-align: middle;
 }
 nav a {
-  padding: 30px 25px;
-  text-decoration: none;
+  padding: 24px 25px;
   color: #d2d2d2;
   font-size: 18px;
   margin-left:20px;
   margin-right:20px; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-content-a{
+  width: 40px;
+  height: 40px;
 }
 .header-content img{
-  width: 40px;
+  width: 100%;
   vertical-align: middle;
 }
 .banner{
@@ -77,11 +83,12 @@ nav a {
   font-size: 0;
   background-color:rgba(231, 228, 219, 0.7);
   text-align: center;
+  padding: 30px;
 }
 .banner-inner h2{
   font-family: "Times New Roman", Times, serif;
-  margin: 25px 45px 15px 45px;
   font-size: 70px;
+  margin-bottom: 20px; 
 }
 .t2img {
   position: absolute;
@@ -99,11 +106,9 @@ nav a {
   background-color: #303132;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 30px;
 }
 .shopA:hover{
   color: pink;
-  cursor: pointer;
 }
 .FreeShippingWorlWide{
   background-color: #e3e3e3;
@@ -112,34 +117,37 @@ nav a {
   text-align: center;
   letter-spacing: 5px;
 }
+.content{
+  margin: 150px auto;
+}
 .content h3{
   font-size: 45px;
   letter-spacing: 15px;
   text-align: center;
-  padding: 100px 0 50px 0;
 }
 .content hr{
   width: 35px;
+  margin: 30px auto;
 }
 .content p{
   font-size: 25px;
   letter-spacing: 8px;
   text-align: center;
-  padding: 35px 0 80px 0;
+  margin: 0 0 50px 0;
 }
 .content ul{
  text-align: center;
- margin-bottom:100px;
+ font-size: 0;
 }
 .content ul li{
   display: inline-block;
 }
 .content a{
   display: inline-block;
+  width:400px;
 }
 .content img{
   width:100%;
-  height: 450px;
   vertical-align: top;
 }
 .content ul :nth-child(2){
@@ -149,14 +157,13 @@ nav a {
 footer{
   background:#535151;
   color: #d3d3d3;
-  /* text-align: center; */
+  padding: 50px 0;
 }
-footer .horizontal_list_initial_inner >form{
+footer .horizontal_list_initial >form{
     margin: 0 100px 0;
 }
 footer .horizontal_list_initial{
-  height: 150px;
-  padding: 100px 0 0 0;
+  margin-bottom: 50px; 
 }
 .link{
   display:inline-block;
@@ -174,8 +181,11 @@ footer .horizontal_list_initial{
 footer .stayConnected li{
   display: inline-block;
 }
-footer img{
+footer a{
   width: 20px;
+}
+footer img{
+  width: 100%;
 }
 .horizontal_list_initial h4{
   font-size: 15px;
@@ -208,12 +218,11 @@ footer img{
 .horizontal_list_initial .information p{
   padding: 2px 0 2px 0;
 }
-.horizontal_list_initial_inner{
+.horizontal_list_initial{
   width: 880px;
-  margin: auto;
+  margin: 0 auto;
 }
 .copyright{
   text-align: center;
-  padding: 25px 0 100px 0;
   font-weight:bold;
 }
