@@ -66,8 +66,9 @@ nav img {
 }
 
 /* Main */
-.banner {
+.banner-img {
   background-image: url(./img/cover.jpg);
+  width: 100%;
   height: 40rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +87,9 @@ nav img {
 }
 
 h2 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Unna', serif;
+  font-weight: 700;
+  letter-spacing: 4px;
   color: #333;
   margin-top: 0;
   margin-bottom: 10px;
@@ -106,11 +109,12 @@ button:hover {
   cursor: pointer;
 }
 
-section > p {
+.banner > p {
+  font-size: 15px;
   margin: 0;
   padding: 12px 0;
   font-family: 'Raleway', sans-serif;
-  color: #333;
+  color: #666;
   text-align: center;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -122,9 +126,10 @@ section > p {
 }
 
 h3 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Unna', serif;
+  font-weight: 700;
   color: #333;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -186,7 +191,7 @@ footer p, footer label {
 
 .social-media p {
   font-size: 14px;
-  color: #efefef;
+  color: #e0e0e0;
   margin: 0;
   text-transform: uppercase;
 }
@@ -210,7 +215,7 @@ footer p, footer label {
 
 label {
   font-size: 15px;
-  color: #fff;
+  color: #e0e0e0;
   display: block;
   margin-bottom: 5px;
   text-align: left;
@@ -227,6 +232,7 @@ input {
 
 ::placeholder {
   color: #fff;
+  text-indent: 2px;
 }
 
 form:last-child {
@@ -234,9 +240,11 @@ form:last-child {
 }
 
 .input button {
-  background-color: #909090;
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #666;
   font-size: 15px;
-  padding: 8px 20px;
+  padding: 5px 15px;
   margin-top: 5px;
 }
 
@@ -252,6 +260,7 @@ form:last-child {
 }
 
 .contact p:first-child {
+  color: #e0e0e0;
   text-transform: uppercase;
 }
 
@@ -259,11 +268,12 @@ form:last-child {
   margin-top: 30px;
   margin-bottom: 0;
   font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   font-size: 14px;
-  color: #fff;
+  color: #e0e0e0;
 }
 
 .copyright a {
-  color: #fff;
+  color: #e0e0e0;
   font-family: 'Raleway', sans-serif;
 }
