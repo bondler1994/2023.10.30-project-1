@@ -39,8 +39,14 @@ h1 {
   vertical-align: middle;
 }
 
+h1:hover {
+  cursor: pointer;
+  text-shadow: #333 5px 5px;
+}
+
 nav {
   display: inline-block;
+  vertical-align: middle;
 }
 
 nav a {
@@ -68,9 +74,8 @@ nav img {
 /* Main */
 .banner-img {
   background-image: url(./img/cover.jpg);
-  width: 100%;
   height: 40rem;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -86,6 +91,10 @@ nav img {
   transform: translate(-50%, -50%);
 }
 
+.banner-text:hover {
+  box-shadow: 5px 5px 5px 2px rgba(100,100,100,0.5);
+}
+
 h2 {
   font-family: 'Unna', serif;
   font-weight: 700;
@@ -97,15 +106,14 @@ h2 {
   text-transform: uppercase;
 }
 
-button {
+.banner-text a {
   background-color: #333;
   padding: 5px 70px;
-  border: 0;
   font-size: 20px;
   color: #fff;
 }
 
-button:hover {
+.banner-text a:hover {
   cursor: pointer;
 }
 
@@ -133,15 +141,16 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 
 h3::after {
   content: "";
   display: block;
-  margin: 20px auto 0 auto;
+  margin: 20px auto;
   width: 30px;
-  border-bottom: 1px solid black;
+  height: 1px;
+  background-color: #333;
   
 }
 
@@ -190,7 +199,7 @@ footer p, footer label {
 }
 
 .social-media p {
-  font-size: 14px;
+  font-size: 15px;
   color: #e0e0e0;
   margin: 0;
   text-transform: uppercase;
@@ -207,7 +216,7 @@ footer p, footer label {
   color: #fff;
 }
 
-.input {
+.register {
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
@@ -225,27 +234,33 @@ input {
   display: block;
   background-color: #606060;
   border: 1px solid #fff;
+  outline: none;
   color: #fff;
   width: 300px;
   line-height: 25px;
 }
 
-::placeholder {
+input::placeholder {
   color: #fff;
   text-indent: 2px;
-}
+} 
 
 form:last-child {
   text-align: right;
 }
 
-.input button {
+.register button {
   display: inline-block;
   background-color: #e0e0e0;
   color: #666;
+  border: none;
   font-size: 15px;
   padding: 5px 15px;
   margin-top: 5px;
+}
+
+.register button:hover {
+  cursor: pointer;
 }
 
 .contact {
@@ -262,6 +277,12 @@ form:last-child {
 .contact p:first-child {
   color: #e0e0e0;
   text-transform: uppercase;
+}
+
+.contact a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .copyright {
