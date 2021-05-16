@@ -13,17 +13,15 @@
   z-index: 2;
 }
 
-html {
-  min-width: 1350px;
-}
 
 body {
+  min-width: 1350px;
   margin: 0;
   /* position: relative; */
 }
 
 header {  
-  padding: 1.5rem 0;
+  padding: 24px 0;
 
   background-color: #606060;
 
@@ -34,10 +32,10 @@ header {
 h1 {
   display: inline-block;
 
-  margin: 0 5rem 0 0;
+  margin: 0 80px 0 0;
   
   color: #e0e0e0;
-  font-size: 1.5rem;
+  font-size: 24px;
   letter-spacing: 4px;
   text-transform: uppercase;
   
@@ -58,7 +56,7 @@ nav {
 nav a {
   display: inline-block;
   
-  padding: 0.2rem;
+  padding: 6px;
 
   color: #e0e0e0;
   font-size: 18px;
@@ -73,7 +71,7 @@ nav a:hover {
 }
 
 nav a + a {
-  margin-left: 5rem;
+  margin-left: 80px;
 }
 
 nav img {
@@ -84,7 +82,7 @@ nav img {
 .banner-img {
   position: relative;
 
-  height: 40rem;
+  height: 640px;
 
   background-image: url(./img/cover.jpg);
   background-position: top;
@@ -98,7 +96,7 @@ nav img {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding: 1.5rem 3rem;
+  padding: 24px 48px;
 
   background-color: rgba(255,255,255,0.5);
 
@@ -106,7 +104,8 @@ nav img {
 }
 
 .banner-text:hover {
-  box-shadow: 0px 7px 10px 2px rgb(100, 100, 100, 0.9);
+  /* box-shadow: 0px 7px 10px 2px rgb(100, 100, 100, 0.9); */
+  box-shadow: 0px 7px 7px -2px rgb(30, 30, 30, 0.9), 0px 13px 9px 1px rgb(50,50,50,0.5);
 }
 
 h2 {
@@ -114,14 +113,15 @@ h2 {
   margin-bottom: 10px;
   
   color: #333;
-  font-size: 4rem;
+  font-size: 64px;
   font-family: 'Unna', serif;
-  font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 .banner-text a {
+  display: inline-block;
+
   padding: 5px 70px;
 
   background-color: #333;
@@ -148,16 +148,15 @@ h2 {
 }
 
 .display {
-  padding: 4rem 10rem;
+  padding: 64px 160px;
 }
 
 h3 {
   margin: 0;
 
   color: #333;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-family: 'Unna', serif;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 10px;
 
@@ -175,7 +174,7 @@ h3::after {
   background-color: #333;
 }
 
-h4 {
+.display h4 {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -193,6 +192,10 @@ h4 {
 } 
 
 .img-group img {
+  width: 325px;
+  height: 453px;
+  object-fit: cover;
+  
   vertical-align: bottom;
 }
 
@@ -203,7 +206,7 @@ h4 {
 /* Footer */
 
 footer {
-  padding: 3rem 10rem;
+  padding: 48px 160px;
 
   background-color: #606060;
   
@@ -212,7 +215,7 @@ footer {
 }
 
 footer div + div {
-  margin-left: 9rem;
+  margin-left: 144px;
 }
 
 footer p {
@@ -250,6 +253,10 @@ footer p {
   vertical-align: top;
 }
 
+form {
+  width: 300px;
+}
+
 form label {
   display: block;
 
@@ -265,7 +272,8 @@ form label {
 input {
   display: block;
   
-  width: 300px;
+  box-sizing: border-box;
+  width: 100%;
   border: 1px solid #fff;
   outline: none;
   
@@ -307,13 +315,14 @@ form:last-child {
 
 .contact p {
   margin: 0;
-
-  color: #fff;
-  font-size: 15px;
 }
 
-.contact p:first-child {
+.contact h4 {
+  margin: 0;
+
   color: #e0e0e0;
+  font-size: 15px;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
