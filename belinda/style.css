@@ -21,12 +21,17 @@ body {
 }
 
 header {  
-  padding: 24px 0;
-
   background-color: #606060;
 
   font-size: 0;
   text-align: center;
+}
+
+header .wrapper {
+  padding: 24px 0;
+  margin: 0 auto;
+
+  width: 1350px;
 }
 
 h1 {
@@ -147,8 +152,10 @@ h2 {
   text-align: center;
 }
 
-.display {
-  padding: 64px 160px;
+.display .wrapper{
+  margin: 0 auto;
+  padding: 64px 0;
+  width: 1350px;
 }
 
 h3 {
@@ -192,7 +199,7 @@ h3::after {
 } 
 
 .img-group img {
-  width: 325px;
+  /* width: 325px;   note:setting both width and height will distort the image */
   height: 453px;
   object-fit: cover;
   
@@ -206,12 +213,16 @@ h3::after {
 /* Footer */
 
 footer {
-  padding: 48px 160px;
-
   background-color: #606060;
   
   text-align: center;
   font-size: 0;
+}
+
+footer .wrapper {
+  padding: 48px 0;
+  margin: 0 auto;
+  width: 1350px;
 }
 
 footer div + div {
