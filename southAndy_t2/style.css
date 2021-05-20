@@ -63,7 +63,7 @@ nav a {
   color: #d2d2d2;
   vertical-align: middle;
   padding: 10px 0;
-  margin-left: 80px;
+  margin-left: 50px;
 }
 
 header a img {
@@ -136,18 +136,17 @@ figure a {
 }
 
 /*                   Section                   */
-.sales_title.container {
-  margin: 50px 0;
-}
-.sales_title {
+
+.sales-title {
   text-align: center;
+  padding: 50px 0;
 }
-.sales_title h2 {
+.sales-title h2 {
   font-size: 35px;
   font-family: serif;
   letter-spacing: 5px;
 }
-.sales_title p {
+.sales-title p {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 5px;
@@ -164,11 +163,20 @@ figure a {
 
 .sales_products {
   text-align: center;
+  font-size: 0;
+  padding: 50px 0;
 }
 
 .sales_products div {
   display: inline-block;
   width: 30%;
+}
+.sales_products a {
+  display: inline-block;
+  margin-right: 20px;
+}
+.sales_products a:last-child {
+  margin-right: 0;
 }
 
 /*                   Footer                   */
@@ -178,6 +186,7 @@ footer {
 }
 footer .container {
   padding: 40px 0;
+  text-align: center;
 }
 /* footer text style */
 .footer-font {
@@ -205,6 +214,7 @@ footer .container {
 .media a {
   color: #e3e3e3;
   margin: 0 8px;
+  padding: 2px;
   display: inline-block;
 }
 
@@ -213,10 +223,12 @@ footer .container {
   width: 30%;
   display: inline-block;
   vertical-align: top;
+  margin: 0 10px;
 }
 
 .subscribe label {
   display: block;
+  text-align: start;
 }
 .subscribe input {
   background-color: #606060;
