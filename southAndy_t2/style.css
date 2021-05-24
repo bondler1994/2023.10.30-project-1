@@ -97,6 +97,7 @@ nav a:hover {
   text-align: center;
   padding: 25px 40px;
   position: absolute;
+  /* 以relative的箱子作為參考點，進行四個方向的移動 */
   top: 50%;
   left: 50%;
   /* 以容器底線為參考點（移動x, 移動y）方向 */
