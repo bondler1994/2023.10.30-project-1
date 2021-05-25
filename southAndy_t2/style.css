@@ -36,7 +36,9 @@ header h1 {
   color: #d2d2d2;
   letter-spacing: 5px;
   font-size: 21px;
+  margin: 0;
   margin-right: 90px;
+  vertical-align: middle;
 }
 
 header nav {
@@ -46,7 +48,6 @@ header nav {
 h1 a {
   text-decoration: none;
   color: #d2d2d2;
-  vertical-align: middle;
   padding: 10px 0;
 }
 nav a {
@@ -93,7 +94,6 @@ nav a:hover {
 .banner-text {
   background-color: rgba(255, 255, 255, 0.6);
   font-family: "Kanit", sans-serif;
-  margin: 0 auto;
   text-align: center;
   padding: 25px 40px;
   position: absolute;
@@ -142,17 +142,20 @@ nav a:hover {
   font-family: serif;
   letter-spacing: 5px;
 }
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30px;
+  margin: 20px auto;
+  background-color: black;
+}
+
 .sales-title p {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 5px;
   font-family: sans-serif;
-}
-
-.hr-line {
-  width: 30px;
-  padding: 10px 0;
-  margin: 0 auto;
 }
 
 /* sales products */
@@ -170,9 +173,16 @@ nav a:hover {
 .sales-products a {
   display: inline-block;
   margin-right: 20px;
+  height: 450px;
+  width: 325px;
 }
 .sales-products a:last-child {
   margin-right: 0;
+}
+
+.sales-products img {
+  width: 100%;
+  height: 100%;
 }
 
 /*                   Footer                   */
@@ -189,10 +199,16 @@ footer .container {
   font-size: 15px;
   color: #e3e3e3;
   text-transform: uppercase;
+  font-weight: 300;
 }
+
+div.subscribe,
+div.contact {
+  margin-left: 150px;
+}
+
 /* Media part */
 .media {
-  width: 30%;
   color: #e3e3e3;
   display: inline-block;
   font-size: 0;
@@ -220,30 +236,31 @@ footer .container {
 /* subscribe part */
 
 .subscribe {
-  width: 30%;
+  width: 300px;
   display: inline-block;
   vertical-align: top;
-  margin: 0 10px;
+  text-align: right;
 }
-
+form {
+  text-align: right;
+}
 .subscribe label {
   display: block;
-  text-align: start;
+  text-align: left;
 }
 .subscribe input {
   background-color: #606060;
   color: #fff;
-  width: 90%;
+  width: 100%;
   border: solid 1px #e3e3e3;
   display: block;
+
+  box-sizing: border-box;
 }
 .subscribe ::placeholder {
   color: #fff;
 }
 .subscribe button {
-  display: block;
-  position: relative;
-  left: 250px;
   margin-top: 5px;
   background-color: #e3e3e3;
   border: none;
@@ -255,7 +272,6 @@ footer .container {
 
 /* contact part */
 .contact {
-  width: 30%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -279,6 +295,7 @@ p.copyright {
   text-align: center;
   margin-top: 50px;
   text-transform: none;
+  font-weight: 300;
 }
 .copyright a {
   text-decoration: none;
