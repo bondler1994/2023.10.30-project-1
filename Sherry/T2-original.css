@@ -1,0 +1,314 @@
+* {
+    outline: 1px solid red;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+body {
+    min-width: fit-content;
+    margin: 0;
+}
+
+/*header*/
+
+header {
+    padding: 20px 0;
+    background-color: #525050;
+}
+
+.header-container {
+    width: 900px;
+    margin: 0 auto;
+
+    font-size: 0;
+    color: #c3c3c3;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 170px;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 0 50px;
+    font-size: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px 0;
+
+    text-decoration: none;
+    color: #c3c3c3;
+}
+
+nav a+a {
+    margin-left: 85px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.shopbag {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+}
+
+.shopbag img {
+    vertical-align: bottom;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Main - figure */
+
+figure {
+    margin: 0;
+}
+
+.background {
+    background-image: url("img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 700px;
+    margin: 0;
+    text-align: center;
+}
+
+.background::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+}
+
+.caption {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    background: #ffffff80;
+    width: 500px;
+    padding: 20px 0;
+}
+
+.caption p {
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-family: serif;
+    font-weight: bolder;
+
+    margin:10px 0;
+}
+
+.shopnow{
+    color: white;
+    background: black;
+    font-size:16px;
+
+    width: 200px;
+    padding: 10px 30px;
+    border:none;
+}
+
+figure>p {
+    text-align: center;
+
+    background-color: #e4e4e4;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:5px;
+
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Main - section */
+
+section {
+    text-align: center;
+
+    font-size: 0;
+    width: 900px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: serif;
+    font-size: 38px;
+    font-weight: bolder;
+    letter-spacing: 1ex;
+
+    padding: 20px 0;
+}
+
+section hr{
+    display: inline-block;
+    background:black;
+
+    width:25px;
+    height:1px;
+    border: none;
+}
+.content {
+    font-size: 20px;
+    letter-spacing: 5px;
+
+    padding: 20px 0;
+}
+
+.images-container {
+    font-size: 0;
+    padding: 30px 0;
+}
+
+.image-box {
+    display: inline-block;
+
+    width: 290px;
+    height: 413px; 
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /*待確認*/
+}
+
+.images-container div+div {
+    margin-left: 15px;
+}
+
+/* footer */
+
+footer {
+    color: white;
+    background-color: #525050;
+    
+    padding: 50px 0;
+}
+
+.footer-container {
+    font-size: 0;
+
+    width: 800px;
+    margin: 0 auto;
+}
+
+.footer-container>div+div {
+    margin-left: 15%;
+}
+
+.grey {
+    color: #c3c3c3;
+}
+
+/* footer - 左邊社群連結區 */
+
+.links {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+    width: 20%;
+}
+
+.links p {
+    margin: 0 0 10px;
+}
+
+.links a {
+    display: inline-block;
+    text-align: center;
+
+    text-decoration: none;
+    width: 30px;
+}
+
+.fab {
+    vertical-align: top;
+
+    color: white;
+    font-size: 20px;
+}
+
+/* footer 中間email區 */
+
+.email{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.email p{
+    margin: 0;
+}
+
+input {
+    background: #525050;
+    color: white;
+
+    box-sizing: border-box; /*避免超出box*/
+    width: 100%;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.email .button-box {
+    text-align: right;
+}
+
+.updateme{
+    background: #c3c3c3;
+
+    border: none;
+    padding: 5px;
+}
+
+/* footer contact區 */
+
+.contact {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+    width: 20%;
+}
+
+.contact p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* copyright */
+
+.copyright {
+    color: #c3c3c3;
+    text-align: center;
+
+    margin: 50px 0;
+}
+
+u {
+    color: black;
+}
+
+span {
+    color: #c3c3c3;
+}
