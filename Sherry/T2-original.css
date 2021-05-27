@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+p{
+    margin: 0;
+}
+
 /*header*/
 
 header {
@@ -20,6 +24,7 @@ header {
 .header-container {
     width: 900px;
     margin: 0 auto;
+    text-align-last: justify;
 
     font-size: 0;
     color: #c3c3c3;
@@ -29,29 +34,31 @@ h1 {
     display: inline-block;
     vertical-align: middle;
 
-    width: 170px;
     font-size: 16px;
+    font-weight: 700;
     letter-spacing: 4px;
+
+    margin: 0;
 }
 
 nav {
     display: inline-block;
     vertical-align: middle;
 
-    margin: 0 50px;
+    
     font-size: 0;
 }
 
 nav a {
     display: inline-block;
-    padding: 5px 0;
+    padding: 10px;
 
     text-decoration: none;
     color: #c3c3c3;
 }
 
 nav a+a {
-    margin-left: 85px;
+    margin-left: 70px;
 }
 
 nav a:hover {
@@ -70,15 +77,12 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* Main - figure */
+/* Main - section - banner */
 
-figure {
-    margin: 0;
-}
 
 .background {
     background-image: url("img/cover.jpg");
-    background-position: center;
+    background-position: top -25px center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -111,20 +115,28 @@ figure {
     font-family: serif;
     font-weight: bolder;
 
-    margin:10px 0;
+    margin-bottom:10px;
 }
 
 .shopnow{
+    display: block;
+
+    text-decoration: none;
     color: white;
     background: black;
     font-size:16px;
 
     width: 200px;
     padding: 10px 30px;
-    border:none;
+    margin:0 auto;
 }
 
-figure>p {
+.shopnow:hover{
+    color:black;
+    background-color: white;
+}
+
+.banner >p {
     text-align: center;
 
     background-color: #e4e4e4;
@@ -135,14 +147,15 @@ figure>p {
     margin: 0;
 }
 
-/* Main - section */
+/* Main - section - content */
 
-section {
+
+.content{
     text-align: center;
 
     font-size: 0;
     width: 900px;
-    padding: 20px 0;
+    padding: 0 0 20px;
     margin: 0 auto;
 }
 
@@ -152,46 +165,46 @@ section {
     font-weight: bolder;
     letter-spacing: 1ex;
 
-    padding: 20px 0;
+    padding-top: 20px;
 }
-
-section hr{
-    display: inline-block;
+ /*偽元素設定間隔線*/
+.title::after{
+    content:"";
+    display: block;
     background:black;
 
     width:25px;
     height:1px;
     border: none;
+    margin: 20px auto;
 }
-.content {
+.subtitle {
     font-size: 20px;
     letter-spacing: 5px;
 
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
-.images-container {
+.product_links{
     font-size: 0;
     padding: 30px 0;
 }
 
-.image-box {
+.product_links a{
     display: inline-block;
 
     width: 290px;
     height: 413px; 
 }
+.product_links a+a {
+    margin-left: calc((100% - 290px * 3 ) / 2);
+}
 
-.image-box img {
+.product_links img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /*待確認*/
-}
-
-.images-container div+div {
-    margin-left: 15px;
 }
 
 /* footer */
@@ -214,13 +227,13 @@ footer {
     margin-left: 15%;
 }
 
-.grey {
+.gray {
     color: #c3c3c3;
 }
 
 /* footer - 左邊社群連結區 */
 
-.links {
+.socialmedia {
     display: inline-block;
     text-align: center;
     vertical-align: top;
@@ -228,23 +241,23 @@ footer {
     width: 20%;
 }
 
-.links p {
-    margin: 0 0 10px;
+.socialmedia p {
+    margin-bottom:10px;
 }
 
-.links a {
+.socialmedia a {
     display: inline-block;
     text-align: center;
+    vertical-align: top;
 
     text-decoration: none;
+    
     width: 30px;
 }
 
-.fab {
-    vertical-align: top;
-
+.socialmedia i{
+    font-size: 24px;
     color: white;
-    font-size: 20px;
 }
 
 /* footer 中間email區 */
@@ -256,7 +269,7 @@ footer {
 }
 
 .email p{
-    margin: 0;
+    margin-bottom:10px;
 }
 
 input {
@@ -267,33 +280,47 @@ input {
     width: 100%;
     border: 1px solid white;
     padding: 5px;
-    margin: 5px 0;
+    margin-bottom:5px;
 }
 
-.email .button-box {
-    text-align: right;
+.email input::placeholder{
+    color:white;
 }
+.email input:focus{
+    outline:none;
 
-.updateme{
+}
+.updateme_button{
     background: #c3c3c3;
-
+    cursor: pointer;
     border: none;
     padding: 5px;
+    float:right;
+}
+.updateme_button:hover{
+    background-color:black;
+    color:white;
+    
 }
 
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 /* footer contact區 */
 
 .contact {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-
+    line-height: 1.5;
     width: 20%;
 }
 
-.contact p {
-    line-height: 1.5;
-    margin: 0;
+.contact a{
+    text-decoration: none;
+    color:white;
 }
 
 /* copyright */
@@ -302,13 +329,13 @@ input {
     color: #c3c3c3;
     text-align: center;
 
-    margin: 50px 0;
+    margin-top:50px;
 }
 
-u {
-    color: black;
-}
+.copyright a{
+    text-decoration:none;
+    text-decoration-line: underline;
+    text-decoration-color: black;
 
-span {
-    color: #c3c3c3;
+    color:#c3c3c3;
 }
