@@ -1,13 +1,13 @@
 * {
     outline: 1px solid red;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 body {
     min-width: fit-content;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 p{
