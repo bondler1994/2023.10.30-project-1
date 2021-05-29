@@ -55,12 +55,12 @@ nav a+a{
     margin-left: 70px;
 }
 
-.shop_car{
+.shopping_cart{
     display: inline-block;
     width: 30px;
     float: right;
 }
-.shop_car img{
+.shopping_cart img{
     width: 100%;
     vertical-align: middle;
 }
