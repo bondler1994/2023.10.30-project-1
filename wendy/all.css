@@ -9,6 +9,7 @@
 /* *{
     outline: 1px solid red;
 } */
+
 /*css reset */
 *{
     padding:0 ;
@@ -20,16 +21,16 @@ body{
     min-width: 960px;
 }
 .wrap_header{
-    width: 930px;
+    width: fit-content;
     margin: 0 auto;
     font-size: 0;
-    padding: 10px;
+
 }
 header{
     background-color: #585555;
     width: 100%;
     padding-top: 18px;
-    padding-bottom: 25px;
+    padding-bottom: 45px;
 }
 h1{
     display: inline-block;
@@ -37,19 +38,20 @@ h1{
     color:#DCDCDC;
     font-family: sans-serif;
     letter-spacing: 3px;
-    padding-right: 65px;
+    margin-right: 65px;
     vertical-align: middle;
 }
 nav{
     display: inline-block;
 }
 nav a{
-    display: inline-block;
-    text-decoration: none;
     font-size: 16px;
     color: #DCDCDC;
     font-family: monospace;
     vertical-align: middle;
+}
+nav a:hover{
+    color:#fff;
 }
 nav a+a{
     margin-left: 70px;
@@ -59,6 +61,7 @@ nav a+a{
     display: inline-block;
     width: 30px;
     float: right;
+    margin-left: 50px;
 }
 .shopping_cart img{
     width: 100%;
@@ -66,20 +69,25 @@ nav a+a{
 }
 /* section1:banner */
 .banner{
-    padding-top: 260px;
-    padding-bottom: 175px;
+    padding-top: 288px;
+    padding-bottom: 170px;
     background: url(img/cover.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 .banner_inner{
     width: 550px;
     height: 150px;
-    text-align: center;
+    /* text-align: center; */
     padding-top: 26px;
     margin: 0 auto;
     background-color: rgba(250,250,250,0.6);
+}
+.banner_inner > div{
+    width: fit-content;
+    margin: 0 auto;
 }
 .banner_inner span{
     font-size:55px ;
@@ -87,14 +95,21 @@ nav a+a{
     word-spacing: 10px;
 }
 .button{
-    margin-top: 30px;
+    margin-top: 20px;
 }
-.button a{
+
+.button button{
     background-color: black;
-    padding: 8px 60px;
-    border: none;
-    color:#fff;
+    width: 215px;
+    height: 38px;
+    color:white;
     font-size: 20px;
+    border-style: none;
+    }
+
+.button button:active { 
+    background-color: gainsboro;
+    color:black;
 }
 /* section2 */
 .bar{
@@ -102,33 +117,38 @@ nav a+a{
     font-family:sans-serif;
     font-size: 8px;
     letter-spacing: 5px;
-    padding: 16px 0px;
+    line-height: 45px;
+    background-color: #DCDCDC;
 }
-/* section3 */
-.product h2,hr,h3{
-    text-align: center;
+.product{
+    padding: 20px 0px;
 }
 .product h2{
-    padding-top: 65px;
-    padding-bottom: 30px;
+    text-align: center;
     font-size: 40px;
     letter-spacing: 10px;
+    /* background-color: coral; */
+    margin: 20px 0;
 }
 .product hr{
     margin: 0 auto;
     width: 50px;
-    color:#00008B;
+    border-color:#00008B ;
+
 }
 .product h3{
-    padding-top: 30px;
-    padding-bottom: 70px;
+    text-align: center;
+    margin: 30px 0;
     font-size: 20px;
     font-family: sans-serif;
     letter-spacing: 6px;
+    /* background-color: cornflowerblue; */
 }
 .wrap_product{
+    /* background-color: darkgoldenrod; */
+    width: fit-content;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
 }
 .wrap_img{
     display: inline-block;
@@ -139,7 +159,6 @@ nav a+a{
 .wrap_img img{
    height: 100%;
    width: 100%;
-   object-fit: contain;
 }
 main{
     padding-bottom: 80px;
@@ -151,7 +170,7 @@ footer{
     font-family: sans-serif;
 }
 .wrap_footer{
-    width: 870px;
+    width: fit-content;
     margin: 0 auto;
     font-size: 0px;
 }
@@ -160,6 +179,7 @@ footer{
 }
 .footer_social p{
     color:#DCDCDC;
+    margin-bottom: 10px;
 }
 .footer_social{
     font-size: 0;
@@ -167,10 +187,12 @@ footer{
 .footer_social a{
     display: inline-block;
     color: #fff;
-  
+}
+.footer_social a:hover{
+    color:#6495ED;
 }
 .footer_social a+a{
-    padding-left: 10px;
+    margin-left: 10px;
 }
 .footer_social i{
     font-size: 24px;
@@ -183,38 +205,51 @@ footer{
 .footer_email{
     color:#DCDCDC;
 }
-
+.footer_email p{
+    padding-bottom: 10px;
+}
 .footer_email input{
     width: 300px;
     height: 30px;
     background-color: black;
     border-color: #DCDCDC;
-    margin-bottom:5px;
+    /* margin-bottom:5px; */
 }
-.footer_email button{
-    font-size: 14px;
-    background-color: grey;
-    padding: 10px;
-    /* border: 0px; */
+
+.email input{
+    color:#DCDCDC;
 }
 .footer_contact p{
     text-align: center;
     color:#fff;
+    margin-bottom: 10px;
 }
+.footer_contact p:first-child{
+    color:#DCDCDC;
+}
+
 .wrap_footer div+div{
-    padding-left: 135px;
+    margin-left: 135px;
 }
-.input button{
+button{
+    font-size: 14px;
+    background-color:#DCDCDC;
     display: block;
     margin-left: auto;
-}
+    width: 87px;
+    height: 30px;
+    margin-top:10px ;
+} 
 
 .copyright{
     padding: 55px 0px;
     color:#fff;
     text-align: center;
 }
-.footer_contact :nth-child(1){
-    color:#DCDCDC;
-}
 
+
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+  }
