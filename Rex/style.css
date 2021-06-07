@@ -16,6 +16,10 @@
   opacity: .5;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   min-width: 1040px;
 }
@@ -28,6 +32,7 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
+  min-width: 1040px;
 }
 
 .header-container {
@@ -98,7 +103,7 @@ main {
   color: #303132;
 }
 
-.section-activies {
+.section-activities {
   background: url(./img/cover.jpg) no-repeat center/cover;
   height: 666px;
   position: relative;
@@ -195,6 +200,11 @@ figcaption {
   color: #d3d3d3;
 }
 
+figcaption a {
+  color: #d3d3d3;
+  display: block;
+}
+
 .product-section {
   display: inline-block;
   position: relative;
@@ -227,15 +237,16 @@ footer {
   font-family: 'Raleway';
   color: #d3d3d3;
   text-align: center;
+  padding-top: 70px;
 }
 
-footer p {
+.footer-icon {
+  display: inline-block;
   font-family: 'Raleway';
   display: inline-block;
   text-transform: uppercase;
-  width: 330px;
+  width: 200px;
   vertical-align: top;
-  margin-top: 30px;
   line-height: 25px;
   font-size: 14px;
   letter-spacing: 1px;
@@ -259,17 +270,16 @@ footer a + a {
   margin-top: 30px;
 }
 
-.subscription button {
-  text-align: right;
-  text-transform: capitalize;
-  padding: 5px;
-  background-color: #d3d3d3;
-  color: #535151;
+.subscription p {
+  font-family: 'Raleway';
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 0px;
+  line-height: 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-input {
-  width: 328px;
-}
 footer a {
   text-transform: initial;
   color: #fafafa;
@@ -277,4 +287,59 @@ footer a {
 
 footer a:hover {
   color: white;
+}
+
+form {
+  display: inline-block;
+  width: 330px;
+  margin: 0px 130px;
+  text-align: left;
+}
+
+input {
+  width: 326px;
+  height: 33px;
+}
+
+form.form-example {
+  display: table-row;
+}
+
+div.form-example {
+  display: table;
+}
+
+label {
+  font-family: 'Raleway';
+  line-height: 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.subscribe-button {
+  text-align: right;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  color: #303132;
+  font-family: 'Raleway';
+}
+
+.footer-contact {
+  display: inline-block;
+  width: 330px;
+  font-family: 'Raleway';
+  display: inline-block;
+  text-transform: uppercase;
+  width: 200px;
+  vertical-align: top;
+  line-height: 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.footer-copy {
+  margin-top: 50px;
 }
