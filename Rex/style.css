@@ -46,7 +46,7 @@ h1 {
   line-height: 40px;
 }
 
-h1 a{
+h1 a {
   display: inline-block;
   color: #d3d3d3;
   letter-spacing: 6px;
@@ -97,7 +97,7 @@ main {
   margin-top: 90px;
 }
 
-.container p{
+.container p {
   font-family: 'Raleway';
   text-align: center;
   color: #303132;
