@@ -1,0 +1,300 @@
+:root {
+  --header-color: rgb(83, 81, 81);
+  --header-text-color: rgb(211, 211, 211);
+  --header-text-hover-color: rgb(248, 248, 248);
+  --main-theme-color: rgb(48, 49, 50);
+  --buy-season-color: rgba(255, 255, 255, 0.4);
+  --buy-season-a-color: rgb(243, 243, 243);
+  --section-break-color: rgb(227, 227, 227);
+  --footer-color: rgb(83, 81, 81);
+  --footer-text-color: rgb(211, 211, 211);
+}
+
+*:not(html) {
+  outline: 1px dotted greenyellow;
+}
+
+body {
+  min-width: 1024px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* reset */
+
+header {
+  background-color: var(--header-color);
+}
+
+header a {
+  color: var(--header-text-color);
+}
+
+.header-content {
+  width: 1000px;
+  padding: 30px 12px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.header-content > * {
+  vertical-align: middle;
+}
+
+.logo {
+  display: inline-block;
+  letter-spacing: 8px;
+}
+
+.logo a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+nav {
+  display: inline-block;
+  font-size: 0;
+  margin: 0 70px;
+}
+
+nav a {
+  display: inline-block;
+  font-size: initial;
+  padding: 10px;
+}
+
+nav a + a {
+  margin-left: 50px;
+}
+
+nav a:hover {
+  color: var(--header-text-hover-color);
+}
+
+.cart {
+  display: inline-block;
+}
+
+.cart a {
+  display: inline-block;
+  padding: 5px;
+}
+/* header */
+
+.hero {
+  height: 700px;
+  position: relative;
+  background-image: url(./img/cover.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.buy-season {
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  padding: 40px;
+  text-align: center;
+  background-color: var(--buy-season-color);
+}
+
+.buy-season p {
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+.buy-season a {
+  display: inline-block;
+  padding: 10px 80px;
+  margin-top: 10px;
+  background-color: var(--main-theme-color);
+  color: var(--buy-season-a-color);
+}
+
+/* hero */
+
+.section-break {
+  background-color: var(--section-break-color);
+}
+
+.section-break p {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 8px;
+  font-weight: 300;
+  letter-spacing: 6px;
+}
+
+/* break */
+
+.demo {
+  padding: 60px 0;
+}
+
+.demo-content {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.demo-content .category {
+  width: fit-content;
+  position: relative;
+  padding: 20px 0;
+  margin: 0 auto;
+  letter-spacing: 16px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+}
+
+.demo-content .category::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: var(--main-theme-color);
+}
+
+.demo-content .sub-category {
+  width: fit-content;
+  padding: 20px 0;
+  margin: 0 auto;
+  letter-spacing: 8px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.demo-content .products {
+  width: fit-content;
+  padding: 20px 0;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.products .product {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+}
+
+.products .product + .product {
+  margin-left: 20px;
+}
+
+.product > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+}
+
+/* demo */
+
+footer {
+  background-color: var(--footer-color);
+  padding: 60px 0;
+}
+
+.footer-content {
+  width: fit-content;
+  margin: 0 auto;
+  color: var(--footer-text-color);
+  font-size: 0;
+}
+
+.footer-content p,
+.footer-content a {
+  font-size: initial;
+}
+
+.footer-content > div {
+  display: inline-block;
+  width: fit-content;
+  vertical-align: top;
+}
+
+.footer-content > div + div {
+  margin-left: 120px;
+}
+
+.social-links p {
+  letter-spacing: 2px;
+}
+
+.social-links .social-icons {
+  width: fit-content;
+  margin: 10px auto 0 auto;
+  font-size: 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: var(--footer-text-color);
+  font-size: 0;
+}
+
+.social-icons a + a {
+  margin-left: 20px;
+}
+
+.social-icons i {
+  font-size: 25px;
+}
+
+.subscribe input {
+  width: 300px;
+  /* input is not centered! */
+}
+
+.subscribe button {
+  display: block;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contacts-info {
+  font-weight: 700;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+/* footer */
