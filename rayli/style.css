@@ -28,15 +28,15 @@ h1 {
   margin: 0;
 }
 
-h2 {
-  margin: 0;
-}
-
-h3 {
-  margin: 0;
-}
-
+h2,
+h3,
+h4,
 p {
+  margin: 0;
+}
+
+input {
+  padding: 0;
   margin: 0;
 }
 
@@ -77,7 +77,6 @@ header a {
 
 nav {
   display: inline-block;
-  font-size: 0;
   margin: 0 70px;
 }
 
@@ -85,6 +84,7 @@ nav a {
   display: inline-block;
   font-size: initial;
   padding: 10px;
+  text-transform: capitalize;
 }
 
 nav a + a {
@@ -101,7 +101,6 @@ nav a:hover {
 
 .cart a {
   display: inline-block;
-  padding: 5px;
 }
 /* header */
 
@@ -124,10 +123,11 @@ nav a:hover {
   background-color: var(--buy-season-color);
 }
 
-.buy-season p {
+.buy-season h2 {
   font-size: 60px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .buy-season a {
@@ -150,28 +150,25 @@ nav a:hover {
   font-size: 8px;
   font-weight: 300;
   letter-spacing: 6px;
+  text-transform: uppercase;
 }
 
 /* break */
 
-.demo {
-  padding: 60px 0;
-}
-
 .demo-content {
   width: 1024px;
+  padding: 60px 0;
   margin: 0 auto;
 }
 
 .demo-content .category {
-  width: fit-content;
   position: relative;
   padding: 20px 0;
-  margin: 0 auto;
   letter-spacing: 16px;
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .demo-content .category::after {
@@ -186,30 +183,27 @@ nav a:hover {
 }
 
 .demo-content .sub-category {
-  width: fit-content;
   padding: 20px 0;
-  margin: 0 auto;
   letter-spacing: 8px;
-  text-align: center;
   font-weight: 300;
   font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .demo-content .products {
-  width: fit-content;
-  padding: 20px 0;
-  margin: 0 auto;
   font-size: 0;
+  padding: 0 12px;
 }
 
 .products .product {
   display: inline-block;
   width: 300px;
-  height: 400px;
+  height: 420px;
 }
 
 .products .product + .product {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .product > a {
@@ -221,51 +215,52 @@ nav a:hover {
 .product img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 /* demo */
 
 footer {
   background-color: var(--footer-color);
-  padding: 60px 0;
 }
 
 .footer-content {
-  width: fit-content;
+  width: 900px;
+  padding: 60px 0;
   margin: 0 auto;
   color: var(--footer-text-color);
   font-size: 0;
 }
 
-.footer-content p,
-.footer-content a {
+.footer-content p {
   font-size: initial;
 }
 
 .footer-content > div {
   display: inline-block;
-  width: fit-content;
   vertical-align: top;
 }
 
-.footer-content > div + div {
-  margin-left: 120px;
+.footer-content > div > p:first-child {
+  text-transform: uppercase;
+}
+
+.social-links {
+  width: 160px;
 }
 
 .social-links p {
-  letter-spacing: 2px;
+  text-align: center;
 }
 
 .social-links .social-icons {
-  width: fit-content;
-  margin: 10px auto 0 auto;
-  font-size: 0;
+  width: 160px;
+  margin: 5px auto 0 auto;
 }
 
 .social-icons a {
   display: inline-block;
   color: var(--footer-text-color);
-  font-size: 0;
 }
 
 .social-icons a + a {
@@ -273,20 +268,50 @@ footer {
 }
 
 .social-icons i {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.subscribe input {
+.subscribe {
   width: 300px;
-  /* input is not centered! */
+  margin: 0 140px;
 }
 
-.subscribe button {
+.subscribe form {
+  display: flow-root;
+}
+
+.subscribe input[type="email"] {
   display: block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 22px;
+  margin-top: 5px;
+  background-color: var(--footer-color);
+  border: 1px solid var(--footer-text-color);
+  font-size: 16px;
+  color: var(--footer-text-color);
+}
+
+.subscribe input[type="submit"] {
+  float: right;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--footer-text-color);
+  font-size: 16px;
+  color: var(--footer-color);
+  cursor: pointer;
 }
 
 .contacts {
+  width: 160px;
   text-align: center;
+}
+
+.contacts a {
+  display: block;
+  font-size: initial;
+  color: inherit;
 }
 
 .contacts-info {
