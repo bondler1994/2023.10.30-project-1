@@ -1,0 +1,150 @@
+* {
+  outline: 1px solid #fa0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.layout_wrapper {
+  width: 850px;
+  margin: 0 auto;
+}
+/* --header-- */
+header {
+  padding: 20px 0;
+  background-color: #535151;
+}
+header > .layout_wrapper {
+  font-size: 0;
+}
+.logo, .menu_navigation, .cart_btn {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.logo a {
+  color: #fff;
+  font-size: 24px;
+}
+.menu_list {
+  margin-left: 70px;
+  font-size: 12px;
+  color: #fff;
+}
+.cart_btn {
+  width: 30px;
+  margin-left: 70px;
+  vertical-align: middle;
+}
+.cart_btn img {
+  width: 100%;
+}
+
+/* --main-- */
+/* banner */
+.cover_area {
+  position: relative;
+  height: 400px;
+  background: url(../img/cover.jpg) center / cover no-repeat;
+}
+.seasonal_info {
+  width: 400px;
+  padding: 20px 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(255,255,255,0.6);
+}
+.seasonal_info h2 {
+  font-size: 40px;
+}
+.seasonal_info a {
+  display: inline-block;
+  padding: 5px 50px;
+  color: #fff;
+  background-color: #303132;
+}
+.ship_info {
+  background-color: #e3e3e3;
+  text-align: center;
+  padding: 5px 0;
+}
+/* product */
+.product {
+  text-align: center;
+}
+.product h2 {
+  font-size: 30px;
+}
+.product h2::after {
+  content: '';
+  width: 25px;
+  height: 1px;
+  display: block;
+  background-color: #000;
+  margin: 0 auto;
+}
+.product p {
+  font-size: 24px;
+}
+.product_container {
+  display: flow-root;
+}
+.item {
+  float: left;
+  width: 32%;
+}
+.item + .item {
+  margin-left: 2%;
+}
+
+.item img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.item a {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+}
+.item_2 {
+  position: relative;
+}
+.item_2 span {
+  position: absolute;
+  font-size: 28px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* --footer-- */
+footer {
+  background-color: #535151;
+  padding: 50px 0;
+}
+.clear_fix {
+  display: flow-root;
+}
+.social_media, .rapid_register, .contact_info {
+  float: left;
+  width: 32%;
+}
+.rapid_register, .contact_info {
+  margin-left: 2%;
+}
+input {
+  display: block;
+}
+input[type=email] {
+  width: 100%;
+  color: #fff;
+  background-color: #535151;
+}
+input[type=submit] {
+  margin-left: auto;
+}
+.copyright {
+  text-align: center;
+}
