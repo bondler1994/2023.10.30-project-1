@@ -1,0 +1,254 @@
+* {
+  /* outline: solid red 1px; */
+  font-weight: 400;
+  font-family: sans-serif;
+}
+body {
+  min-width: fit-content;
+  margin: 0;
+}
+
+/* header */
+header {
+  background-color: #535151;
+}
+.header_contener {
+  font-size: 0;
+  width: 900px;
+  margin: 0 auto;
+  padding: 15px 0px;
+  text-align-last: justify;
+}
+header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 4px;
+  font-size: 23px;
+}
+header nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+header nav a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+header a {
+  text-decoration: none;
+  color: #d8d8d8;
+  padding: 5px;
+  display: inline-block;
+}
+
+header a + a {
+  margin-left: 50px;
+}
+header a:hover {
+  color: #fff;
+}
+.bluebag {
+  display: inline-block;
+  width: 4%;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.bluebag img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* main */
+.section_container {
+  position: relative;
+  background-image: url(./img/cover.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+main h2 {
+  margin: 0;
+  font-size: 50px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+main p {
+  margin: 0;
+  background-color: #e3e2e2;
+  text-align: center;
+  padding: 10px 0;
+}
+.section_content {
+  margin: 0 auto;
+  width: 430px;
+  position: absolute;
+  padding: 30px;
+  top: 40%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+main button {
+  margin-top: 15px;
+  padding: 5px 60px;
+  color: #fff;
+  background-color: #303132;
+  font-family: "Raleway";
+  cursor: pointer;
+}
+.introduce_img {
+  width: 750px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  font-size: 0;
+}
+figure {
+  font-size: 0;
+  margin: 0;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+figure a {
+  display: inline-block;
+}
+figure + figure {
+  margin-left: 20px;
+}
+figcaption {
+  font-size: 16px;
+  background-color: #303132;
+  color: #d3d3d3;
+  line-height: 30px;
+}
+
+figcaption a {
+  text-decoration: none;
+  color: #d3d3d3;
+  display: block;
+}
+figcaption a:hover {
+  color: aqua;
+}
+figure img {
+  width: 100%;
+}
+main h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 10px;
+  padding: 30px 0;
+}
+main h3::after {
+  content: "";
+  background-color: black;
+  display: block;
+  width: 50px;
+  height: 1px;
+  margin: 30px auto 0;
+}
+main h4 {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #545050;
+}
+.footer_contener {
+  width: 740px;
+  margin: 0 auto;
+  padding: 30px 0px 50px 0px;
+}
+footer .info {
+  display: inline-block;
+  font-size: 0;
+}
+footer .society_media {
+  display: inline-block;
+  color: #fff;
+  text-align-last: justify;
+  vertical-align: top;
+}
+footer .society_media p {
+  margin: 0;
+  font-size: 16px;
+}
+footer .search {
+  display: inline-block;
+  margin: 0 87px;
+  text-align: right;
+}
+footer .search p {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: left;
+}
+footer .search input {
+  color: #fff;
+  margin-top: 0;
+  font-size: 16px;
+  width: 97%;
+}
+footer .personal_information {
+  display: inline-block;
+  vertical-align: top;
+}
+footer .society_media i {
+  font-size: 20px;
+  color: white;
+}
+footer .society_media i:hover {
+  color: aqua;
+}
+footer .society_media a {
+  display: inline-block;
+}
+footer button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+footer .personal_information p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
+footer .personal_information a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+footer .personal_information a:hover {
+  color: aqua;
+}
+.footer_content {
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer_content a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+.footer_content a:hover {
+  color: aqua;
+}
+.footer_content p {
+  margin: 0;
+  display: inline-block;
+}
+.text_area {
+  background-color: inherit;
+  border: solid 1px #d2d2d2;
+}
