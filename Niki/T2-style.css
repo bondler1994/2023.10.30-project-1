@@ -17,7 +17,7 @@
 
 body {
     margin: 0;
-    min-width: 1400px;
+    min-width: 1440px;
 }
 
 header , footer {
@@ -150,7 +150,8 @@ h1 a{
 }
 
 .banner__items {
-    margin: 90px auto 0;
+    margin: 0 auto;
+    padding: 90px 0 0;
     width: fit-content;
     font-size: 0;
 }
@@ -183,7 +184,9 @@ footer {
     font-size: 0;
 }
 
-.footer__container div , .footer__getmail{
+.footer__medialink ,
+.footer__getmail ,
+.footer__assistance{
     width: 440px;
     display: inline-block;
     vertical-align: top;
@@ -206,7 +209,6 @@ footer {
 .footer__medialink a i {
     font-size: 28px;
     color: #f9f9f9cb;
-    vertical-align: bottom;
 }
 
 .footer__medialink a + a {
@@ -215,6 +217,14 @@ footer {
 
 .footer__getmail {
     font-size: 20px;
+}
+
+.footer__getmail > span {
+    font-size: 20px;
+}
+
+.footer__input--position-change {
+    position: relative;
 }
 
 .footer__input {
@@ -227,13 +237,39 @@ footer {
     color: #f9f9f9cb;
 }
 
-.footer__input::placeholder {
-    color: #f9f9f9cb;
+.footer__input--position-change > label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: .2s ease all;
+    font-size: 16px;
 }
 
-.footer__input:focus {
-    border: 2px solid #f9f9f9cb;
+.footer__input--position-change:focus-within > label ,
+.footer__input:not(:placeholder-shown) + label {
+    padding: 0 5px;
+    background-color: #535151;
+    top:-2px;
+    left:6px;
+    font-size:10px;
+}
+
+.footer__input ~ i {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 12px;
     color: #f9f9f9cb;
+    font-size: 0px;
+}
+
+.footer__input:not(:placeholder-shown) ~ i {
+    font-size: 16px;
+} 
+
+.footer__input:not(:placeholder-shown) {
+    padding-left: 30px ;
 }
 
 .footer__submit {
@@ -274,8 +310,3 @@ footer {
     text-decoration: underline 2px #353535;
     letter-spacing: .2em;
 }
-
-:focus {
-    border: 0;
-}
-
