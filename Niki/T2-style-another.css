@@ -79,14 +79,17 @@ h1 a{
 }
 
 .entrance__background {
-    padding: 400px 0 300px; 
+    height: 950px;
     background-image: url("img/cover.jpg");
     background-position:center;
     background-size: cover;
 }
 
 .entrance__focus {
-    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform:translate( -50% , 0 );
     padding: 48px 0 0;
     width: 800px;
     background-color: rgba(255,255,255,.5);
@@ -136,11 +139,23 @@ h1 a{
 
 }
 
-.banner__title hr {
-    margin: 40px auto;
-    width: 50px;
-    border: .5px solid #303132;
+.banner__title span {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
 }
+
+.banner__title span:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , 0 );
+    background: #303132;
+}    
 
 .banner__title h3 {
     margin: 0;
