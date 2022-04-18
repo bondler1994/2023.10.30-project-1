@@ -1,0 +1,56 @@
+header {
+    background-color: rgb(83, 81, 81);
+    color: #808080;
+}
+
+.header-wrapper {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align-last: justify;
+}
+
+.header-wrapper h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+h1 a {
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 5px;
+    letter-spacing: 7px;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 650px;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+}
+
+.shopping-bag {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.shopping-bag > img {
+    width: 100%;
+}
+
+.header-wrapper a {
+    color: rgb(202, 203, 204);
+    text-decoration: none;
+}
+
+.header-wrapper a:hover {
+    color: white;
+}

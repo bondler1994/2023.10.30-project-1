@@ -1,0 +1,12 @@
+* {
+    outline: 1px solid red;
+}
+html {
+    /* height: 100%; */
+}
+
+
+body {
+    min-width: 1440px;
+    margin: 0;
+}
