@@ -1,6 +1,7 @@
 header {
     background-color: rgb(83, 81, 81);
     color: #808080;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .header-wrapper {
@@ -17,8 +18,8 @@ header {
 }
 
 h1 a {
+    display: inline-block;
     font-size: 24px;
-    font-family: 'Work Sans', sans-serif;
     padding: 5px;
     letter-spacing: 7px;
 }
@@ -32,7 +33,6 @@ nav {
 nav a {
     display: inline-block;
     font-size: 18px;
-    font-family: 'Work Sans', sans-serif;
     padding: 10px;
 }
 
@@ -47,7 +47,7 @@ nav a {
 }
 
 .header-wrapper a {
-    color: rgb(202, 203, 204);
+    color: rgb(202, 202, 202);
     text-decoration: none;
 }
 
