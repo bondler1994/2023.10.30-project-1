@@ -1,6 +1,5 @@
 header {
     background-color: rgb(83, 81, 81);
-    color: #808080;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -11,46 +10,47 @@ header {
     text-align-last: justify;
 }
 
-.header-wrapper h1 {
+h1 , nav , .shopping-bag {
     display: inline-block;
     vertical-align: middle;
+}
+
+h1 , nav {
     font-size: 0;
 }
 
-h1 a {
+h1 a , nav a {
     display: inline-block;
-    font-size: 24px;
-    padding: 5px;
-    letter-spacing: 7px;
-}
-
-nav {
-    display: inline-block;
-    vertical-align: middle;
-    width: 650px;
-}
-
-nav a {
-    display: inline-block;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.shopping-bag {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50px;
-}
-
-.shopping-bag > img {
-    width: 100%;
-}
-
-.header-wrapper a {
     color: rgb(202, 202, 202);
     text-decoration: none;
 }
 
-.header-wrapper a:hover {
+h1 a {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    padding: 5px;
+}
+
+nav a {
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+nav a + a {
+    margin-left: 40px;
+}
+
+h1 a:hover , nav a:hover {
     color: white;
+}
+
+.shopping-bag {
+    width: 45px;
+}
+
+.shopping-bag > img {
+    width: 100%;
+    vertical-align: bottom;
 }

@@ -1,151 +1,149 @@
 .banner-wrapper {
-    background-color: rgb(230, 230, 230);
-    text-align-last: center;
+    background-image: url("../img/cover.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
     position: relative;
 }
 
-.banner-image {
-    width: 1440px;
-}
-
-.banner-image > img {
-    width: 100%;
-    height:100%;
-    vertical-align: bottom;
-}
-
 .banner-container {
-    width: 620px;
-    height: 180px;
+    padding: 30px 60px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     background-color: rgb(255, 255, 255 ,0.40);
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .banner-container p {
     font-size: 60px;
-    font-family:'Times New Roman', Times, serif ;
-    font-weight: bold;
-    margin: 20px 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif ;
+    margin: 0 0 20px;
 }
 
-.banner-container-bottom {
+.banner-container-button {
     display: inline-block;
-    width: 240px;
     font-size: 22px;
-    line-height: 2.2;
+    text-transform: capitalize;
+    padding: 10px 60px;
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     background-color: rgb(50, 50, 50);
-    text-decoration: none;
     color: rgb(230, 230, 230);
 }
 
 .banner-container-bottom:hover {
     background-color: rgb(120, 160, 171);
-    color:black;
+    color: black;
 }
 
-.banner-wrapper > p {
-    display: inline-block;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 3px;
-    color: rgb(100, 100, 100);
-}
-
-article {
+.banner > p {
     text-align: center;
-    padding-bottom: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(227, 227, 227);
+    color: rgb(100, 100, 100);
+    padding: 20px 0;
+    margin: 0;
 }
 
-article > p:nth-of-type(1) {
+.product {
+    width: 1080px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.product > p:nth-of-type(1) {
     font-size: 46px;
-    font-family:'Times New Roman', Times, serif ;
-    font-weight:600;
+    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 10px;;
-    margin-bottom: 35px;
+    font-family: 'Times New Roman', Times, serif ;
+    margin: 0 0 50px;
 }
 
 .horizontal-line {
     width: 35px;
     height: 1.5px;
     background-color: rgb(155, 155, 155);
-    margin: 0 auto;
+    margin: 0 auto  50px;
 }
 
-article > p:nth-of-type(2) {
-    font-family: 'Nunito', sans-serif;
+.product > p:nth-of-type(2) {
     font-size: 24px;
+    text-transform: capitalize;
     letter-spacing: 7px;
-    margin: 35px 0 70px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 0 50px;
 }
 
-.card-container {
-    text-align:center;
+.product-container {
     width: 1080px;
     margin: 0 auto;
     font-size: 0;
+    text-transform: uppercase;
 }
 
-.card-item-position {
-    margin:0 20px;
-}
-  
-.card-container > div {
+.product-item {
     display: inline-block;
     width: 330px;
-    height: 400px;
-    vertical-align:bottom;
+    height: 450px;
+    vertical-align: bottom;
 }
 
-.card-image {
-    height: calc( 400px - 50px );
+.title > div {
+    height: calc( 450px - 60px );
 }
   
-img {
+.product-item img {
     width: 100%;
     height: 100%;
     vertical-align: bottom;
+    object-fit: cover;
 }
   
-.card-item a {
+.title a {
     display: inline-block;
     width: 100%;
     font-size: 20px;
+    line-height: 60px;
     text-decoration: none;
+    text-align: center;
     font-family: 'Work Sans', sans-serif;
     background-color: rgb(50, 50, 50);
     color: white;
-    line-height: 50px;
-    text-align: center;
     margin: 0;
 }
-.card-item a:hover {
+
+.title a:hover {
     background-color: rgb(120, 160, 171);
-    color:black;
+    color: black;
 }
 
-
-.card-item-position {
-    position:relative;
+.title-position {
+    margin: 0 20px;
+    position: relative;
 }
 
-.card-item-position a {
+.title-position a {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 60px;
-    text-decoration: none;
-    font-family:'Times New Roman', Times, serif ;
     letter-spacing: 20px;
     padding-left: 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif ;
     color: black;
-    position: absolute;
-    top: 100px;
-    left:50%;
-    transform: translate(-50%, -50%);
 }
 
-.card-item-position a:hover {
+.title-position a:hover {
     color: rgb(120, 160, 171);
 }
