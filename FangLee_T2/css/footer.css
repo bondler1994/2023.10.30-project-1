@@ -13,7 +13,7 @@ footer {
 .footer-row {
     margin-bottom: 70px;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .social-media , 
@@ -28,13 +28,11 @@ footer {
 }
 
 .email-subscribe {
-    width: 450px;
+    width: 350px;
 }
 
 .social-media{
     float: left;
-    padding-bottom: 100%;
-    margin-bottom: -100%;
 }
 
 .social-media-wrapper , 
@@ -43,56 +41,53 @@ footer {
     display: inline-block;
 }
 
-.social-media-wrapper p {
+footer h4 {
     font-size: 18px;
     text-transform: uppercase;
     margin: 0 0 10px;
 }
 
-.social-media-list a {
+.social-media-item a {
     display: inline-block;
     font-size: 0;    
 }
 
-.social-media-list a + a {
+.social-media-item a + a {
     margin-left: 5px;
 }
 
-.social-media-list a i {
-    font-size: 22px;
+.social-media-item a i {
+    font-size: 26px;
     color: rgb(202, 202, 202);
 }
 
-.social-media-list a i:hover {
+.social-media-item a i:hover {
     color: white;
 }
 
 .email-subscribe-wrapper {
     text-align: initial;
+    width: 100%;
 }
 
-.email-subscribe-wrapper p {
-    margin: 0 0 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
 
-.email-subscribe-wrapper input {
-    width: 300px;
+.email-subscribe-form input {
+    width: 100%;
+    box-sizing: border-box;
     line-height: 1.5;
     padding: 5px;
     border: 2px solid rgb(202, 202, 202);
     background-color: rgb(83, 81, 81);
 }
 
-.email-subscribe-wrapper input::placeholder {
+.email-subscribe-form input::placeholder {
     font-size: 14px;
     text-transform: capitalize;
     font-family: 'Raleway', sans-serif;
     color: rgb(202, 202, 202);
 }
 
-.email-subscribe-wrapper button {
+.email-subscribe-form button {
     float: right;
     font-size: 16px;
     text-transform: capitalize;
@@ -111,12 +106,9 @@ footer {
 
 .get-help {
     float:right;
-    padding-bottom: 100%;
-    margin-bottom: -100%;
 }
 
-.get-help-wrapper a , 
-.get-help-wrapper p {
+.get-help-wrapper a {
     font-size: 18px;
     font-style: normal;
     text-decoration: none;
@@ -129,10 +121,6 @@ footer {
 
 .get-help-wrapper a:hover {
     color: white;
-}
-
-.get-help-wrapper p {
-    text-transform: uppercase;
 }
 
 .footer-copyright {
@@ -149,6 +137,6 @@ footer {
     color: rgb(202, 202, 202);
 }
 
-.text-uppercase {
+.footer-copyright span {
     text-transform: uppercase;
 }

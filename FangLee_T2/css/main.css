@@ -16,10 +16,9 @@
     background-color: rgb(255, 255, 255 ,0.40);
 }
 
-.banner-container p {
+.banner-container h2 {
     font-size: 60px;
     text-transform: uppercase;
-    font-weight: 600;
     font-family: 'Times New Roman', Times, serif ;
     margin: 0 0 20px;
 }
@@ -40,7 +39,7 @@
     color: black;
 }
 
-.banner > p {
+.banner h3 {
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
@@ -52,17 +51,16 @@
     margin: 0;
 }
 
-.product {
+.product-wrapper {
     width: 1080px;
     text-align: center;
     padding: 50px 0;
     margin: 0 auto;
 }
 
-.product > p:nth-of-type(1) {
+.product-wrapper h2 {
     font-size: 46px;
     text-transform: uppercase;
-    font-weight: 600;
     letter-spacing: 10px;;
     font-family: 'Times New Roman', Times, serif ;
     margin: 0 0 50px;
@@ -75,7 +73,7 @@
     margin: 0 auto  50px;
 }
 
-.product > p:nth-of-type(2) {
+.product-wrapper h3 {
     font-size: 24px;
     text-transform: capitalize;
     letter-spacing: 7px;
@@ -84,23 +82,28 @@
 }
 
 .product-container {
-    width: 1080px;
-    margin: 0 auto;
-    font-size: 0;
-    text-transform: uppercase;
+    text-align-last: justify;
 }
 
 .product-item {
     display: inline-block;
-    width: 330px;
-    height: 450px;
-    vertical-align: bottom;
+    width: 345px;
+    height: 470px;
+    text-transform: uppercase;
+    vertical-align: top;
+    text-align-last: initial;
 }
 
-.title > div {
-    height: calc( 450px - 60px );
+.image-box {
+    height: calc( 470px - 60px );
 }
-  
+
+.image-box-full {
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+
 .product-item img {
     width: 100%;
     height: 100%;
@@ -108,30 +111,27 @@
     object-fit: cover;
 }
   
-.title a {
+.title {
     display: inline-block;
     width: 100%;
     font-size: 20px;
     line-height: 60px;
     text-decoration: none;
-    text-align: center;
     font-family: 'Work Sans', sans-serif;
     background-color: rgb(50, 50, 50);
     color: white;
-    margin: 0;
 }
 
-.title a:hover {
+.title:hover {
     background-color: rgb(120, 160, 171);
     color: black;
 }
 
-.title-position {
-    margin: 0 20px;
+.product-container :nth-last-of-type(2) {
     position: relative;
 }
 
-.title-position a {
+.title-position {
     position: absolute;
     top: 70px;
     left: 50%;
@@ -144,6 +144,6 @@
     color: black;
 }
 
-.title-position a:hover {
+.title-position:hover {
     color: rgb(120, 160, 171);
 }
