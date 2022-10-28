@@ -2,15 +2,19 @@ footer {
   padding: 90px 0 65px 0;
   text-align: center;
   background-color: #535151;
-  border-top: 1px;
+  border-top: 2px solid #312d2d;
 }
 .footer_container > div,
 .footer_community li {
   display: inline-block;
   vertical-align: top;
 }
-.footer_container > div > * + * {
+.footer_container > div > * + *,
+.footer_fill form * + * {
   margin-top: 5px;
+}
+.footer_container h4 {
+  text-transform: uppercase;
 }
 .footer_container h4,
 .footer_copyright,
@@ -36,8 +40,12 @@ footer {
   padding: 5px 10px;
 }
 .footer_community a:hover,
-.footer_contact a:hover {
+.footer_contact a:hover,
+.footer_copyright a:hover {
   color: lightsalmon;
+}
+.footer_fill_mail:focus-visible {
+  outline: 1px solid lightsalmon;
 }
 
 .footer_fill_mail,

@@ -1,11 +1,14 @@
 header {
+  position: relative;
   background-color: #535151;
+  height: 15vh;
 }
 .header_container {
-  margin: 0 auto;
-  padding: 25px 0;
-  text-align: center;
+  position: absolute;
   width: 1140px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 0;
 }
 .logo_link,
@@ -31,6 +34,7 @@ header {
 }
 .header_menu_list a {
   font-size: 1.2rem;
+  text-transform: capitalize;
 }
 .header_menu_list li {
   margin-left: 25px;
