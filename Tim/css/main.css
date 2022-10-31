@@ -1,13 +1,10 @@
-section:nth-child(1) {
-  height: 85vh;
-}
 .banner_container {
   position: relative;
   background-image: url(../img/cover.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
-  height: 80vh;
+  height: 75vh;
   width: 100%;
 }
 
@@ -23,7 +20,7 @@ section:nth-child(1) {
 }
 .banner_title {
   position: absolute;
-  top: 0;
+  top: 15%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -57,7 +54,7 @@ section:nth-child(1) {
   background-color: #e3e3e3;
 }
 .event_container,
-.event_boxList,
+.event_box-list,
 .event_box {
   font-size: 0;
 }
@@ -81,23 +78,26 @@ section:nth-child(1) {
 .event_container p {
   letter-spacing: 0.5rem;
 }
-.event_boxList {
+.event_box-list {
   margin-top: 70px;
 }
 .event_box {
   display: inline-block;
   vertical-align: middle;
-}
-.event_box a {
-  display: block;
   width: 325px;
   height: 455px;
 }
+.event_box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .event_box img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.event_box:nth-child(2) {
+.event_box {
   position: relative;
 }
 .event_box a p:nth-child(1) {
@@ -111,6 +111,8 @@ section:nth-child(1) {
   color: #303132;
 }
 .event_box a p:nth-child(2) {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 60px;
   line-height: 60px;
