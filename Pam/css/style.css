@@ -1,0 +1,262 @@
+* {
+  outline: 1px red solid;
+  font-size: 0;
+}
+
+/*疊圖抓尺寸*/
+body > img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  color: #cbcaca;
+  text-decoration: none;
+}
+
+a:hover {
+  scale: 1.1;
+}
+
+p {
+  margin: 0;
+  font-family: "Catamaran", sans-serif;
+  color: #343435;
+  letter-spacing: 0.1em;
+}
+
+header {
+  padding: 40px 0px;
+  background: #535151;
+}
+
+.container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+h1 a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.3em;
+}
+
+nav {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+nav a {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.actived {
+  color: white;
+}
+
+nav a:last-child {
+  width: 32px;
+  height: 36px;
+  padding: 0;
+  vertical-align: bottom; /*hackmd note*/
+}
+
+nav img {
+  width: 100%;
+  height: 100%;
+}
+
+nav a + a {
+  margin-left: 60px;
+}
+
+.banner {
+  box-sizing: border-box;
+  height: 680px;
+  padding-top: 285px;
+  background-image: url("../img/cover.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.button {
+  width: 680px;
+  height: 170px;
+  margin: 0 auto;
+  padding-top: 30px;
+  background-color: #eee;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.button h2 {
+  margin: 0;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 55px;
+}
+
+.button a {
+  margin-top: 20px;
+  padding: 5px 65px;
+  color: #fafafb;
+  font-size: 24px;
+  background-color: #303132;
+  /* opacity看起來不是1？*/
+}
+
+.product {
+  padding-bottom: 80px;
+}
+
+.shipping {
+  padding: 10px 0;
+  background-color: #e3e3e3;
+}
+
+.product_text {
+  margin: 0;
+  text-align: center;
+}
+
+.shipping h5 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  color: #777777;
+  letter-spacing: 0.3em;
+}
+
+.product h3 {
+  padding: 85px 0 30px;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.4em; /* 0.4em= font-size*0.4*/
+}
+
+.product hr {
+  width: 30px;
+  border: none;
+  border-top: 1px solid #69696a;
+}
+
+.product h4 {
+  padding: 25px 0 70px;
+  font-family: "Catamaran", sans-serif;
+  color: #202123;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+}
+
+.product_img {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.box {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product_img .box {
+  width: 320px;
+  height: 475px;
+}
+
+.product_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.product_img .box + .box {
+  margin-left: 25px;
+}
+
+.product_img a:hover {
+  scale: 1.05;
+}
+
+footer {
+  padding: 80px 0;
+  background: #535151;
+  /* text-align: center; */
+}
+
+footer .box {
+  width: 400px;
+}
+
+footer p {
+  width: fit-content;
+  font-size: 16px;
+  color: #cbcaca;
+}
+
+footer a {
+  padding: 5px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.icons i {
+  font-size: 22px;
+}
+
+.icons {
+  text-align-last: justify;
+}
+
+footer form {
+  text-align: right;
+}
+
+footer form input {
+  display: inline-block;
+  font-size: 16px;
+}
+
+footer .mail {
+  padding: 5px 175px 5px 5px;
+  border: 1px #cbcaca solid;
+  color: #cbcaca;
+  background: transparent;
+}
+
+footer .submit {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+footer .box:last-child a {
+  font-size: 16px;
+  text-align: center;
+}
+
+::placeholder {
+  color: #cbcaca;
+}
+
+.center {
+  text-align: center;
+}
+
+footer > p {
+  margin: 70px auto 0;
+}
