@@ -1,0 +1,111 @@
+/* 上面的 */
+
+.section_link_wrap{
+    background-image: url(/Ray_/img/cover.jpg);
+    background-position: top;
+    padding: 390px 0 264px 0;
+    text-align: center;
+}
+
+.section_link_wrap>div{
+    width: 828px;
+    background-color:rgba(255,255,255,0.8);
+    padding: 56px 0 43px 0; 
+    margin: 0 auto;
+}
+
+.section_link_wrap h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    letter-spacing:7px;
+    margin: 0;
+    margin-bottom: 42px;
+}
+
+.section_link a{
+    display: block;
+    background-color: #303132;
+    width: 320px;
+    padding: 8px 0;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.section_slogan{
+    background-color: #E3E3E3;
+    padding:8px 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/* 下面的 */
+
+.section_sell_items_wrap{
+    padding: 70px 0 118px 0;
+    text-align: center;
+}
+
+.section_sell_text p:nth-child(1){
+    font-family: 'DM Serif Display', serif;
+    font-size: 44px;
+    letter-spacing:10px;
+    font-weight: 600;
+}
+
+.section_sell_text div{
+    width: 46px;
+    height: 1px;
+    background-color: #6B6B6C;
+    margin: 0 auto;
+}
+
+.section_sell_text p:nth-child(3){
+    font-family: 'Raleway', sans-serif; 
+    font-size:20px;
+    margin: 44px 0 110px 0;
+    letter-spacing:10px;
+}
+
+.section_sell_picture_wrap{
+    width:1400px;
+    margin:0 auto;
+    text-align-last: justify;
+}
+
+.section_sell_picture,
+.section_sell_picture_bag{
+    display: inline-block;
+    width: 452px;
+    vertical-align: top;
+}
+
+.section_sell_picture_bag{
+    position: relative;
+}
+
+.section_sell_picture img,
+.section_sell_picture_bag img{
+    display:block;
+    width: 100%;
+}
+
+.section_sell_picture p{
+    background-color: #303132;
+    color: #F7F7F7;
+    text-align-last: center;
+    margin:0;
+    padding:18px 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 26px;
+}
+
+.section_sell_picture_bag p{
+    position: absolute;
+    top: 37px;
+    left: 91px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing:25px;
+}
