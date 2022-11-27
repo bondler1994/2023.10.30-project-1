@@ -7,14 +7,17 @@ font-family: 'Raleway', sans-serif; */
     outline: 1px solid red;
 } */
 
-body{
-    min-width: 1440px;
+body,h1,h2,p{
     margin: 0;
+}
+
+{
+    min-width: 1440px;
 }
 
 a{
     text-decoration: none;
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
 header{

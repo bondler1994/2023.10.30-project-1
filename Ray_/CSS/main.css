@@ -1,8 +1,9 @@
 /* 上面的 */
 
 .section_link_wrap{
-    background-image: url(/Ray_/img/cover.jpg);
+    background-image: url(../img/cover.jpg);
     background-position: top;
+    background-size: cover;
     padding: 390px 0 264px 0;
     text-align: center;
 }
@@ -26,23 +27,29 @@
     display: block;
     background-color: #303132;
     width: 320px;
-    padding: 8px 0;
+    padding: 16px 0;
     font-family: 'Raleway', sans-serif; 
     font-size: 24px;
     margin: 0 auto;
+    color: #FAFAFA;
 }
 
-.section_slogan{
+.section_link a:hover{
+    color: #D4D4D4;
+}
+
+section>.section_slogan{
     background-color: #E3E3E3;
-    padding:8px 0;
+    padding:24px 0;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    letter-spacing: 7px;
 }
 
 /* 下面的 */
 
 .section_sell_items_wrap{
-    padding: 70px 0 118px 0;
+    padding: 115px 0;
     text-align: center;
 }
 
@@ -57,7 +64,7 @@
     width: 46px;
     height: 1px;
     background-color: #6B6B6C;
-    margin: 0 auto;
+    margin: 55px auto;
 }
 
 .section_sell_text p:nth-child(3){
@@ -102,7 +109,7 @@
 
 .section_sell_picture_bag p{
     position: absolute;
-    top: 37px;
+    top: 117px;
     left: 91px;
     font-family: 'DM Serif Display', serif;
     font-size: 80px;

@@ -23,16 +23,22 @@ footer{
     margin-bottom: 76px;
 }
 
+.footer_link>p,
+.footer_send_email>p{
+    margin-bottom: 16px;
+}
+
 .footer_link a{
     font-size: 25px;
 }
 
 .footer_link i{
+    color: #FAFAFA;
     vertical-align: top;
 }
 
 .footer_link a:not(:last-child){
-    margin-right: 28px;
+    margin-right: 22px;
 }
 
 
@@ -55,14 +61,20 @@ footer{
     font-size:16px;
     margin-left: 340px;
     background-color: #BBBABA;
+    border: none;
+    cursor: pointer;
+}
+
+.footer_send_email input:nth-child(2):active{
+    border: 1px solid #535151;
 }
 
 .footer_contact{
     text-align: center;
 }
 
-.footer_contact>p{
-    margin-bottom: 10px;
+.footer_contact p{
+    margin-bottom: 8px;
 }
 
 .footer_contact div p{
@@ -76,4 +88,5 @@ footer>div>p{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: #BBBABA;
+    letter-spacing: 3px;
 }
