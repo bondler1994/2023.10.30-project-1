@@ -11,13 +11,12 @@ body,h1,h2,p{
     margin: 0;
 }
 
-{
+body{
     min-width: 1440px;
 }
 
 a{
     text-decoration: none;
-    /* color: #ffffff; */
 }
 
 header{
@@ -37,7 +36,6 @@ nav{
 
 h1{
     display: inline-block;
-    margin:0;
     text-align-last: right;
     letter-spacing:7px;
 }

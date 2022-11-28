@@ -19,7 +19,6 @@
     font-family: 'DM Serif Display', serif;
     font-size: 56px;
     letter-spacing:7px;
-    margin: 0;
     margin-bottom: 42px;
 }
 
@@ -68,9 +67,9 @@ section>.section_slogan{
 }
 
 .section_sell_text p:nth-child(3){
+    margin: 44px 0 110px 0;
     font-family: 'Raleway', sans-serif; 
     font-size:20px;
-    margin: 44px 0 110px 0;
     letter-spacing:10px;
 }
 
@@ -80,24 +79,22 @@ section>.section_slogan{
     text-align-last: justify;
 }
 
-.section_sell_picture,
-.section_sell_picture_bag{
+.section_sell_picture_wrap div{
     display: inline-block;
     width: 452px;
     vertical-align: top;
 }
 
-.section_sell_picture_bag{
+.section_sell_picture_wrap div:nth-child(2){
     position: relative;
 }
 
-.section_sell_picture img,
-.section_sell_picture_bag img{
+.section_sell_picture_wrap img{
     display:block;
     width: 100%;
 }
 
-.section_sell_picture p{
+.section_sell_picture_wrap div:nth-child(odd) p{
     background-color: #303132;
     color: #F7F7F7;
     text-align-last: center;
@@ -107,7 +104,7 @@ section>.section_slogan{
     font-size: 26px;
 }
 
-.section_sell_picture_bag p{
+.section_sell_picture_wrap div:nth-child(2) p{
     position: absolute;
     top: 117px;
     left: 91px;
