@@ -1,6 +1,10 @@
+html {
+  overflow-x: hidden;
+}
+
 * {
   outline: 1px red solid;
-  font-size: 0;
+  /* font-size: 0; */
 }
 
 /*疊圖抓尺寸*/
@@ -18,7 +22,7 @@ body {
 }
 
 a {
-  display: inline-block;
+  display: inline-block; /*作為圖的container & 文字連結加padding增加點擊面積*/
   color: #cbcaca;
   text-decoration: none;
 }
@@ -27,56 +31,51 @@ a:hover {
   scale: 1.1;
 }
 
-p {
-  margin: 0;
-  font-family: "Catamaran", sans-serif;
-  color: #343435;
-  letter-spacing: 0.1em;
-}
-
 header {
   padding: 40px 0px;
   background: #535151;
 }
 
-.container {
+.centered_container {
   width: fit-content;
   margin: 0 auto;
+  /* font-size: 0;  */
 }
 
-h1 {
+header > .centered_container {
+  font-size: 0;
+}
+
+.logo {
   display: inline-block;
   margin: 0;
-}
-
-h1 a {
+  font-size: 24px; /*font相關設定設在h1, 讓<a>繼承*/
   font-family: "Work Sans", sans-serif;
-  font-size: 24px;
   letter-spacing: 0.3em;
 }
 
-nav {
+.navbar {
   display: inline-block;
   margin-left: 70px;
+  font-size: 18px;
 }
 
-nav a {
+.navbar a {
   padding: 5px;
-  font-size: 18px;
 }
 
 .actived {
   color: white;
 }
 
-nav a:last-child {
+.navbar a:last-child {
   width: 32px;
   height: 36px;
   padding: 0;
   vertical-align: bottom; /*hackmd note*/
 }
 
-nav img {
+.navbar img {
   width: 100%;
   height: 100%;
 }
@@ -94,43 +93,34 @@ nav a + a {
   background-size: cover;
 }
 
-.button {
-  width: 680px;
-  height: 170px;
+.banner_text {
+  width: 690px;
   margin: 0 auto;
-  padding-top: 30px;
-  background-color: #eee;
+  padding: 35px 0;
+  background-color: rgb(255, 255, 255, 0.6);
+  /* background-color: #eeeeee;
+  opacity: 0.7; */
+  /* 連按鈕也半透了 */
   text-align: center;
-  opacity: 0.7;
 }
 
-.button h2 {
+.banner_text h2 {
   margin: 0;
   font-family: "Libre Baskerville", sans-serif;
   font-size: 55px;
 }
 
-.button a {
+.button {
   margin-top: 20px;
   padding: 5px 65px;
   color: #fafafb;
   font-size: 24px;
   background-color: #303132;
-  /* opacity看起來不是1？*/
-}
-
-.product {
-  padding-bottom: 80px;
 }
 
 .shipping {
   padding: 10px 0;
   background-color: #e3e3e3;
-}
-
-.product_text {
-  margin: 0;
-  text-align: center;
 }
 
 .shipping h5 {
@@ -140,8 +130,16 @@ nav a + a {
   letter-spacing: 0.3em;
 }
 
+.product {
+  padding: 85px 0 100px;
+}
+
+.product_text {
+  margin: 0;
+  text-align: center;
+}
+
 .product h3 {
-  padding: 85px 0 30px;
   font-family: "Libre Baskerville", sans-serif;
   font-size: 36px;
   letter-spacing: 0.4em; /* 0.4em= font-size*0.4*/
@@ -149,12 +147,13 @@ nav a + a {
 
 .product hr {
   width: 30px;
+  margin-top: 35px; /*hr top/bottom margin=8, 此處不消掉margin-bottom以margin-collapse吃掉重疊部分小的margin */
   border: none;
   border-top: 1px solid #69696a;
 }
 
 .product h4 {
-  padding: 25px 0 70px;
+  margin-top: 25px;
   font-family: "Catamaran", sans-serif;
   color: #202123;
   font-size: 22px;
@@ -163,16 +162,11 @@ nav a + a {
 }
 
 .product_img {
-  width: fit-content;
-  margin: 0 auto;
+  margin-top: 70px;
+  font-size: 0;
 }
 
-.box {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.product_img .box {
+.product_img a {
   width: 320px;
   height: 475px;
 }
@@ -182,28 +176,35 @@ nav a + a {
   height: 100%;
 }
 
-.product_img .box + .box {
+.product_img a + a {
   margin-left: 25px;
 }
 
 .product_img a:hover {
-  scale: 1.05;
+  scale: 1.01;
 }
 
 footer {
   padding: 80px 0;
   background: #535151;
-  /* text-align: center; */
 }
 
-footer .box {
+footer > .centered_container {
+  font-size: 0;
+}
+
+.box {
+  display: inline-block;
   width: 400px;
+  vertical-align: top;
 }
 
 footer p {
-  width: fit-content;
-  font-size: 16px;
+  margin: 0;
   color: #cbcaca;
+  font-size: 16px;
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 0.1em;
 }
 
 footer a {
@@ -227,12 +228,12 @@ footer form {
 }
 
 footer form input {
-  display: inline-block;
   font-size: 16px;
 }
 
 footer .mail {
-  padding: 5px 175px 5px 5px;
+  width: 330px;
+  padding: 5px 5px;
   border: 1px #cbcaca solid;
   color: #cbcaca;
   background: transparent;
@@ -241,10 +242,13 @@ footer .mail {
 footer .submit {
   margin-top: 10px;
   padding: 5px 10px;
+  color: #585859;
+  background: #d3d3d4;
   cursor: pointer;
 }
 
 footer .box:last-child a {
+  padding: 0;
   font-size: 16px;
   text-align: center;
 }
@@ -253,10 +257,11 @@ footer .box:last-child a {
   color: #cbcaca;
 }
 
-.center {
-  text-align: center;
+footer > p {
+  width: fit-content;
+  margin: 70px auto 0;
 }
 
-footer > p {
-  margin: 70px auto 0;
+.block {
+  display: block;
 }
