@@ -1,92 +1,98 @@
-footer{
-    background-color: #535151;
-    padding:88px 0 72px 0;
+footer {
+  background-color: #535151;
+  padding: 88px 313px 72px;
 }
 
-.footer_wrap{
-    width: 1275px;
-    margin: 0 auto;
-    text-align-last: justify;
+.company_information div {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Kanit", sans-serif;
+  font-size: 0px;
+  letter-spacing: 1px;
+  color: #bbbaba;
 }
 
-.footer_wrap div{
-    display: inline-block;
-    vertical-align: top;
-    font-family: 'Kanit', sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-align-last:initial;
-    color: #BBBABA;
+.company_information {
+  margin-bottom: 76px;
 }
 
-.footer_wrap{
-    margin-bottom: 76px;
+.information_title {
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 
-.footer_link>p,
-.footer_send_email>p{
-    margin-bottom: 16px;
+.social_media_link {
+  width: 204px;
+  margin-right: 220px;
+  text-align: center;
 }
 
-.footer_link a{
-    font-size: 25px;
+.social_media_link a {
+  display: inline-block;
+  vertical-align: top;
 }
 
-.footer_link i{
-    color: #FAFAFA;
-    vertical-align: top;
+.social_media_link i {
+  vertical-align: top;
+  color: #fafafa;
+  font-size: 28px;
 }
 
-.footer_link a:not(:last-child){
-    margin-right: 22px;
+.social_media_link a:not(:last-child) {
+  margin-right: 14px;
 }
 
-
-.footer_send_email input:nth-child(1){
-    display: block;
-    width: 432px;
-    height: 34px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #FAFAFA;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    color: #FAFAFA;
-    margin-bottom: 8px;
+.send_email {
+  width: 445px;
+  margin-right: 200px;
 }
 
-.footer_send_email input:nth-child(2){
-    width: 100px;
-    height: 32px;
-    text-align:center;
-    font-size:16px;
-    margin-left: 340px;
-    background-color: #BBBABA;
-    border: none;
-    cursor: pointer;
+.input_email {
+  display: block;
+  width: 440px;
+  height: 34px;
+  margin-bottom: 8px;
+  border: 1px solid #fafafa;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #fafafa;
 }
 
-.footer_send_email input:nth-child(2):active{
-    border: 1px solid #535151;
+.input_email::placeholder {
+  color: #fafafa;
 }
 
-.footer_contact{
-    text-align: center;
+.input_button {
+  display: block;
+  width: 100px;
+  height: 32px;
+  margin-left: 345px;
+  border: none;
+  background-color: #bbbaba;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.footer_contact p{
-    margin-bottom: 8px;
+.send_email input:nth-child(3):active {
+  border: 1px solid #535151;
 }
 
-.footer_contact div p{
-    margin: 5px;
-    color: #FAFAFA;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+.company_contact {
+  width: 217px;
+  text-align: center;
 }
 
-footer>div>p{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: #BBBABA;
-    letter-spacing: 3px;
+.company_contact div a {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fafafa;
+}
+
+.copyright {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 3px;
+  color: #bbbaba;
 }

@@ -3,20 +3,20 @@ font-family: 'DM Serif Display', serif;
 font-family: 'Kanit', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
-/* *{
+*{
     outline: 1px solid red;
-} */
+}
 
-body,h1,h2,p{
+body,h1,h2,h3,p{
     margin: 0;
 }
 
-nav,h1>a,.nav_link a{
-    color:#D4D4D4;
+body{
+    min-width: 1920px;
 }
 
-body{
-    min-width: 1440px;
+nav,.logo_home_link,.nav_link a{
+    color:#D4D4D4;
 }
 
 a{
@@ -24,50 +24,44 @@ a{
 }
 
 header{
+    padding: 30px 260px 55px;
     background-color: #535151;
-    padding-top: 30px;
-    padding-bottom: 55px;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
 }
 
-nav{
-    width: 1400px;
-    margin: 0 auto;
-    text-align-last: justify;
-}
-
 h1{
     display: inline-block;
+    margin-right: 140px;
+    vertical-align: middle;
     text-align-last: right;
-    letter-spacing:7px;
-}
-
-h1>a{
+    letter-spacing:10px;
     font-size:30px;
 }
 
 .nav_link{
     display: inline-block;
+    margin-right: 153px;
     font-size:20px;
+    vertical-align: middle;
 }
 
-
-.nav_link>a:not(:first-child){
+.nav_link>a:not(:first-child) {
     margin-left: 100px;
 }
 
-.nav_link a:hover{
+.nav_link a:hover {
     color:#FFFFFF;
 }
 
-nav>a {
+.shopping_cart_link {
     display: inline-block;
     width: 40px;
     margin-right:15px;
     vertical-align: bottom;
 }
 
-nav img{
+.shopping_cart_link img {
+    display: block;
     width: 100%;
 }
