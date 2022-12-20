@@ -1,0 +1,39 @@
+/* article */
+
+.product_title {
+  margin: 85px auto 75px;
+  text-align: center;
+}
+
+.product_title h3 {
+  font-family: "DM Serif Display", cursive;
+  color: #303132;
+  font-size: 45px;
+  letter-spacing: 15px;
+}
+
+.product_title hr {
+  width: 35px;
+  color: #6b6b6c;
+  margin: 35px auto 35px;
+}
+
+.product_title span {
+  display: block;
+  color: #242527;
+  font-size: 23px;
+  letter-spacing: 5px;
+}
+
+/* product_card */
+
+.product_card_container {
+  width: 1056px;
+  margin: 0 auto 85px;
+  column-count: 3;
+}
+
+.product_card img {
+  display: block;
+  width: 100%;
+}
