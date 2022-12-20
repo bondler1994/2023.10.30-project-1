@@ -6,7 +6,8 @@
 }
 
 body {
-    min-width: 1520px;
+    min-width: 1512px;
+    margin: 0;
 }
 
 a {
@@ -14,26 +15,44 @@ a {
 }
 
 
+nav ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     margin: 0;
-    padding: 0 200px;
-    color:#535151;
-    background::#535151 ;
+    /* padding: 0 200px; */
+    background-color: #535151;
 }
 
 .header__container {
     margin: 0 auto;
     width: 1100px;
+    text-align-last: justify;
 }
 
 .header__navbar {
     text-align-last:justify;
 }
 
+.header__navbar h1 {
+    display: inline-block;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.header__navbar nav {
+    display: inline-block;
+    width: 814px;
+    vertical-align: middle;
+}
 
 .header__navbar a {
     display: block;
     width: 100%;
+    color:#D2D2D2;
 }
 
 .header__navbar ul {
@@ -49,16 +68,25 @@ a {
     color:#D2D2D2;
 }
 
+
 .header__navbar li {
     display: inline-block;
+    font-size: 18px;
 }
 
-.header__navbar li a {
+.header__navbar  a {
+    display: block;
     color: #D2D2D2;
+    /* width: 100%; */
+    /* font-size: 18px; */
 }
 
 .visual__container {
-    
+    background-image: url('/img/cover.jpg');
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+    position: relative;
 }
 
 .visual__buttonblock {
@@ -67,6 +95,9 @@ a {
     padding:32px 0;
     background-color: #E6E1D9;
     opacity: 70%;
+    position: absolute;
+    top:310px;
+    left:432px;
 }
 
 .visual__buttonblock-text {
@@ -96,14 +127,20 @@ a {
     height: 45px;
 }
 
-.shipping__text {
+.shipping__container {
     background-color: #E3E3E3;
-    color:#303132;
-    margin:0;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+.shipping__container span {
+    display: inline-block;
     text-align: center;
     width:100%;
-    height: 55px;
     font-family:'Montserrat', sans-serif;
+    color:#535151;
+    letter-spacing: 4px;
+    font-weight:bolder;
 }
 
 .products__container {
@@ -114,37 +151,54 @@ a {
 .products__slogan {
     margin:0 auto;
     width: 430px;
+    margin-bottom: 66px;
 }
 
 .products__slogan p {
     width: 100%;
     text-align: center;
+    margin:10px 0;
 }
 
-.products__slogan:nth-child(1) {
+.products__slogan p:nth-child(1) {
     font-family: 'DM Serif Display', serif;
+    font-size: 45px;
+    letter-spacing: 16px;
+}
+
+.products__slogan p:nth-child(2) {
     font-size: 20px;
 }
 
-.products__slogan:nth-child(1) {
-    font-size: 20px;
-}
-
-.products__slogan:nth-child(3) {
+.products__slogan p:nth-child(3) {
     font-size: 15px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 300;
+    color:#535151
+
 }
 
 .products__images {
-    margin-top: 66px;
-    margin:0 auto;
+    margin: 0 auto;
     width: 1114px;
     text-align-last: justify;
+}
+
+.products__images div{
+    display: inline-block;
+     width: 354px;
 }
 
 .products__images img {
     width: 354px;
     height: auto;
 }
+
+.products__images img :nth-child(2) {
+    height: 492px;
+}
+
 
 footer {
     background-color:  #535151 ;
@@ -157,21 +211,29 @@ footer {
 }
 
 .footer__container p {
+    margin: 0;
     font-family:'Montserrat', sans-serif ;
 }
 
 .footer__snslinks {
-    width:78px;
+    width:173px;
     display: inline-block;
+    text-align-last: auto;
 }
 
 .footer__snslinks p {
     text-align: center;
-    font-size: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer__snslinks ul {
+    margin: 1 0 0px;
 }
 
 .footer__snslinks li {
     font-size: ;
+    display: inline-block;
 }
 
 .footer__subscription {
@@ -181,23 +243,30 @@ footer {
 
 
 .footer__subscription p {
+    margin: 2px;
     text-align: left;
-    font-size:10px;
+    font-size:15px;
+    color:#FFFFFF
 }
 
-
+.footer__subscription {
+    font-family:'Montserrat', sans-serif ;
+    text-align-last:auto ;
+}
 
 .footer__subscription input[type=text]{
+    width: 360px;
     color: #E3E3E3;
 }
 
 
 .footer__subscription input[type=submit]{
-    text-align: right;
     cursor:pointer;
     background:#ccc; 
     width: 103px;
     padding:5px;
+    border: none 0;
+    color:#404142 ;
 }
 
 
@@ -209,26 +278,23 @@ footer {
 }
 
 .footer__contact p {
+    margin:0;
     color:#FFFFFF;
     text-align: center;
 }
 
+.footer__contact p a {
+    color:#FFFFFF;
+}
 .footer__copyright {
-    padding:20px 0;
+    margin: 0 auto;
+    padding:10px 0;
     width: 1022px;
     color:#FFFFFF;
     text-align-last:auto;
 }
 
 .footer__copyright p {
+    /* margin:0 auto; */
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
