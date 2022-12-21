@@ -114,7 +114,32 @@ nav ul {
     text-align: center;
     letter-spacing: 10px;
 }
+/* new */
+.visual__buttonblock-button-test {
+    margin:0 auto;
+    width:254px;
+}
 
+.visual__buttonblock-button-test a {
+    display: block;
+    width: 100%;
+    background: #303132;
+    text-align: center;
+    padding:10px 0;
+}
+
+.visual__buttonblock-button-test a:hover {
+    background: #494a4b;
+}
+
+.visual__buttonblock-button-test p {
+    margin:0;
+    color:#FFFFFF;
+    font-size:20px;
+}
+
+
+/* old */
 .visual__buttonblock-button {
     margin:20px auto 0;
     padding: 16px 0; 
@@ -124,34 +149,23 @@ nav ul {
     background-color: #303132;
 }
 
-.visual__buttonblock-button p {
-    margin:0 auto;
+.visual__buttonblock-button a {
+    display: inline-block;
+    width: 100%;
     text-align: center;
     color:#FFFFFF;
     font-size: 20px;
 }
 
+.visual__buttonblock-button:hover {
+    background-color: #FFFFFF;
+    
+}
 
-/* .visual__buttonblock-button {
-    margin-top: 10px;
-    padding:10px;
-    background-color:#303132 ;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    width: 240px;
-    height: 45px;
-} */
+.visual__buttonblock-button p:hover {
+    color:#303132;
+}
 
-/* .visual__buttonblock-buttton {
-    display: block;
-    margin-top: 10px;
-    padding:10px;
-    background-color:#303132 ;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    width: 240px;
-    height: 45px;
-} */
 
 .shipping__container {
     background-color: #E3E3E3;
@@ -314,6 +328,9 @@ footer {
     font-size: 15px;
 }
 
+.footer__subscription input[type=submit]:hover{
+    background: rgb(167, 167, 167);
+}
 
 .footer__contact {
     display: inline-block;
@@ -341,7 +358,7 @@ footer {
 }
 
 .footer__copyright p {
-    /* margin:0 auto; */
+    margin:30px auto;
     text-align: center;
 }
 
