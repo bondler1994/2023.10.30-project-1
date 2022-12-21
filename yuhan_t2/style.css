@@ -22,7 +22,6 @@ nav ul {
 
 .header {
     margin: 0;
-    /* padding: 0 200px; */
     background-color: #535151;
 }
 
@@ -77,8 +76,6 @@ nav ul {
 .header__navbar  a {
     display: block;
     color: #D2D2D2;
-    /* width: 100%; */
-    /* font-size: 18px; */
 }
 
 .header__navbar img {
@@ -115,12 +112,12 @@ nav ul {
     letter-spacing: 10px;
 }
 /* new */
-.visual__buttonblock-button-test {
+.visual__buttonblock-button {
     margin:0 auto;
     width:254px;
 }
 
-.visual__buttonblock-button-test a {
+.visual__buttonblock-button a {
     display: block;
     width: 100%;
     background: #303132;
@@ -128,42 +125,14 @@ nav ul {
     padding:10px 0;
 }
 
-.visual__buttonblock-button-test a:hover {
+.visual__buttonblock-button a:hover {
     background: #494a4b;
 }
 
-.visual__buttonblock-button-test p {
+.visual__buttonblock-button p {
     margin:0;
     color:#FFFFFF;
     font-size:20px;
-}
-
-
-/* old */
-.visual__buttonblock-button {
-    margin:20px auto 0;
-    padding: 16px 0; 
-    display: block;
-    width: 254px;
-    /* height: 48px; */
-    background-color: #303132;
-}
-
-.visual__buttonblock-button a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    color:#FFFFFF;
-    font-size: 20px;
-}
-
-.visual__buttonblock-button:hover {
-    background-color: #FFFFFF;
-    
-}
-
-.visual__buttonblock-button p:hover {
-    color:#303132;
 }
 
 
@@ -220,24 +189,37 @@ nav ul {
     
 }
 
+
 .products__images {
     margin: 0 auto;
     width: 1114px;
     text-align-last: justify;
 }
 
+.products__images a {
+    width: 100%;
+}
+
 .products__images div{
     display: inline-block;
     width: 354px;
-}
-
-.products__images img {
-    width: 354px;
-    height: auto;
-}
-
-.products__images img :nth-child(2) {
     height: 492px;
+}
+
+.left {
+    background-image: url(/img/left.png);
+    background-size: cover;
+}
+
+.middle {
+    background-image: url(/img/middle.png);
+    background-size: cover;
+
+}
+
+.right {
+    background-image: url(/img/right.png);
+    background-size: cover;
 }
 
 
@@ -363,38 +345,4 @@ footer {
 .footer__copyright p {
     margin:30px auto;
     text-align: center;
-}
-
-
-/* test */
-.products__images {
-    margin: 0 auto;
-    width: 1114px;
-    text-align-last: justify;
-}
-
-.products__images a {
-    width: 100%;
-}
-
-.products__images div{
-    display: inline-block;
-    width: 354px;
-    height: 492px;
-}
-
-.left {
-    background-image: url(/img/left.png);
-    background-size: cover;
-}
-
-.middle {
-    background-image: url(/img/middle.png);
-    background-size: cover;
-
-}
-
-.right {
-    background-image: url(/img/right.png);
-    background-size: cover;
 }
