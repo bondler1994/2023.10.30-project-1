@@ -271,12 +271,15 @@ footer {
 }
 
 .footer__snslinks ul {
+    padding:0;
+    width: 173px;
     margin: 10px;
+    text-align-last:justify ;
 }
 
 .footer__snslinks li {
-    font-size: ;
     display: inline-block;
+    color:#fff;
 }
 
 .footer__subscription {
