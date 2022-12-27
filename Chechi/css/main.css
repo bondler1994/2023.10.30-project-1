@@ -8,14 +8,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
   }
   
   .banner_area {
     width: 620px;
-    height: 200px;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: #ffffff80;
     margin: 0 auto;
     padding: 40px;
     position: relative;
@@ -23,13 +21,16 @@
     text-align: center;
   }
   
+  .banner_area h2{
+    margin-bottom: 30px;
+  }
+
   .ShopNow_button {
     display: inline-block;
     text-decoration: none;
     background-color: #303132;
     color: #ffffff;
     transition: background-color 0.4s ease-out;
-    margin-top: 30px;
     padding: 10px 80px;
     font-size: 20px;
   }
@@ -71,15 +72,18 @@
     font-size: 45px;
     letter-spacing: 15px;
   }
-  
-  .product_title hr {
+
+  .product_title h3::after{
+    display: block;
+    content: "";
     width: 35px;
-    color: #6b6b6c;
-    margin: 35px auto 35px;
+    height: 1px;
+    background-color: #6b6b6c;
+    margin: 35px auto 35px; /* 用偽元素來做出橫線 */
   }
+
   
   .product_title span {
-    display: block;
     color: #242527;
     font-size: 23px;
     letter-spacing: 5px;

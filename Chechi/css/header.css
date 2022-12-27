@@ -4,14 +4,18 @@ header {
   background-color: #535151;
 }
 
-nav {
+.navigation {
   width: 1025px;
   margin: 0 auto;
   padding: 30px 0px;
   text-align-last: justify;
 }
 
-nav h1 {
+.navigation a{
+  display: inline-block;
+}
+
+.navigation h1 {
   display: inline-block;
   color: #d6d6d6;
   font-family: 'Lexend', sans-serif;
@@ -20,7 +24,7 @@ nav h1 {
   letter-spacing: 5px;
 }
 
-nav h1:hover{
+.navigation h1:hover{
     color: #f6f6f6;
 }
 
@@ -31,8 +35,12 @@ nav h1:hover{
 
 .menu a{
     display: inline-block;
+    margin-right: 60px;
 }
 
+.menu a:last-child{
+  margin-right: 90px;
+}
 .menu ul {
   display: inline-block;
   font-size: 0; /* 把ul的空隙消掉 */
@@ -43,7 +51,6 @@ nav h1:hover{
   display: inline-block;
   color: #c7c7c7;
   font-size: 18px;
-  margin-right: 65px;
   padding: 10px;
 }
 
@@ -55,10 +62,6 @@ nav h1:hover{
   display: inline-block;
   width: 40px;
   vertical-align: middle;
-}
-
-.shopping_cart a {
-  margin-left: 25px;
 }
 
 .shopping_cart img {
