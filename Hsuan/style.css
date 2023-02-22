@@ -5,9 +5,9 @@
     --main-text-color: #d3d3d3;
     --hover-color: #f9f9f9;
 }
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 body {
     margin: 0;
     min-width: 1425px;
@@ -90,9 +90,9 @@ button img {
 .banner_content {
     position: absolute;
     padding: 25px 50px;
-    top: 43%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -25%);
     text-align: center;
     background-color: rgba(255,255,255,0.4);
 }
@@ -116,11 +116,12 @@ button img {
     color: var(--main-text-color);
 }
 .section_footer {
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     background-color: rgba(211,211,211,0.6);
 }
-.section_footer span {
+.section_footer p {
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -144,7 +145,6 @@ section:nth-child(2) p {
     font-size: 25px;
     text-transform: capitalize;
     letter-spacing: 5px;
-    color: #303132;
 }
 .commodity {
     margin: 0 auto;
@@ -211,7 +211,7 @@ footer {
     color: var(--main-text-color);
 }
 form {
-    display: flow-root;
+    display: inline-block;
 }
 form input[type=email] {
     display: inline-block;
@@ -228,9 +228,8 @@ form input::placeholder {
     font-family: 'Raleway', sans-serif;
     color: var(--hover-color);
 }
-form input[type=submit] {
+form button {
     padding: 10px;
-    border: none;  
     float: right;  
     font-size: 18px;
     text-transform: capitalize;
@@ -238,7 +237,7 @@ form input[type=submit] {
     color: #696a6b;
     cursor: pointer;
 }
-form input[type=submit]:hover {
+form button:hover {
     color: #484848;
 }
 .contact_information {
@@ -252,7 +251,8 @@ form input[type=submit]:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.contact_information p:not(:first-child) {
+.contact_information p a {
+    text-decoration: none;
     color: var(--hover-color);
 }
 .contact_information p:not(:last-child) {
