@@ -1,0 +1,126 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 auto;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 1390px;
+  margin: 0 auto;
+
+}
+
+/* header */
+header {
+
+  background-color: #535151;
+}
+
+
+.header-wrapper {
+  padding: 0 135px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.logo {
+  display: inline-block;
+  font-family: 'Geologica', sans-serif;
+  vertical-align: baseline;
+  font-size: 16px;
+  letter-spacing: 10px;
+  margin: 0 25px;
+
+}
+
+.nav-list {
+  display: inline-block;
+}
+
+.nav-link {
+  display: inline;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: palevioletred;
+}
+
+.shopping-cart-link {
+  float: right;
+  font-size: 0;
+  padding: 32px;
+}
+
+.shopping-cart {
+  width: 30px;
+  height: 35px;
+}
+
+/* section seasonal-sale */
+.seasonal-sale {
+  background-image: url(./img/cover.jpg);
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 670px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  padding: 285px 252px 195px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.seasonal-sale-text {
+  width: 607px;
+  height: 190px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+strong {
+  font-family: 'Noto Serif Armenian', serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+.seasonal-sale-button {
+  display: block;
+  background-color: #303132;
+  margin: 20px auto 0;
+  font-size: 20px;
+  line-height: 2em;
+  width: 235px;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 0 auto;
+}
