@@ -58,19 +58,19 @@ header {
 
 .nav-item {
   display: inline-block;
-  padding: 40px;
+  padding: 50px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.nav-link:hover {
+.nav-item:hover .nav-link {
   color: palevioletred;
 }
 
 .shopping-cart-link {
   float: right;
   font-size: 0;
-  padding: 32px;
+  padding: 40px;
 }
 
 .shopping-cart {
@@ -179,17 +179,88 @@ footer {
 }
 
 .footer-blocks {
-  width: 1000px;
-  margin: 0 auto 50px;
-  padding-top: 70px;
-}
-
-table {
-  width: 100%;
+  width: 1025px;
+  margin: 0 auto;
+  padding: 70px 50px 50px;
+  box-sizing: border-box;
+  text-align-last: justify;
 }
 
 .footer-block {
   display: inline-block;
-  font-size: 12px;
+  /* font-size: 12px; */
   vertical-align: top;
+  letter-spacing: 2px;
+}
+
+.footer-block-title {
+  display: inline-block;
+  margin: 0.5em 0;
+}
+
+
+input {
+  display: block;
+  width: 330px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+button {
+  background-color: #D3D3D3;
+  color: black;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  letter-spacing: 2px;
+  border: 0.5px solid black;
+  float: right;
+}
+
+
+.phone,
+.mail {
+  margin: 0;
+  text-align-last: center;
+}
+
+.phone {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fa-brands {
+  font-size: 20px;
+}
+
+.social-media-links {
+  padding: 0 10px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.copyright {
+  text-align-last: center;
+  padding-bottom: 63px;
+  letter-spacing: 2px;
+}
+
+.copyright a {
+  text-decoration: underline;
+  text-decoration-color: black;
 }
