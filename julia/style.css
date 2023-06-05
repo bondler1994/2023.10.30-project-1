@@ -124,3 +124,72 @@ strong {
   box-sizing: border-box;
   padding: 0 auto;
 }
+
+/* section year-round-sale */
+.banner {
+  background-color: #E3E3E3;
+  text-align: center;
+  font-size: 12px;
+  padding: 17px 0;
+  letter-spacing: 7px;
+}
+
+.year-round-sale-text {
+  text-align: center;
+  margin: 55px 0;
+}
+
+.title {
+  font-size: 30px;
+  font-family: 'Noto Serif Armenian', serif;
+  letter-spacing: 20px;
+  margin-bottom: 43px;
+}
+
+.slogan {
+  font-size: 20px;
+  letter-spacing: 9px;
+  margin-top: 43px;
+}
+
+
+hr {
+  background-color: black;
+  width: 34px;
+  height: 1px;
+  border: none;
+}
+
+.hot-topics-for-sale {
+  margin: 0 auto 90px;
+  font-size: 0;
+  width: 1020px;
+  text-align-last: justify;
+
+}
+
+.hot-topic {
+  display: inline-block;
+}
+
+/* footer */
+footer {
+  background-color: #535151;
+  color: white;
+}
+
+.footer-blocks {
+  width: 1000px;
+  margin: 0 auto 50px;
+  padding-top: 70px;
+}
+
+table {
+  width: 100%;
+}
+
+.footer-block {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: top;
+}
