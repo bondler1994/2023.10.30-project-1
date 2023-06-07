@@ -15,32 +15,35 @@
 </head>
 
 <body>
+  <!-- check與原圖的差距 -->
+  <!-- <img class="origin" src="./Template_2.png" alt=""> -->
   <header>
-    <div class="container header_wrapper">
+    <div class="header_wrapper">
       <h1 class="logo"><a href="##">PRETTY GAL</a></h1>
       <nav>
-      <ul class="nav_list">
-        <li class="nav_item"><a href="##">Home</a></li>
-        <li class="nav_item"><a href="##">Shop</a></li>
-        <li class="nav_item"><a href="##">Sale</a></li>
-        <li class="nav_item"><a href="##">Customer Care</a></li>
-        <li class="nav_item"><a href="##">Stockists</a></li>
-      </ul>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="##">Home</a></li>
+          <li class="nav_item"><a href="##">Shop</a></li>
+          <li class="nav_item"><a href="##">Sale</a></li>
+          <li class="nav_item"><a href="##">Customer Care</a></li>
+          <li class="nav_item"><a href="##">Stockists</a></li>
+        </ul>
       </nav>
       <a class="shopping_cart_link" href="##"><img class="shopping_cart" src="./img/bag.png"
-          alt="shopping_cart_img"></a>
+          alt="shopping cart img"></a>
     </div>
   </header>
-  <section class="container seasonal_sale">
+  <main>
+  <section class="seasonal_sale">
     <div class="seasonal_sale_text">
-      <h2><strong>FALL & WINTER</strong></h2>
+      <h2>FALL & WINTER</h2>
       <a href="##" class="seasonal_sale_button">Shop Now</a>
     </div>
   </section>
-  <section class="container year_round_sale">
+  <section class="year_round_sale">
     <div class="banner">
       <p>FREE SHIPPING WORLDWIDE</p>
-      </div>
+    </div>
     <div class="year_round_sale_text">
       <h3>YEAR ROUND</h3>
       <hr>
@@ -63,8 +66,9 @@
       </div>
     </div>
   </section>
+  </main>
   <footer>
-    <div class="container footer_wrapper">
+    <div class="footer_wrapper">
       <div class="footer_blocks">
         <div class="footer_block social_media">
           <p class="footer_block_title">STAY CONNECTED</p>
@@ -78,14 +82,15 @@
         <div class="footer_block">
           <p class="footer_block_title">BE OUR FRIEND</p>
           <form action="">
-            <input type="text" name="contactEmail" placeholder="Email" autocomplete="off" value="">
-            <button type="submit" disabled="">Update Me</button>
+            <input type="email" name="contactEmail" placeholder="Email" value="" autocomplete="off">
+            <button type="submit">Update Me</button>
+            <div class="clearfix"></div>
           </form>
         </div>
         <div class="footer_block">
           <p class="footer_block_title">NEED ASSISTANCE?</p>
           <a href="tel:+123-456-7890">
-            <p class="phone" >123-456-7890</p>
+            <p class="phone">123-456-7890</p>
           </a>
           <a href="mailto:info@mysite.com">
             <p class="mail">info@mysite.com</p>
@@ -93,8 +98,10 @@
         </div>
       </div>
       <div class="copyright">
-        &copy; 2023 PRETTY GAL Proudly created with
-        <a href="##">Wix.com</a>      
+        <p>
+          &copy; &#169;2023 PRETTY GAL Proudly created with
+          <a href="##">Wix.com</a>
+        </p>
       </div>
     </div>
   </footer>

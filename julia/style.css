@@ -19,7 +19,9 @@ a {
   color: white;
 }
 
-.container {
+.header_wrapper,
+main,
+.footer_wrapper {
   width: 1831px;
   margin: 0 auto;
 
@@ -65,13 +67,13 @@ nav {
 
 .nav_item:hover a {
   color: palevioletred;
+  font-size: 25px;
 }
 
 .shopping_cart_link {
-  float: right;  
-  padding: 51px;
+  float: right;
+  padding: 58px;
   width: 39px;
-  height: 52px;
 }
 
 .shopping_cart {
@@ -83,7 +85,7 @@ nav {
   background-image: url(./img/cover.jpg);
   background-color: #cccccc;
   /* Used if the image is unavailable */
-  height: 670px;
+  height: 863px;
   /* You must set a specified height */
   background-position: center;
   /* Center the image */
@@ -106,11 +108,17 @@ nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-strong {
+.seasonal_sale_text a:hover {
+  color: palevioletred;
+  transform: scale(1.1);
+  border: 3px double palevioletred;  
+}
+
+h2 {
   font-family: 'Noto Serif Armenian', serif;
   font-size: 52px;
-  font-weight: 700;
   letter-spacing: 10px;
+  margin: 0;
 }
 
 .seasonal_sale_button {
@@ -136,7 +144,7 @@ strong {
 .banner p {
   font-size: 20px;
   padding: 1em 0;
-  letter-spacing: 9px;
+  letter-spacing: 7px;
   margin: 0;
 }
 
@@ -184,6 +192,10 @@ hr {
   height: 100%;
 }
 
+.hot_topic img:hover {
+  transform: scale(1.03);
+}
+
 /* footer */
 footer {
   background-color: #535151;
@@ -193,7 +205,7 @@ footer {
 .footer_blocks {
   width: 1333px;
   margin: 0 auto;
-  padding: 90px 65px 65px;
+  padding: 100px 65px 75px;
   box-sizing: border-box;
   text-align-last: justify;
 }
@@ -208,7 +220,7 @@ footer {
 .footer_block_title {
   display: inline-block;
   font-size: 20px;
-  margin: 0.5em 0;
+  margin: 0 0 0.5em;
 }
 
 
@@ -219,6 +231,13 @@ input {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid white;
 }
 
 button {
@@ -226,11 +245,22 @@ button {
   color: black;
   display: block;
   font-size: 20px;
-  margin: 0.5em 0;
   padding: 0.5em;
   letter-spacing: 3px;
   border: 1px solid black;
   float: right;
+}
+
+button:hover {
+  background-color: white;
+}
+
+button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);  
+}
+
+.clearfix {
+  clear: right;
 }
 
 
@@ -244,12 +274,22 @@ button {
   font-family: 'Raleway', sans-serif;
 }
 
-.fa-brands {
+.social_media_links {
+  font-size: 0;
+  padding: 0 13px;
+}
+
+.social_media_links i {
   font-size: 26px;
 }
 
-.social_media_links {
-  padding: 0 13px;
+.social_media_links a {
+  display: inline-block;
+}
+
+.social_media_links i:hover, .mail:hover, .phone:hover, .copyright a:hover {
+  color: palevioletred;
+  transform: scale(1.5);
 }
 
 ::placeholder {
@@ -271,7 +311,12 @@ button {
 .copyright {
   text-align-last: center;
   padding-bottom: 82px;
+}
+
+.copyright p {
   letter-spacing: 3px;
+  font-size: 20px;
+  margin: 0;
 }
 
 
@@ -279,3 +324,10 @@ button {
   text-decoration: underline;
   text-decoration-color: black;
 }
+/* check與原圖差距用 */
+/* .origin {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  width: 100%;
+} */
