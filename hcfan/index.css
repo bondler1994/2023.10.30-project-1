@@ -1,23 +1,28 @@
 :root {
     --width-template: 1920px;
-    --width-subject: 840px;
-    --height-banner: 915;
-    --height-subject: 260;
-    --padding-header: 38px 200px;
 
     --font-family-general: 'Raleway', sans-serif;
-    --font-family-slogan2: 'Playfair Display', serif;
+    --font-family-slogan: 'Playfair Display', serif;
 
     --color-subject: #303132;
     --color-theme-bg: #535151;
     --color-theme-text: #D2D2D2;
-    --color-slogan1: #E3E3E3;
-    --color-slogan2: #313233;
+    --color-shipping: #E3E3E3;
+    --color-promote: #313233;
 }
 
 body {
     margin: auto;
     min-width: var(--width-template);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
 }
 
 .content {
@@ -34,12 +39,13 @@ footer {
 }
 
 header .content {
-    padding: var(--padding-header);
+    padding: 38px 200px;
     width: fit-content;
 }
 
 header :is(h1, nav) {
     display: inline-block;
+    vertical-align: middle;
 }
 
 h1 {
@@ -65,14 +71,9 @@ header nav a {
     padding: 20px;
 
     font-size: 24px;
-    text-decoration: none;
     word-spacing: normal;
 
     color: #D2D2D2;
-}
-
-header nav a:hover {
-    color: white;
 }
 
 header img {
@@ -82,13 +83,9 @@ header img {
     vertical-align: middle;
 }
 
-main>* {
-    margin-bottom: 105px;
-}
-
 .banner {
     width: 100%;
-    height: var(--height-banner);
+    height: 915px;
     margin: auto;
     padding-top: 385px;
     box-sizing: border-box;
@@ -99,46 +96,48 @@ main>* {
     background-size: 115%;
 }
 
-.banner h2 {
+.banner .subject {
     margin: auto;
     padding: 30px;
     box-sizing: border-box;
-    width: var(--width-subject);
-    height: var(--height-subject);
-
+    width: 840px;
+    height: 260px;
     background-color: #FFFFFF60;
 }
 
-.banner h2 p {
+.banner .subject h2 {
     margin: auto;
     width: fit-content;
 
-    font-family: var(--font-family-slogan2);
+    font-family: var(--font-family-slogan);
     font-size: 76px;
     letter-spacing: 4px;
 
     color: var(--color-subject);
 }
 
-.banner .shop-button {
-    margin: 50px auto 0 auto;
+.shop-button {
     width: fit-content;
+    height: fit-content;
+    margin: 25px auto 0 auto;
 }
 
-.banner .shop-button a {
+.shop-button a {
+    display: inline-block;
     padding: 16px 90px;
 
     font-size: 28px;
-
-    text-align: center;
-    text-align-last: center;
 
     color: white;
     background: var(--color-subject);
 }
 
-.subject .slogan1 {
-    margin: 0;
+.shop-button a:hover {
+    opacity: 0.9;
+}
+
+.shipping-info {
+    margin: 0 0 105px 0;
     padding: 20px 0px;
 
     font-family: var(--font-family-general);
@@ -147,51 +146,65 @@ main>* {
     letter-spacing: 5px;
     text-align-last: center;
 
-    background-color: var(--color-slogan1);
+    background-color: var(--color-shipping);
 }
 
-.slogan2 :is(h2, p) {
+.promote {
+    margin-bottom: 115px;
+}
+
+.promote :is(h2, p) {
     margin: 0;
 
     text-align-last: center;
 
-    color: var(--color-slogan2);
+    color: var(--color-promote);
 }
 
-.slogan2 h2 {
+.promote h2 {
+    /* Used to balance letter spacing at last char */
+    margin-left: 18px;
+
     font-size: 56px;
-    font-family: var(--font-family-slogan2);
+    font-family: var(--font-family-slogan);
     letter-spacing: 18px;
 }
 
-.slogan2 p {
+.promote p {
+    /* Used to balance letter spacing at last char */
+    margin-left: 10px;
+
     font-size: 28px;
     font-family: var(--font-family-general);
     letter-spacing: 10px;
 }
 
-.slogan2 hr {
+.promote h2::after {
+    display: block;
+
     margin: 40px auto 40px;
     width: 50px;
 }
 
-main .products {
+.promote .products {
+    margin-top: 105px;
+
     font-size: 0;
     text-align-last: center;
     word-spacing: 16px;
 }
 
-main .products img {
+.promote .products img {
     height: 625px;
 }
 
-main .products img:hover {
+.promote .products img:hover {
     /* TODO: Only scale product up, and apply animation */
     transform: scale(1.1);
 }
 
 footer .content {
-    padding: 90px 0;
+    padding: 110px 0 90px;
 }
 
 footer .more-block {
@@ -208,6 +221,7 @@ footer .more {
 }
 
 footer .more h2 {
+    margin-top: 0;
     font-size: 22px;
     font-family: var(--font-family-general);
 }
@@ -219,8 +233,6 @@ footer .sns .icons {
 
 footer .sns a {
     font-size: 30px;
-
-    color: var(--color-theme-text);
 }
 
 footer .sns i:hover {
@@ -240,7 +252,7 @@ footer .subscribe form input[type=email] {
 
     font-size: 20px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 150%;
 
     background: transparent;
     color: var(--color-theme-text);
@@ -270,11 +282,8 @@ footer .contacts div {
 }
 
 footer .contacts a {
-    text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-
-    color: var(--color-theme-text);
 }
 
 footer .copyright {
@@ -288,5 +297,5 @@ footer .copyright {
 }
 
 footer .copyright a {
-    color: var(--color-theme-text);
+    text-decoration: underline;
 }
