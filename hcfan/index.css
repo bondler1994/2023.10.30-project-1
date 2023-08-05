@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;500&display=swap");
+
 :root {
     --width-template: 1920px;
+    --height-header: 140px;
 
     --font-family-general: 'Raleway', sans-serif;
     --font-family-slogan: 'Playfair Display', serif;
@@ -39,8 +42,9 @@ footer {
 }
 
 header .content {
-    padding: 38px 200px;
     width: fit-content;
+    height: var(--height-header);
+    padding: 38px 200px 50px;
 }
 
 header :is(h1, nav) {
@@ -62,9 +66,8 @@ header nav {
 }
 
 header nav :is(ul, li, a) {
-    padding: 0;
-
     display: inline-block;
+    padding: 0;
 }
 
 header nav a {
@@ -78,16 +81,16 @@ header nav a {
 
 header img {
     /* Make vertical align fit template */
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 
     vertical-align: middle;
 }
 
 .banner {
     width: 100%;
-    height: 915px;
+    height: calc(100vh - var(--height-header));
     margin: auto;
-    padding-top: 385px;
+    padding-top: 20%;
     box-sizing: border-box;
 
     background-image: url("img/cover.webp");
@@ -118,8 +121,7 @@ header img {
 
 .shop-button {
     width: fit-content;
-    height: fit-content;
-    margin: 25px auto 0 auto;
+    margin: 25px auto 0;
 }
 
 .shop-button a {
@@ -153,6 +155,11 @@ header img {
     margin-bottom: 115px;
 }
 
+.promote hr {
+    width: 50px;
+    margin: 50px auto;
+}
+
 .promote :is(h2, p) {
     margin: 0;
 
@@ -178,13 +185,13 @@ header img {
     font-family: var(--font-family-general);
     letter-spacing: 10px;
 }
-
+/* 
 .promote h2::after {
     display: block;
 
     margin: 40px auto 40px;
     width: 50px;
-}
+} */
 
 .promote .products {
     margin-top: 105px;
@@ -199,7 +206,7 @@ header img {
 }
 
 .promote .products img:hover {
-    /* TODO: Only scale product up, and apply animation */
+    /* TODO Only scale product up, and apply animation */
     transform: scale(1.1);
 }
 
@@ -247,15 +254,15 @@ footer .subscribe form input[type=email] {
     padding: 6px;
     width: 100%;
 
-    border: 2.5px solid var(--color-theme-text);
+    border: 2.5px solid;
     outline: 0px;
 
     font-size: 20px;
     font-weight: bold;
     line-height: 150%;
 
-    background: transparent;
     color: var(--color-theme-text);
+    background: transparent;
 }
 
 footer .subscribe form button {
@@ -274,7 +281,7 @@ footer .subscribe form button {
 }
 
 footer .subscribe form button:hover {
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 footer .contacts div {
@@ -297,5 +304,5 @@ footer .copyright {
 }
 
 footer .copyright a {
-    text-decoration: underline;
+    text-decoration: black underline;
 }
