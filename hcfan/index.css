@@ -15,8 +15,8 @@
 }
 
 body {
-    margin: auto;
     min-width: var(--width-template);
+    margin: auto;
 }
 
 a {
@@ -29,10 +29,9 @@ a:hover {
 }
 
 .content {
-    margin: auto;
-    width: var(--width-template);
-
     box-sizing: border-box;
+    width: var(--width-template);
+    margin: auto;
 }
 
 header,
@@ -54,13 +53,11 @@ header :is(h1, nav) {
 
 h1 {
     margin: 0;
-
     letter-spacing: 8px;
 }
 
 header nav {
     margin: 0 110px 0 100px;
-
     font-size: 0;
     word-spacing: 63px;
 }
@@ -72,26 +69,23 @@ header nav :is(ul, li, a) {
 
 header nav a {
     padding: 20px;
-
     font-size: 24px;
-    word-spacing: normal;
-
     color: #D2D2D2;
+    word-spacing: normal;
 }
 
 header img {
     /* Make vertical align fit template */
     padding-bottom: 10px;
-
     vertical-align: middle;
 }
 
 .banner {
+    box-sizing: border-box;
     width: 100%;
     height: calc(100vh - var(--height-header));
     margin: auto;
     padding-top: 20%;
-    box-sizing: border-box;
 
     background-image: url("img/cover.webp");
     background-position: center;
@@ -100,23 +94,23 @@ header img {
 }
 
 .banner .subject {
-    margin: auto;
-    padding: 30px;
     box-sizing: border-box;
     width: 840px;
     height: 260px;
+    margin: auto;
+    padding: 30px;
+
     background-color: #FFFFFF60;
 }
 
 .banner .subject h2 {
-    margin: auto;
     width: fit-content;
+    margin: auto;
 
     font-family: var(--font-family-slogan);
     font-size: 76px;
-    letter-spacing: 4px;
-
     color: var(--color-subject);
+    letter-spacing: 4px;
 }
 
 .shop-button {
@@ -126,11 +120,12 @@ header img {
 
 .shop-button a {
     display: inline-block;
+
     padding: 16px 90px;
 
     font-size: 28px;
-
     color: white;
+
     background: var(--color-subject);
 }
 
@@ -143,10 +138,10 @@ header img {
     padding: 20px 0px;
 
     font-family: var(--font-family-general);
-    font-weight: 100;
     font-size: 20px;
-    letter-spacing: 5px;
+    font-weight: 100;
     text-align-last: center;
+    letter-spacing: 5px;
 
     background-color: var(--color-shipping);
 }
@@ -162,27 +157,23 @@ header img {
 
 .promote :is(h2, p) {
     margin: 0;
-
-    text-align-last: center;
-
     color: var(--color-promote);
+    text-align-last: center;
 }
 
 .promote h2 {
     /* Used to balance letter spacing at last char */
     margin-left: 18px;
-
-    font-size: 56px;
     font-family: var(--font-family-slogan);
+    font-size: 56px;
     letter-spacing: 18px;
 }
 
 .promote p {
     /* Used to balance letter spacing at last char */
     margin-left: 10px;
-
-    font-size: 28px;
     font-family: var(--font-family-general);
+    font-size: 28px;
     letter-spacing: 10px;
 }
 /* 
@@ -195,7 +186,6 @@ header img {
 
 .promote .products {
     margin-top: 105px;
-
     font-size: 0;
     text-align-last: center;
     word-spacing: 16px;
@@ -217,25 +207,24 @@ footer .content {
 footer .more-block {
     width: 1200px;
     margin: 0 auto 100px;
-
     text-align-last: justify;
 }
 
 footer .more {
-    text-align-last: left;
     display: inline-block;
+    text-align-last: left;
     vertical-align: top;
 }
 
 footer .more h2 {
     margin-top: 0;
-    font-size: 22px;
     font-family: var(--font-family-general);
+    font-size: 22px;
 }
 
 footer .sns .icons {
-    text-align-last: justify;
     font-size: 0;
+    text-align-last: justify;
 }
 
 footer .sns a {
@@ -251,33 +240,33 @@ footer .subscribe {
 }
 
 footer .subscribe form input[type=email] {
-    padding: 6px;
     width: 100%;
-
-    border: 2.5px solid;
-    outline: 0px;
+    padding: 6px;
 
     font-size: 20px;
     font-weight: bold;
     line-height: 150%;
-
     color: var(--color-theme-text);
+
     background: transparent;
+    border: 2.5px solid;
+    outline: 0px;
 }
 
 footer .subscribe form button {
-    margin-top: 10px;
-    padding: 8px 12px;
-    float: right;
-
-    border: 0px;
-
-    font-size: 20px;
-    text-decoration: none;
     cursor: pointer;
 
+    float: right;
+
+    margin-top: 10px;
+    padding: 8px 12px;
+
+    font-size: 20px;
     color: var(--color-theme-bg);
+    text-decoration: none;
+
     background-color: var(--color-theme-text);
+    border: 0px;
 }
 
 footer .subscribe form button:hover {
@@ -294,12 +283,12 @@ footer .contacts a {
 }
 
 footer .copyright {
-    margin: auto;
     width: fit-content;
+    margin: auto;
 
     font-family: var(--font-family-general);
-    font-weight: bold;
     font-size: 20px;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 
