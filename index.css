@@ -1,23 +1,36 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url(font/Roboto-Light.ttf);
+}
 body{
-    margin: 0px;
+    font-family: Roboto-Light;
+    margin: 0;
+    background-color: blanchedalmond;
+    height: 100vh;
 }
+
 .header{
-    cursor: pointer;
-}
-
-.header button{
-    border: 0;
+    position: relative;
     background-color: white;
-
+    height: 100px;
 }
-.header a{
-    display: block;
+.header img{
+    margin: 32px;
+    margin-left: 100px;
+}
+.header nav{
+    margin: 40px;
+    float: right;
+    font-weight: bold;
+}
+.header nav a{
     text-decoration: none;
+    padding: 10px;
+    position: relative;
     color: black;
-    padding: 10px 15px 10px 10px;
-    position: ;
 }
-.header .content{
-    position: absolute;
-    background-color: #D0D0D0;
+.header a:hover{
+    background-color: #CE0000;
+    border-radius: 40px;
+    color: white;
 }
