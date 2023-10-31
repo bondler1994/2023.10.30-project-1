@@ -1,36 +1,61 @@
+
 @font-face {
     font-family: Roboto-Light;
     src: url(font/Roboto-Light.ttf);
 }
+
 body{
     font-family: Roboto-Light;
     margin: 0;
-    background-color: blanchedalmond;
+    background-color: #141a24;
     height: 100vh;
 }
 
-.header{
-    position: relative;
+.one{
     background-color: white;
-    height: 100px;
+    padding: 10px;
 }
-.header img{
-    margin: 32px;
-    margin-left: 100px;
+.one img{
+    margin-left: 10px;
+    display: inline-flex;
 }
-.header nav{
-    margin: 40px;
-    float: right;
+.select{
+    display: inline-flex;
+    float: inline-end;
+}
+.select a{
     font-weight: bold;
-}
-.header nav a{
     text-decoration: none;
     padding: 10px;
-    position: relative;
     color: black;
 }
-.header a:hover{
-    background-color: #CE0000;
-    border-radius: 40px;
+.select a:hover{
+    background-color: #EA0000;
+    border-radius: 30px;
     color: white;
+    transition: 0.5s;
+}
+.photo-one{
+    width: 100vw;
+}
+.two{
+    color: white;
+    text-align: center;
+}
+.two h1{
+    color: white;
+    background-color: #EA0000;
+    margin-left: 235px;
+    margin-right: 235px;
+    padding: 30px;
+    font-weight: bold;
+}
+.two p{
+    text-align: center;
+    margin-left: 230px;
+    margin-right: 230px;
+
+}
+.two hr{
+    max-width: 200px;
 }
