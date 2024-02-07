@@ -1,0 +1,32 @@
+main article {
+    background-image: url(./img/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+}
+
+.section_shop {
+    background-color: rgb(255, 255, 255, 50%);
+    text-align: center;
+    display: inline-block;
+    width: 605px;
+    height: 190px;
+    position: relative;
+    top: 43%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.section_shop a {
+    font-weight: bold;
+    background-color: #303132;
+    color: white;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10.5px 72px;
+}
