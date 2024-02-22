@@ -58,3 +58,8 @@ header nav .active,
 header nav a:hover {
     color: #D2D2D2;
 }
+
+header nav img {
+    width: 100%;
+    object-fit: fill;
+}

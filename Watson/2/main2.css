@@ -13,12 +13,13 @@ main section {
 
 
 .section_banner {
-
+    /* 要改 */
     position: relative;
     top: 258px;
     display: inline-block;
     width: 605px;
     height: 190px;
+    padding: ;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
